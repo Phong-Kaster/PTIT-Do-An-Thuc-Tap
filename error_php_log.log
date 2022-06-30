@@ -1,0 +1,419 @@
+[29-Jun-2022 13:26:22 UTC] PHP Fatal error:  Uncaught Error: Class 'PostController' not found in D:\xampp\htdocs\nextpost\app\core\App.php:451
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\core\App.php(513): App->route()
+#1 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\core\App.php on line 451
+[29-Jun-2022 13:28:38 UTC] PHP Fatal error:  Uncaught Error: Class 'PostController' not found in D:\xampp\htdocs\nextpost\app\core\App.php:451
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\core\App.php(513): App->route()
+#1 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\core\App.php on line 451
+[29-Jun-2022 13:30:03 UTC] PHP Fatal error:  Uncaught Error: Class 'PostController' not found in D:\xampp\htdocs\nextpost\app\core\App.php:451
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\core\App.php(513): App->route()
+#1 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\core\App.php on line 451
+[29-Jun-2022 13:30:07 UTC] PHP Fatal error:  Uncaught Error: Class 'PostController' not found in D:\xampp\htdocs\nextpost\app\core\App.php:451
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\core\App.php(513): App->route()
+#1 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\core\App.php on line 451
+[29-Jun-2022 13:31:34 UTC] PHP Warning:  Use of undefined constant TABLE_PLUGINS - assumed 'TABLE_PLUGINS' (this will throw an Error in a future version of PHP) in D:\xampp\htdocs\nextpost\app\models\PluginsModel.php on line 16
+[29-Jun-2022 13:31:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.ec_table_plugins' doesn't exist in D:\xampp\htdocs\nextpost\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\nextpost\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT count(*)...', Array)
+#2 D:\xampp\htdocs\nextpost\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(252): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 D:\xampp\htdocs\nextpost\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(235): Pixie\QueryBuilder\QueryBuilderHandler->aggregate('count')
+#4 D:\xampp\htdocs\nextpost\app\core\DataList.php(137): Pixie\QueryBuilder\QueryBuilderHandler->count()
+#5 D:\xampp\htdocs\nex in D:\xampp\htdocs\nextpost\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[29-Jun-2022 13:32:39 UTC] PHP Fatal error:  Uncaught Error: Call to a member function where() on null in D:\xampp\htdocs\nextpost\app\core\App.php:221
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\core\App.php(502): App->loadPlugins()
+#1 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\core\App.php on line 221
+[29-Jun-2022 13:33:07 UTC] PHP Notice:  Undefined index: _PLUGINS_ in D:\xampp\htdocs\nextpost\app\core\App.php on line 389
+[29-Jun-2022 13:33:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\nextpost\app\core\App.php on line 389
+[29-Jun-2022 13:33:08 UTC] PHP Notice:  Undefined index: _PLUGINS_ in D:\xampp\htdocs\nextpost\app\core\App.php on line 389
+[29-Jun-2022 13:33:08 UTC] PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\nextpost\app\core\App.php on line 389
+[29-Jun-2022 13:33:08 UTC] PHP Notice:  Undefined index: _PLUGINS_ in D:\xampp\htdocs\nextpost\app\core\App.php on line 389
+[29-Jun-2022 13:33:08 UTC] PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\nextpost\app\core\App.php on line 389
+[29-Jun-2022 13:33:25 UTC] PHP Parse error:  syntax error, unexpected '$Translator' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST) in D:\xampp\htdocs\nextpost\app\core\App.php on line 397
+[29-Jun-2022 13:33:31 UTC] PHP Notice:  Undefined index: _PLUGINS_ in D:\xampp\htdocs\nextpost\app\core\App.php on line 389
+[29-Jun-2022 13:33:31 UTC] PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\nextpost\app\core\App.php on line 389
+[29-Jun-2022 13:33:31 UTC] PHP Notice:  Undefined index: _PLUGINS_ in D:\xampp\htdocs\nextpost\app\core\App.php on line 389
+[29-Jun-2022 13:33:31 UTC] PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\nextpost\app\core\App.php on line 389
+[29-Jun-2022 13:33:31 UTC] PHP Notice:  Undefined index: _PLUGINS_ in D:\xampp\htdocs\nextpost\app\core\App.php on line 389
+[29-Jun-2022 13:33:31 UTC] PHP Warning:  Invalid argument supplied for foreach() in D:\xampp\htdocs\nextpost\app\core\App.php on line 389
+[29-Jun-2022 13:35:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function where() on null in D:\xampp\htdocs\nextpost\app\controllers\PostController.php:57
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\core\App.php(524): PostController->process()
+#1 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\PostController.php on line 57
+[29-Jun-2022 13:35:22 UTC] PHP Notice:  Undefined variable: Captions in D:\xampp\htdocs\nextpost\app\controllers\PostController.php on line 65
+[29-Jun-2022 13:35:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function isAvailable() on null in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php:264
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\views\post.php(35): require_once()
+#1 D:\xampp\htdocs\nextpost\app\core\Controller.php(92): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\nextpost\app\controllers\PostController.php(77): Controller->view('post')
+#3 D:\xampp\htdocs\nextpost\app\core\App.php(524): PostController->process()
+#4 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#5 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php on line 264
+[29-Jun-2022 13:35:59 UTC] PHP Notice:  Undefined variable: Captions in D:\xampp\htdocs\nextpost\app\controllers\PostController.php on line 65
+[29-Jun-2022 13:35:59 UTC] PHP Fatal error:  Uncaught Error: Call to a member function isAvailable() on null in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php:264
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\views\post.php(35): require_once()
+#1 D:\xampp\htdocs\nextpost\app\core\Controller.php(92): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\nextpost\app\controllers\PostController.php(77): Controller->view('post')
+#3 D:\xampp\htdocs\nextpost\app\core\App.php(524): PostController->process()
+#4 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#5 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php on line 264
+[29-Jun-2022 13:37:20 UTC] PHP Notice:  Undefined variable: Captions in D:\xampp\htdocs\nextpost\app\controllers\PostController.php on line 65
+[29-Jun-2022 13:37:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function isAvailable() on null in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php:264
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\views\post.php(35): require_once()
+#1 D:\xampp\htdocs\nextpost\app\core\Controller.php(92): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\nextpost\app\controllers\PostController.php(77): Controller->view('post')
+#3 D:\xampp\htdocs\nextpost\app\core\App.php(524): PostController->process()
+#4 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#5 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php on line 264
+[29-Jun-2022 13:38:11 UTC] PHP Notice:  Undefined variable: Captions in D:\xampp\htdocs\nextpost\app\controllers\PostController.php on line 65
+[29-Jun-2022 13:38:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function isAvailable() on null in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php:264
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\views\post.php(35): require_once()
+#1 D:\xampp\htdocs\nextpost\app\core\Controller.php(92): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\nextpost\app\controllers\PostController.php(77): Controller->view('post')
+#3 D:\xampp\htdocs\nextpost\app\core\App.php(524): PostController->process()
+#4 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#5 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php on line 264
+[29-Jun-2022 13:38:58 UTC] PHP Notice:  Undefined variable: Captions in D:\xampp\htdocs\nextpost\app\controllers\PostController.php on line 65
+[29-Jun-2022 13:38:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function isAvailable() on null in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php:264
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\views\post.php(35): require_once()
+#1 D:\xampp\htdocs\nextpost\app\core\Controller.php(92): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\nextpost\app\controllers\PostController.php(77): Controller->view('post')
+#3 D:\xampp\htdocs\nextpost\app\core\App.php(524): PostController->process()
+#4 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#5 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php on line 264
+[29-Jun-2022 13:40:03 UTC] PHP Notice:  Undefined variable: Captions in D:\xampp\htdocs\nextpost\app\controllers\PostController.php on line 65
+[29-Jun-2022 13:40:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function isAvailable() on null in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php:264
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\views\post.php(35): require_once()
+#1 D:\xampp\htdocs\nextpost\app\core\Controller.php(92): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\nextpost\app\controllers\PostController.php(77): Controller->view('post')
+#3 D:\xampp\htdocs\nextpost\app\core\App.php(524): PostController->process()
+#4 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#5 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php on line 264
+[29-Jun-2022 13:40:45 UTC] PHP Warning:  Use of undefined constant TABLE_OPTIONS - assumed 'TABLE_OPTIONS' (this will throw an Error in a future version of PHP) in D:\xampp\htdocs\nextpost\app\models\OptionModel.php on line 38
+[29-Jun-2022 13:40:45 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce.ec_table_options' doesn't exist in D:\xampp\htdocs\nextpost\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\nextpost\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT count(*)...', Array)
+#2 D:\xampp\htdocs\nextpost\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(252): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 D:\xampp\htdocs\nextpost\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(235): Pixie\QueryBuilder\QueryBuilderHandler->aggregate('count')
+#4 D:\xampp\htdocs\nextpost\app\models\OptionModel.php(42): Pixie\QueryBuilder\QueryBuilderHandler->count()
+#5 D:\xampp\htdocs in D:\xampp\htdocs\nextpost\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[29-Jun-2022 13:41:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function isAvailable() on null in D:\xampp\htdocs\nextpost\app\helpers\common.helper.php:486
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\helpers\theme.helper.php(16): get_option('np_active_theme...')
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(259): active_theme('idname')
+#2 D:\xampp\htdocs\nextpost\app\core\App.php(507): App->loadTheme()
+#3 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\helpers\common.helper.php on line 486
+[29-Jun-2022 13:41:31 UTC] PHP Notice:  Undefined variable: Captions in D:\xampp\htdocs\nextpost\app\controllers\PostController.php on line 65
+[29-Jun-2022 13:41:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function isAvailable() on null in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php:264
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\views\post.php(35): require_once()
+#1 D:\xampp\htdocs\nextpost\app\core\Controller.php(92): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\nextpost\app\controllers\PostController.php(77): Controller->view('post')
+#3 D:\xampp\htdocs\nextpost\app\core\App.php(524): PostController->process()
+#4 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#5 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php on line 264
+[29-Jun-2022 13:42:34 UTC] PHP Fatal error:  Uncaught Error: Class 'PostController' not found in D:\xampp\htdocs\nextpost\app\core\App.php:451
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\core\App.php(513): App->route()
+#1 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\core\App.php on line 451
+[29-Jun-2022 13:43:27 UTC] PHP Fatal error:  Uncaught Error: Class 'PostController' not found in D:\xampp\htdocs\nextpost\app\core\App.php:451
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\core\App.php(513): App->route()
+#1 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\core\App.php on line 451
+[29-Jun-2022 13:44:08 UTC] PHP Notice:  Undefined variable: Captions in D:\xampp\htdocs\nextpost\app\controllers\PostController.php on line 65
+[29-Jun-2022 13:44:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function isAvailable() on null in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php:264
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\views\post.php(35): require_once()
+#1 D:\xampp\htdocs\nextpost\app\core\Controller.php(92): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\nextpost\app\controllers\PostController.php(77): Controller->view('post')
+#3 D:\xampp\htdocs\nextpost\app\core\App.php(524): PostController->process()
+#4 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#5 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php on line 264
+[29-Jun-2022 13:44:19 UTC] PHP Notice:  Undefined variable: Captions in D:\xampp\htdocs\nextpost\app\controllers\PostController.php on line 65
+[29-Jun-2022 13:44:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function isAvailable() on null in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php:264
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\views\post.php(35): require_once()
+#1 D:\xampp\htdocs\nextpost\app\core\Controller.php(92): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\nextpost\app\controllers\PostController.php(77): Controller->view('post')
+#3 D:\xampp\htdocs\nextpost\app\core\App.php(524): PostController->process()
+#4 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#5 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php on line 264
+[29-Jun-2022 13:44:32 UTC] PHP Notice:  Undefined variable: Captions in D:\xampp\htdocs\nextpost\app\controllers\PostController.php on line 65
+[29-Jun-2022 13:44:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function isAvailable() on null in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php:264
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\views\post.php(35): require_once()
+#1 D:\xampp\htdocs\nextpost\app\core\Controller.php(92): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\nextpost\app\controllers\PostController.php(77): Controller->view('post')
+#3 D:\xampp\htdocs\nextpost\app\core\App.php(524): PostController->process()
+#4 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#5 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php on line 264
+[29-Jun-2022 13:46:46 UTC] PHP Notice:  Undefined variable: Captions in D:\xampp\htdocs\nextpost\app\controllers\PostController.php on line 65
+[29-Jun-2022 13:46:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function isAvailable() on null in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php:264
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\views\post.php(35): require_once()
+#1 D:\xampp\htdocs\nextpost\app\core\Controller.php(92): require_once('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\nextpost\app\controllers\PostController.php(77): Controller->view('post')
+#3 D:\xampp\htdocs\nextpost\app\core\App.php(524): PostController->process()
+#4 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#5 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\views\fragments\post.fragment.php on line 264
+[29-Jun-2022 14:11:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function print_f() in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:32
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(19): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 32
+[29-Jun-2022 14:11:18 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\JWT' not found in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:59
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(19): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 59
+[29-Jun-2022 14:27:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\JWT' not found in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:58
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(19): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 58
+[29-Jun-2022 14:27:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\JWT' not found in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:58
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(19): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 58
+[29-Jun-2022 14:28:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\JWT' not found in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:58
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(19): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 58
+[29-Jun-2022 14:29:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function print_f() in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:32
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(19): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 32
+[29-Jun-2022 14:29:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function print_f() in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:32
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(19): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 32
+[29-Jun-2022 14:29:42 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\JWT' not found in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:58
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(19): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 58
+[29-Jun-2022 14:30:34 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\JWT' not found in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:59
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(20): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 59
+[29-Jun-2022 14:32:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\JWT' not found in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:59
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(20): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 59
+[29-Jun-2022 14:38:03 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\JWT' not found in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:56
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(20): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 56
+[29-Jun-2022 14:38:14 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\JWT' not found in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:56
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(20): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 56
+[29-Jun-2022 14:39:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\JWT' not found in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:56
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(20): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 56
+[29-Jun-2022 14:40:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\JWT' not found in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:56
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(20): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 56
+[29-Jun-2022 14:41:45 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\JWT' not found in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:57
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(20): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 57
+[29-Jun-2022 14:42:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\JWT' not found in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:57
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(20): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 57
+[29-Jun-2022 14:44:58 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\JWT' not found in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:57
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(20): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 57
+[29-Jun-2022 14:47:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\JWT' not found in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:57
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(20): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 57
+[29-Jun-2022 14:48:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\JWT' not found in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:57
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(20): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 57
+[29-Jun-2022 14:49:33 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\JWT' not found in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:57
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(20): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 57
+[29-Jun-2022 14:50:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\JWT' not found in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:57
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(20): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 57
+[29-Jun-2022 14:58:11 UTC] PHP Fatal error:  Uncaught Error: Class 'JWT' not found in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:57
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(20): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 57
+[29-Jun-2022 14:58:17 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\JWT' not found in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php:57
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(20): LoginController->login()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(72): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 57
+[29-Jun-2022 15:10:40 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 57 and at least 3 expected in D:\xampp\htdocs\nextpost\app\vendor\firebase\php-jwt\src\JWT.php:171
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(57): Firebase\JWT\JWT::encode(Array, '0TKSeBDgx5R1wgT...')
+#1 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(20): LoginController->login()
+#2 D:\xampp\htdocs\nextpost\app\core\App.php(524): LoginController->process()
+#3 D:\xampp\htdocs\nextpost\index.php(71): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\vendor\firebase\php-jwt\src\JWT.php on line 171
+[29-Jun-2022 16:00:17 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in D:\xampp\htdocs\nextpost\app\controllers\CategoriesController.php on line 22
+[29-Jun-2022 16:06:38 UTC] PHP Fatal error:  Uncaught Exception: Invalid method in D:\xampp\htdocs\nextpost\app\core\Input.php:71
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\CategoriesController.php(21): Input::__callStatic('method', Array)
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): CategoriesController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(71): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\core\Input.php on line 71
+[29-Jun-2022 16:08:38 UTC] PHP Fatal error:  Uncaught Exception: Invalid method in D:\xampp\htdocs\nextpost\app\core\Input.php:71
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\CategoriesController.php(21): Input::__callStatic('method', Array)
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): CategoriesController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(71): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\core\Input.php on line 71
+[29-Jun-2022 16:09:37 UTC] PHP Fatal error:  Uncaught Exception: Invalid method in D:\xampp\htdocs\nextpost\app\core\Input.php:71
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\CategoriesController.php(21): Input::__callStatic('method', Array)
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): CategoriesController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(71): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\core\Input.php on line 71
+[29-Jun-2022 16:10:03 UTC] PHP Fatal error:  Uncaught Exception: Invalid method in D:\xampp\htdocs\nextpost\app\core\Input.php:71
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\CategoriesController.php(21): Input::__callStatic('method', Array)
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): CategoriesController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(71): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\core\Input.php on line 71
+[29-Jun-2022 16:11:13 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CategoriesController::getAll(), 0 passed in D:\xampp\htdocs\nextpost\app\controllers\CategoriesController.php on line 24 and exactly 1 expected in D:\xampp\htdocs\nextpost\app\controllers\CategoriesController.php:35
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\CategoriesController.php(24): CategoriesController->getAll()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): CategoriesController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(71): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\CategoriesController.php on line 35
+[29-Jun-2022 16:11:50 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function CategoriesController::getAll(), 0 passed in D:\xampp\htdocs\nextpost\app\controllers\CategoriesController.php on line 24 and exactly 1 expected in D:\xampp\htdocs\nextpost\app\controllers\CategoriesController.php:35
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\CategoriesController.php(24): CategoriesController->getAll()
+#1 D:\xampp\htdocs\nextpost\app\core\App.php(524): CategoriesController->process()
+#2 D:\xampp\htdocs\nextpost\index.php(71): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\controllers\CategoriesController.php on line 35
+[30-Jun-2022 00:34:24 UTC] PHP Warning:  Creating default object from empty value in D:\xampp\htdocs\nextpost\app\core\App.php on line 231
+[30-Jun-2022 00:34:24 UTC] PHP Warning:  Creating default object from empty value in D:\xampp\htdocs\nextpost\app\core\App.php on line 231
+[30-Jun-2022 00:38:59 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Firebase\JWT\JWT::encode(), 2 passed in D:\xampp\htdocs\nextpost\app\controllers\LoginController.php on line 57 and at least 3 expected in D:\xampp\htdocs\nextpost\app\vendor\firebase\php-jwt\src\JWT.php:171
+Stack trace:
+#0 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(57): Firebase\JWT\JWT::encode(Array, '0TKSeBDgx5R1wgT...')
+#1 D:\xampp\htdocs\nextpost\app\controllers\LoginController.php(20): LoginController->login()
+#2 D:\xampp\htdocs\nextpost\app\core\App.php(577): LoginController->process()
+#3 D:\xampp\htdocs\nextpost\index.php(71): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\nextpost\app\vendor\firebase\php-jwt\src\JWT.php on line 171
