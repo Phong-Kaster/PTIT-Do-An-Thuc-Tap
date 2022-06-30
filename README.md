@@ -3,26 +3,26 @@
 </h1>
 
 <p align="center">
-    <img src="./photo/BlackFullScale.png" width="1280" />
+    <img src="./photo/steel-eagle.png" width="1280" />
 </p>
 
 
 # [**Table Of Content**](#table-of-content)
 - [**Table Of Content**](#table-of-content)
-- [**Introduction**](#introduction)
+- [**Database**](#database)
 - [**Timeline**](#timeline)
   - [**Phase 1: 29-06-2022 to xx-xx-2022**](#phase-1-29-06-2022-to-xx-xx-2022)
-- [**Our Team**](#our-team)
+- [**Special Thank**](#special-thank)
 - [**Made with 💘 and PHP <img src="https://www.vectorlogo.zone/logos/php/php-horizontal.svg" width="60">**](#made-with--and-php-)
 
-# [**Introduction**](#introduction)
+# [**Database**](#database)
 
 <p align="center">
-    <img src="./avatar/Black.jpg" width="640" />
+    <img src="./photo/mySQL-diagram-database2.png" width="640" />
 </p>
 <h3 align="center">
 
-***HEAR ME ROAR - UNBOWED, UNBENT, UNBROKEN***
+***Bản thiết kế tiêu chuẩn cơ sở dữ liệu cho đồ án thực tập***
 </h3>
 
 
@@ -32,15 +32,17 @@
 
 - **29-06-2022** - khởi tạo dự án, chức năng đăng nhập và tạo mã JWT token
 
-# [**Our Team**](#our-team)
+- **30-06-2022** - sửa lỗi JWT token do mã hóa sai, thêm Product & Products Model
+
+# [**Special Thank**](#our-team)
 
 <table>
         <tr>
             <td align="center">
-                <a href="https://github.com/Phong-Kaster">
-                    <img src="./photo/Blue.jpg" width="100px;" alt=""/>
+                <a href="https://github.com/ngdanghau">
+                    <img src="./photo/Hau.jpg" width="100px;" alt=""/>
                     <br />
-                    <sub><b>Nguyễn Thành Phong</b></sub>
+                    <sub><b>Nguyễn Đăng Hậu</b></sub>
                 </a>
             </td>
         </tr>

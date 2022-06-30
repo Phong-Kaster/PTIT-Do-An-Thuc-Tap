@@ -7,7 +7,7 @@ require_once APPPATH.'/config/i18n.config.php'; // i18n configuration
 define("CRYPTO_KEY", "def00000953dd1ebc7f114b6d769cc8feede974cc053aecd286ecb892a5ef0b82b848406f8d90a4efe4259400b0f05be5b53eefead92886375a794c2f0ccf7c76b13780c");
 
 // General purpose salt
-define("EC_SALT", "0TKSeBDgx5R1wgTW");
+define("EC_SALT", "ImINZ0B8kD2PmWuU");
 
 
 // Path to instagram sessions directory

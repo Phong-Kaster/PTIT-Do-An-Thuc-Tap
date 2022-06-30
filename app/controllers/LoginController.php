@@ -40,6 +40,7 @@ class LoginController extends Controller
                 password_verify($password, $User->get("password"))) 
             {
                 $data = array(
+                    "id"    => $User->get("id"),
                     "email" => $User->get("email"),
                     "first_name" => $User->get("first_name"),
                     "last_name" => $User->get("last_name"),
