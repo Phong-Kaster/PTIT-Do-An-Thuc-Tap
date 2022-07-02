@@ -539,3 +539,14 @@ function active_lang($option, $value = null)
         return Config::get("active_lang_".$option);
     }
 }
+
+
+/**
+ * Check json is invalid
+ * @param $str is json string
+ * @return boolean
+ */
+function isValidJSON($str) {
+    json_decode($str);
+    return json_last_error() == JSON_ERROR_NONE;
+ }

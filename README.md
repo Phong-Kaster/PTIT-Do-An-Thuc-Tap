@@ -10,6 +10,7 @@
 # [**Table Of Content**](#table-of-content)
 - [**Table Of Content**](#table-of-content)
 - [**Database**](#database)
+- [**Controller Timeline](#controller-timeline)
 - [**Timeline**](#timeline)
   - [**Phase 1: 29-06-2022 to xx-xx-2022**](#phase-1-29-06-2022-to-xx-xx-2022)
 - [**Special Thank**](#special-thank)
@@ -25,6 +26,23 @@
 ***Bản thiết kế tiêu chuẩn cơ sở dữ liệu cho đồ án thực tập***
 </h3>
 
+# [**Controller Timeline](#controller-timeline)
+
+Trình tự xây dựng các controller của đồ án này, cái này các bạn tham khảo để nhận biết cái controller nào sẽ `ưu tiên xây dựng trước`.
+
+> Note: quy ước ở cái số 3 và 4 áp dụng cho tất cả Controller nào có dạng số ít và số nhiều như `3` và `4`
+
+1. Login Controller
+
+2. Sign Up Controller
+
+3. Users Controller - cái này để lấy danh sách toàn bộ user ngoại trừ chính người đang đăng nhập và thêm mới một user
+
+4. User Controller - các chức năng sửa-xóa-lấy thông tin 1 user.
+
+5. Product Controller 
+
+6. Product Controller
 
 # [**Timeline**](#timeline)
 
@@ -33,6 +51,8 @@
 - **29-06-2022** - khởi tạo dự án, chức năng đăng nhập và tạo mã JWT token
 
 - **30-06-2022** - sửa lỗi JWT token do mã hóa sai, thêm Product & Products Model
+
+- **02-07-2022** - C.R.U.D cho bảng `Users`
 
 # [**Special Thank**](#our-team)
 

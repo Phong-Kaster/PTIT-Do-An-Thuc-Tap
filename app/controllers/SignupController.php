@@ -73,7 +73,7 @@ class SignupController extends Controller
                 ->set("password", password_hash(Input::post("password"), PASSWORD_DEFAULT))
                 ->set("first_name", Input::post("first_name"))
                 ->set("last_name", Input::post("last_name"))
-                ->set("role", "customer")
+                ->set("role", "member")
                 ->set("active", 1)
                 ->set("create_at", date("Y-m-d H:i:s"))
                 ->set("update_at", date("Y-m-d H:i:s"))

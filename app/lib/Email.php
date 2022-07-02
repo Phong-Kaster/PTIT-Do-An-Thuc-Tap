@@ -31,34 +31,46 @@ class Email extends PHPMailer{
 
         // Get settings
         $emailSettings = self::getEmailSettings();
-        
+
         // Get site name
         $siteSettings = self::getSiteSettings();
 
         $this->CharSet = "UTF-8";
         $this->isHTML();
 
-        if ($emailSettings->get("data.smtp.host")) {
+
+
+        if ($emailSettings->get("data.host")) {
+
             $this->isSMTP();
 
-            if ($emailSettings->get("data.smtp.from")) {
-                $this->From = $emailSettings->get("data.smtp.from");
+            if ($emailSettings->get("data.from")) {
+                $this->From = $emailSettings->get("data.from");
                 $this->FromName = htmlchars($siteSettings->get("data.site_name"));
             }
             
-            $this->Host = $emailSettings->get("data.smtp.host");
-            $this->Port = $emailSettings->get("data.smtp.port");
-            $this->SMTPSecure = $emailSettings->get("data.smtp.encryption");
+            $this->Host = $emailSettings->get("data.host");
+            
+            $this->Port = $emailSettings->get("data.port");
+            $this->SMTPSecure = $emailSettings->get("data.encryption");
 
-            if ($emailSettings->get("data.smtp.auth")) {
+            if ($emailSettings->get("data.auth")) {
                 $this->SMTPAuth = true;
-                $this->Username = $emailSettings->get("data.smtp.username");
+                $this->Username = $emailSettings->get("data.username");
 
                 try {
-                    $password = \Defuse\Crypto\Crypto::decrypt($emailSettings->get("data.smtp.password"), 
+
+                    // $message = 'sdf';
+                    // $ciphertext = \Defuse\Crypto\Crypto::Encrypt($message, \Defuse\Crypto\Key::loadFromAsciiSafeString(CRYPTO_KEY));
+                    // $plaintext = \Defuse\Crypto\Crypto::Decrypt($ciphertext, \Defuse\Crypto\Key::loadFromAsciiSafeString(CRYPTO_KEY));
+                    // print_r("temporary password: ".$message."</br>");
+                    // print_r("hash temporary password: ".$ciphertext."</br>");
+                    // print_r("after temporary password: ".$plaintext."</br>");
+
+                    $password = \Defuse\Crypto\Crypto::decrypt($emailSettings->get("data.password"), 
                                 \Defuse\Crypto\Key::loadFromAsciiSafeString(CRYPTO_KEY));
                 } catch (Exception $e) {
-                    $password = $emailSettings->get("data.smtp.password");
+                    $password = $emailSettings->get("data.password");
                 }
                 $this->Password = $password;
             }
@@ -100,7 +112,7 @@ class Email extends PHPMailer{
     private static function getEmailSettings()
     {
         if (is_null(self::$emailSettings)) {
-            self::$emailSettings = \Controller::model("GeneralData", "email-settings");
+            self::$emailSettings = \Controller::model("Configuration", "smtp");
         }
 
         return self::$emailSettings;
@@ -113,7 +125,7 @@ class Email extends PHPMailer{
     private static function getSiteSettings()
     {
         if (is_null(self::$siteSettings)) {
-            self::$siteSettings = \Controller::model("GeneralData", "settings");
+            self::$siteSettings = \Controller::model("Configuration", "settings");
         }
 
         return self::$siteSettings;
@@ -128,6 +140,7 @@ class Email extends PHPMailer{
     {   
         if (!self::$template) {
             $html = file_get_contents(APPPATH."/inc/email-template.inc.php");
+
             $Settings = self::getSiteSettings();
             
             $html = str_replace(
@@ -190,28 +203,27 @@ class Email extends PHPMailer{
         $emailSettings = self::getEmailSettings();
         $siteSettings = self::getSiteSettings();
 
-        if (!$emailSettings->get("data.notifications.emails") ||
-            !$emailSettings->get("data.notifications.new_user")) 
-        {    
-            return false;
-        }
+        $user = $data["user"];
+        $password = $data["password"];
 
         $mail = new Email;
         $mail->Subject = "New Registration";
+        $mail->addAddress( $user->get("email"));
 
-        $tos = explode(",", $emailSettings->get("data.notifications.emails"));
-        foreach ($tos as $to) {
-            $mail->addAddress(trim($to));
-        }
+
+        // $tos = explode(",", $emailSettings->get("data.notifications.emails"));
+        // foreach ($tos as $to) {
+        //     $mail->addAddress(trim($to));
+        // }
 
         $user = $data["user"];
         $emailbody = "<p>Hello, </p>"
                    . "<p>Someone signed up in <a href='".APPURL."'>".htmlchars($siteSettings->get("data.site_name"))."</a> with following data:</p>"
                    . "<div style='margin-top: 30px; font-size: 14px; color: #9b9b9b'>"
-                   . "<div><strong>Firstname:</strong> ".htmlchars($user->get("firstname"))."</div>"
-                   . "<div><strong>Lastname:</strong> ".htmlchars($user->get("lastname"))."</div>"
+                   . "<div><strong>Firstname:</strong> ".htmlchars($user->get("first_name"))."</div>"
+                   . "<div><strong>Lastname:</strong> ".htmlchars($user->get("last_name"))."</div>"
                    . "<div><strong>Email:</strong> ".htmlchars($user->get("email"))."</div>"
-                   . "<div><strong>Timezone:</strong> ".htmlchars($user->get("preferences.timezone"))."</div>"
+                   . "<div><strong>Password:</strong> ".htmlchars($password)."</div>"
                    . "</div>";
 
         return $mail->sendmail($emailbody);

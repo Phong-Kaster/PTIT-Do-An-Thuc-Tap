@@ -182,3 +182,249 @@ Stack trace:
 #2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(71): App->process()
 #3 {main}
   thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 21
+[02-Jul-2022 09:26:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get() on null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php:193
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(167): Email::sendNewUserNotification(Array)
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(197): Email::sendNotification('new-user', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(30): UsersController->save()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(71): App->process()
+#5 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php on line 193
+[02-Jul-2022 09:38:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get() on null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php:193
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(167): Email::sendNewUserNotification(Array)
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(197): Email::sendNotification('new-user', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(30): UsersController->save()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(71): App->process()
+#5 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php on line 193
+[02-Jul-2022 09:40:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get() on null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php:41
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(199): Email->__construct()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(167): Email::sendNewUserNotification(Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(197): Email::sendNotification('new-user', Array)
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(30): UsersController->save()
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#5 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(71): App->process()
+#6 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php on line 41
+[02-Jul-2022 09:42:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get() on null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php:41
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(196): Email->__construct()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(167): Email::sendNewUserNotification(Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(197): Email::sendNotification('new-user', Array)
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(30): UsersController->save()
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#5 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(71): App->process()
+#6 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php on line 41
+[02-Jul-2022 09:43:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get() on null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php:41
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(196): Email->__construct()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(167): Email::sendNewUserNotification(Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(197): Email::sendNotification('new-user', Array)
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(30): UsersController->save()
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#5 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(71): App->process()
+#6 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php on line 41
+[02-Jul-2022 09:44:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get() on null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php:34
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(198): Email->__construct()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(169): Email::sendNewUserNotification(Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(197): Email::sendNotification('new-user', Array)
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(30): UsersController->save()
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#5 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(71): App->process()
+#6 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php on line 34
+[02-Jul-2022 09:47:36 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get() on null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php:34
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(198): Email->__construct()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(169): Email::sendNewUserNotification(Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(197): Email::sendNotification('new-user', Array)
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(30): UsersController->save()
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#5 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(71): App->process()
+#6 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php on line 34
+[02-Jul-2022 09:59:50 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php on line 55
+[02-Jul-2022 09:59:50 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php on line 55
+[02-Jul-2022 10:09:10 UTC] PHP Fatal error:  Uncaught Error: Object of class Defuse\Crypto\Key could not be converted to string in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php:67
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(210): Email->__construct()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(181): Email::sendNewUserNotification(Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(197): Email::sendNotification('new-user', Array)
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(30): UsersController->save()
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#5 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(71): App->process()
+#6 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php on line 67
+[02-Jul-2022 10:12:20 UTC] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Defuse\Crypto\Crypto::encrypt() must be an instance of Defuse\Crypto\Key, string given, called in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php on line 65 and defined in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\defuse\php-encryption\src\Crypto.php:20
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(65): Defuse\Crypto\Crypto::encrypt(Object(Defuse\Crypto\Key), 'Forever21@#+()', true)
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(211): Email->__construct()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(182): Email::sendNewUserNotification(Array)
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(197): Email::sendNotification('new-user', Array)
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(30): UsersController->save()
+#5 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#6 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(71): App->p in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\defuse\php-encryption\src\Crypto.php on line 20
+[02-Jul-2022 10:13:02 UTC] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Defuse\Crypto\Crypto::encrypt() must be an instance of Defuse\Crypto\Key, string given, called in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php on line 65 and defined in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\defuse\php-encryption\src\Crypto.php:20
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(65): Defuse\Crypto\Crypto::encrypt(Object(Defuse\Crypto\Key), 'Forever21@#+()', true)
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(211): Email->__construct()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(182): Email::sendNewUserNotification(Array)
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(197): Email::sendNotification('new-user', Array)
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(30): UsersController->save()
+#5 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#6 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(71): App->p in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\defuse\php-encryption\src\Crypto.php on line 20
+[02-Jul-2022 10:17:05 UTC] PHP Parse error:  syntax error, unexpected '$password' (T_VARIABLE) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php on line 76
+[02-Jul-2022 10:17:53 UTC] PHP Parse error:  syntax error, unexpected '}' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php on line 80
+[02-Jul-2022 10:23:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Defuse\Crypto\Crypto::CreateNewRandomKey() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php:61
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(210): Email->__construct()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php(181): Email::sendNewUserNotification(Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(197): Email::sendNotification('new-user', Array)
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(30): UsersController->save()
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#5 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(71): App->process()
+#6 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\lib\Email.php on line 61
+[02-Jul-2022 11:32:20 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php on line 162
+[02-Jul-2022 11:33:01 UTC] PHP Parse error:  syntax error, unexpected '{', expecting '(' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php on line 229
+[02-Jul-2022 11:33:25 UTC] PHP Parse error:  syntax error, unexpected '"email"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php on line 231
+[02-Jul-2022 11:33:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isValidJSON() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:21
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php(25): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UserController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 21
+[02-Jul-2022 11:36:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isValidJSON() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:21
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php(25): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UserController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 21
+[02-Jul-2022 11:37:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isValidJSON() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:21
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php(25): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UserController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 21
+[02-Jul-2022 11:39:16 UTC] PHP Notice:  Undefined variable: AuthUser in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php on line 46
+[02-Jul-2022 11:39:16 UTC] PHP Fatal error:  Uncaught Error: Call to a member function isAdmin() on null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php:46
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php(30): UserController->getById()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UserController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php on line 46
+[02-Jul-2022 11:39:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isValidJSON() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:21
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php(26): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UserController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 21
+[02-Jul-2022 11:39:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isValidJSON() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:24
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php(26): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UserController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 24
+[02-Jul-2022 11:41:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isValidJSON() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:22
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php(26): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UserController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 22
+[02-Jul-2022 11:41:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isValidJSON() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:22
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php(26): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UserController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 22
+[02-Jul-2022 11:45:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isValidJSON() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:22
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php(26): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UserController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 22
+[02-Jul-2022 11:47:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isValidJSON() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:22
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php(26): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UserController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 22
+[02-Jul-2022 11:48:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isValidJSON() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:22
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(27): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 22
+[02-Jul-2022 11:48:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isValidJSON() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:22
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php(26): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UserController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 22
+[02-Jul-2022 11:50:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isValidJSON() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:20
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php(26): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UserController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 20
+[02-Jul-2022 11:51:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isValidJSON() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:20
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(27): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 20
+[02-Jul-2022 11:52:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isValidJSON() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:20
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(27): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 20
+[02-Jul-2022 11:53:57 UTC] PHP Fatal error:  Uncaught Exception: Invalid method in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:86
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php(172): Input::__callStatic('put', Array)
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php(28): UserController->save()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UserController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 86
+[02-Jul-2022 11:55:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method UserModel::idAdmin() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php:183
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php(28): UserController->save()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UserController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UserController.php on line 183
+[02-Jul-2022 12:21:37 UTC] PHP Fatal error:  Uncaught Error: Class 'IndexController' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:507
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(569): App->route()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 507
+[02-Jul-2022 12:22:13 UTC] PHP Fatal error:  Uncaught Error: Class 'IndexController' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:507
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(569): App->route()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 507
