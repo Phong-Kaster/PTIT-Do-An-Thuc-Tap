@@ -158,7 +158,8 @@
 	     */
 	    public function isAdmin()
 	    {
-	    	if ($this->isAvailable() && in_array($this->get("role"), array("developer", "admin"))) {
+	    	if ($this->isAvailable() && 
+				in_array($this->get("role"), array("developer", "admin"))) {
 	    		return true;
 	    	}
 

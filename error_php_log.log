@@ -115,3 +115,70 @@ Stack trace:
 [30-Jun-2022 14:04:05 UTC] PHP Notice:  Undefined variable: col in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\UserModel.php on line 37
 [30-Jun-2022 14:04:05 UTC] PHP Notice:  Undefined property: stdClass::$id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 242
 [30-Jun-2022 14:04:05 UTC] PHP Notice:  Undefined variable: col in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\UserModel.php on line 37
+[02-Jul-2022 07:45:59 UTC] PHP Parse error:  syntax error, unexpected '"', expecting ')' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php on line 21
+[02-Jul-2022 07:46:40 UTC] PHP Parse error:  syntax error, unexpected '"/"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php on line 21
+[02-Jul-2022 07:47:12 UTC] PHP Parse error:  syntax error, unexpected '"/dashboard"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php on line 21
+[02-Jul-2022 07:48:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function print_f() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php:31
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(71): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php on line 31
+[02-Jul-2022 07:57:13 UTC] PHP Notice:  Undefined property: stdClass::$account_type in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php on line 108
+[02-Jul-2022 07:57:13 UTC] PHP Notice:  Undefined property: stdClass::$account_type in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php on line 108
+[02-Jul-2022 07:59:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isValidJSON() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:19
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(27): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(71): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 19
+[02-Jul-2022 07:59:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isValidJSON() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:19
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(27): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(71): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 19
+[02-Jul-2022 08:00:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isValidJSON() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:19
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(27): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(71): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 19
+[02-Jul-2022 08:00:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isValidJSON() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:19
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(27): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(71): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 19
+[02-Jul-2022 08:05:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function print_f() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:20
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(27): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(71): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 20
+[02-Jul-2022 08:05:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isValidJSON() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:22
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(27): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(71): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 22
+[02-Jul-2022 08:08:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isValidJSON() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:22
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(27): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(71): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 22
+[02-Jul-2022 08:09:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function isValidJSON() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php:21
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\UsersController.php(27): Input::method()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): UsersController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(71): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\Input.php on line 21

@@ -16,8 +16,11 @@
 			$method = strtoupper($_SERVER['REQUEST_METHOD']);
 			$m = "_".$method;
 			$input = file_get_contents('php://input');
+
+
 			if (strlen($input) > 0 && isValidJSON($input)){
 				$arr = json_decode($input, true);
+				print_r($arr);
 			}else{
 				parse_str(urldecode($input), $arr);
 			}

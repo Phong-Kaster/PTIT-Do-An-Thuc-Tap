@@ -52,5 +52,10 @@ $settings_pages = [
 App::addRoute("GET|POST", "/settings/[".implode("|", $settings_pages).":page]?/?", "Settings");
 
 
-// Categories
+/**************************CATEGORIES CONTROLLER*****************************/
 App::addRoute("GET", "/categories/?", "Categories");
+
+
+/**************************USERS CONTROLLER*****************************/
+App::addRoute("GET|POST", "/users/?", "Users");
+App::addRoute("GET|PUT|DELETE", "/user/[i:id]", "User");
