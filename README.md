@@ -10,7 +10,7 @@
 # [**Table Of Content**](#table-of-content)
 - [**Table Of Content**](#table-of-content)
 - [**Database**](#database)
-- [**Controller Timeline](#controller-timeline)
+- [**Controller Timeline**](#controller-timeline)
 - [**Timeline**](#timeline)
   - [**Phase 1: 29-06-2022 to xx-xx-2022**](#phase-1-29-06-2022-to-xx-xx-2022)
 - [**Special Thank**](#special-thank)
@@ -26,7 +26,7 @@
 ***Bản thiết kế tiêu chuẩn cơ sở dữ liệu cho đồ án thực tập***
 </h3>
 
-# [**Controller Timeline](#controller-timeline)
+# [**Controller Timeline**](#controller-timeline)
 
 Trình tự xây dựng các controller của đồ án này, cái này các bạn tham khảo để nhận biết cái controller nào sẽ `ưu tiên xây dựng trước`.
 
@@ -52,7 +52,11 @@ Trình tự xây dựng các controller của đồ án này, cái này các b�
 
 - **30-06-2022** - sửa lỗi JWT token do mã hóa sai, thêm Product & Products Model
 
-- **02-07-2022** - C.R.U.D cho bảng `Users`
+- **02-07-2022** 
+  
+  1. C.R.U.D cho bảng `Users`
+  2. Thêm model ProductCategories | ProductCategory | ProductsPhoto | ProductsPhotos
+  3. Tạo ProductsController & chức năng truy vấn dữ liệu có bộ lọc nâng cao( Không khó nhưng lâu vãi *beep* 😖)
 
 # [**Special Thank**](#our-team)
 
@@ -65,7 +69,14 @@ Trình tự xây dựng các controller của đồ án này, cái này các b�
                     <sub><b>Nguyễn Đăng Hậu</b></sub>
                 </a>
             </td>
-        </tr>
+            <td align="center">
+                <a href="https://github.com/Phong-Kaster">
+                    <img src="./photo/swastika2.jpg" width="100px;" alt=""/>
+                    <br />
+                    <sub><b>Nguyễn Thành Phong</b></sub>
+                </a>
+            </td>
+        </tr>    
 </table>
  
 # [**Made with 💘 and PHP <img src="https://www.vectorlogo.zone/logos/php/php-horizontal.svg" width="60">**](#made-with-love-and-php)

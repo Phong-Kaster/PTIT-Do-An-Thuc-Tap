@@ -59,3 +59,7 @@ App::addRoute("GET", "/categories/?", "Categories");
 /**************************USERS CONTROLLER*****************************/
 App::addRoute("GET|POST", "/users/?", "Users");
 App::addRoute("GET|PUT|DELETE|PATCH", "/users/[i:id]", "User");
+
+
+/**************************PRODUCTS CONTROLLER*****************************/
+App::addRoute("GET|POST", "/products/?", "Products");

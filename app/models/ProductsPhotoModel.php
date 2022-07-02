@@ -1,13 +1,13 @@
 <?php 
 	/**
-	 * Product Model
+	 * Category Model
 	 *
 	 * @version 1.0
 	 * @author Onelab <hello@onelab.co> 
 	 * 
 	 */
 	
-	class ProductModel extends DataEntry
+	class ProductsPhotoModel extends DataEntry
 	{	
 		/**
 		 * Extend parents constructor and select entry
@@ -30,12 +30,10 @@
 	    {
 	    	if (is_int($uniqid) || ctype_digit($uniqid)) {
 	    		$col = $uniqid > 0 ? "id" : null;
-	    	} else {
-	    		$col = "name";
 	    	}
 
 	    	if ($col) {
-		    	$query = DB::table(TABLE_PREFIX.TABLE_PRODUCTS)
+		    	$query = DB::table(TABLE_PREFIX.TABLE_PRODUCTS_PHOTO)
 			    	      ->where($col, "=", $uniqid)
 			    	      ->limit(1)
 			    	      ->select("*");
@@ -64,19 +62,9 @@
 	    public function extendDefaults()
 	    {
 	    	$defaults = array(
-	    		"name"=>"",
-                "remaining" => "0",
-                "manufacturer" => "Dell",
-                "price" => "12500000",
-                "screen_size" => "15.6",
-                "cpu" => "",
-                "ram" => "8GB",
-                "graphic_card" => "",
-                "rom" => "512GB",
-                "demand" => "",
-                "content" =>"",
-                "create_at" => date("Y-m-d H:i:s"),
-				"update_at" => date("Y-m-d H:i:s")
+	    		"product_id" => ""
+                "path" => UPLOAD_PATH."/default.png"
+                "is_avatar" => "1"
 	    	);
 
 
@@ -97,22 +85,12 @@
 
 	    	$this->extendDefaults();
 
-	    	$id = DB::table(TABLE_PREFIX.TABLE_PRODUCTS)
+	    	$id = DB::table(TABLE_PREFIX.TABLE_PRODUCTS_PHOTO)
 		    	->insert(array(
 		    		"id" => null,
-		    		"name"=> $this->get("name"),
-                    "remaining" => $this->get("remaining"),
-                    "manufacturer" => $this->get("manufacturer"),
-                    "price" => $this->get("price"),
-                    "screen_size" => $this->get("screen_size"),
-                    "cpu" => $this->get("cpu"),
-                    "ram" => $this->get("ram"),
-                    "graphic_card" => $this->get("graphic_card"),
-                    "rom" => $this->get("rom"),
-                    "demand" => $this->get("demand"),
-                    "content" => $this->get("content"),
-                    "create_at" => date("Y-m-d H:i:s"),
-                    "update_at" => date("Y-m-d H:i:s")
+		    		"product_id" => $this->get("product_id"),
+                    "path" => $this->get("path"),
+                    "is_avatar" => $this->get("is_avatar")
 		    	));
 
 	    	$this->set("id", $id);
@@ -131,21 +109,12 @@
 
 	    	$this->extendDefaults();
 
-	    	$id = DB::table(TABLE_PREFIX.TABLE_PRODUCTS)
+	    	$id = DB::table(TABLE_PREFIX.TABLE_PRODUCTS_PHOTO)
 	    		->where("id", "=", $this->get("id"))
 		    	->update(array(
-		    		"name"=> $this->get("name"),
-                    "remaining" => $this->get("remaining"),
-                    "manufacturer" => $this->get("manufacturer"),
-                    "price" => $this->get("price"),
-                    "screen_size" => $this->get("screen_size"),
-                    "cpu" => $this->get("cpu"),
-                    "ram" => $this->get("ram"),
-                    "graphic_card" => $this->get("graphic_card"),
-                    "rom" => $this->get("rom"),
-                    "demand" => $this->get("demand"),
-                    "content" => $this->get("content"),
-                    "update_at" => date("Y-m-d H:i:s")
+		    		"product_id" => $this->get("product_id"),
+                    "path" => $this->get("path"),
+                    "is_avatar" => $this->get("is_avatar")
 		    	));
 
 	    	return $this;
@@ -160,7 +129,7 @@
 	    	if(!$this->isAvailable())
 	    		return false;
 
-	    	DB::table(TABLE_PREFIX.TABLE_PRODUCTS)->where("id", "=", $this->get("id"))->delete();
+	    	DB::table(TABLE_PREFIX.TABLE_PRODUCTS_PHOTO)->where("id", "=", $this->get("id"))->delete();
 	    	$this->is_available = false;
 	    	return true;
 	    }

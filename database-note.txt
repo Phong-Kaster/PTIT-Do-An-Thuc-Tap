@@ -1,0 +1,2 @@
+1. Các tùy chọn lọc sẽ cài đặt cứng luôn, không phải tạo bảng để render ra nữa 
+=> giảm bớt 1 bảng trong cơ sở dữ liệu

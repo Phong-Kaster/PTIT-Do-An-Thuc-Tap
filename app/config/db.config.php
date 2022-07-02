@@ -17,5 +17,7 @@ define("TABLE_PREFIX", "ec_");
 // Set table names without prefix
 define("TABLE_USERS", "users");
 define("TABLE_CATEGORIES","categories");
-define("TABLE_PRODUCTS", "products");
 define("TABLE_CONFIGURATION","configuration");
+define("TABLE_PRODUCTS","products");
+define("TABLE_PRODUCT_CATEGORY","product_category");
+define("TABLE_PRODUCTS_PHOTO", "productsphoto");

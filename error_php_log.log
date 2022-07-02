@@ -428,3 +428,32 @@ Stack trace:
 #1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
 #2 {main}
   thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 507
+[02-Jul-2022 16:23:49 UTC] PHP Fatal error:  Uncaught Error: Class 'ProductsController' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:507
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(569): App->route()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 507
+[02-Jul-2022 16:24:42 UTC] PHP Parse error:  syntax error, unexpected '$demand' (T_VARIABLE) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 45
+[02-Jul-2022 16:24:58 UTC] PHP Parse error:  syntax error, unexpected '{' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 53
+[02-Jul-2022 16:25:30 UTC] PHP Parse error:  syntax error, unexpected '}' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 164
+[02-Jul-2022 16:26:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::get() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php:151
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php(10): ProductsController->getAll()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(580): ProductsController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 151
+[02-Jul-2022 17:05:59 UTC] PHP Parse error:  syntax error, unexpected 'private' (T_PRIVATE), expecting end of file in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 186
+[02-Jul-2022 17:06:57 UTC] PHP Parse error:  syntax error, unexpected 'private' (T_PRIVATE), expecting end of file in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 189
+[02-Jul-2022 17:07:35 UTC] PHP Parse error:  syntax error, unexpected 'private' (T_PRIVATE), expecting end of file in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 189
+[02-Jul-2022 17:07:52 UTC] PHP Parse error:  syntax error, unexpected 'private' (T_PRIVATE), expecting end of file in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 194
+[02-Jul-2022 17:20:13 UTC] PHP Notice:  Undefined variable: avatar in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 167
+[02-Jul-2022 17:20:13 UTC] PHP Warning:  Use of undefined constant UPLOAD - assumed 'UPLOAD' (this will throw an Error in a future version of PHP) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 167
+[02-Jul-2022 17:20:13 UTC] PHP Notice:  Undefined variable: avatar in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 167
+[02-Jul-2022 17:20:13 UTC] PHP Warning:  Use of undefined constant UPLOAD - assumed 'UPLOAD' (this will throw an Error in a future version of PHP) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 167
+[02-Jul-2022 17:20:13 UTC] PHP Notice:  Undefined variable: avatar in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 167
+[02-Jul-2022 17:20:13 UTC] PHP Warning:  Use of undefined constant UPLOAD - assumed 'UPLOAD' (this will throw an Error in a future version of PHP) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 167
+[02-Jul-2022 17:20:25 UTC] PHP Notice:  Undefined variable: avatar in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 167
+[02-Jul-2022 17:20:25 UTC] PHP Notice:  Undefined variable: avatar in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 167
+[02-Jul-2022 17:20:25 UTC] PHP Notice:  Undefined variable: avatar in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 167
