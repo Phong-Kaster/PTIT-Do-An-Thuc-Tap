@@ -53,13 +53,13 @@ App::addRoute("GET|POST", "/settings/[".implode("|", $settings_pages).":page]?/?
 
 
 /**************************CATEGORIES CONTROLLER*****************************/
-App::addRoute("GET", "/categories/?", "Categories");
+App::addRoute("GET", "/admin/categories/?", "AdminCategories");
 
 
 /**************************USERS CONTROLLER*****************************/
-App::addRoute("GET|POST", "/users/?", "Users");
-App::addRoute("GET|PUT|DELETE|PATCH", "/users/[i:id]", "User");
+App::addRoute("GET|POST", "/admin/users/?", "AdminUsers");
+App::addRoute("GET|PUT|DELETE|PATCH", "/admin/users/[i:id]", "AdminUser");
 
 
 /**************************PRODUCTS CONTROLLER*****************************/
-App::addRoute("GET|POST", "/products/?", "Products");
+App::addRoute("GET|POST", "/admin/products/?", "AdminProducts");

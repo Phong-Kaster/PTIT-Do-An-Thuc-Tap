@@ -2,7 +2,7 @@
 /**
  * Categories Controller
  */
-class CategoriesController extends Controller
+class AdminCategoriesController extends Controller
 {
     /**
      * Process
@@ -11,12 +11,15 @@ class CategoriesController extends Controller
     {
         $AuthUser = $this->getVariable("AuthUser");
         $Route = $this->getVariable("Route");
-        // Auth
+        //Auth
         if (!$AuthUser){
             header("Location: ".APPURL."/login");
             exit;
-        } 
-
+        }
+        else if( !$AuthUser->isAdmin()){
+            header("Location: ".APPURL."/dashboard");
+            exit;
+        }
 
         $request_method = Input::method();
 

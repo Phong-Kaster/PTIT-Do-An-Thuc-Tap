@@ -457,3 +457,93 @@ Stack trace:
 [02-Jul-2022 17:20:25 UTC] PHP Notice:  Undefined variable: avatar in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 167
 [02-Jul-2022 17:20:25 UTC] PHP Notice:  Undefined variable: avatar in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 167
 [02-Jul-2022 17:20:25 UTC] PHP Notice:  Undefined variable: avatar in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 167
+[03-Jul-2022 07:52:21 UTC] PHP Notice:  Undefined variable: avatar in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 168
+[03-Jul-2022 07:52:21 UTC] PHP Notice:  Undefined variable: avatar in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 168
+[03-Jul-2022 07:52:21 UTC] PHP Notice:  Undefined variable: avatar in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 168
+[03-Jul-2022 08:00:48 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 208
+[03-Jul-2022 08:02:22 UTC] PHP Notice:  Undefined offset: 0 in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 210
+[03-Jul-2022 08:02:22 UTC] PHP Notice:  Undefined offset: 0 in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 210
+[03-Jul-2022 08:02:22 UTC] PHP Notice:  Undefined offset: 0 in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 210
+[03-Jul-2022 08:03:07 UTC] PHP Notice:  Undefined offset: 0 in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 210
+[03-Jul-2022 08:03:07 UTC] PHP Notice:  Undefined offset: 0 in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 210
+[03-Jul-2022 08:03:07 UTC] PHP Notice:  Undefined offset: 0 in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 210
+[03-Jul-2022 08:20:46 UTC] PHP Fatal error:  Uncaught Error: Class 'AdminProductsController' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:507
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(569): App->route()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 507
+[03-Jul-2022 08:22:08 UTC] PHP Fatal error:  Uncaught Error: Class 'CategoriesController' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:507
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(569): App->route()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 507
+[03-Jul-2022 08:32:15 UTC] PHP Fatal error:  Uncaught Error: Class 'IndexController' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:507
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(569): App->route()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 507
+[03-Jul-2022 08:32:27 UTC] PHP Fatal error:  Uncaught Error: Class 'IndexController' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:507
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(569): App->route()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 507
+[03-Jul-2022 09:34:56 UTC] PHP Parse error:  syntax error, unexpected '"remaining"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 315
+[03-Jul-2022 09:35:43 UTC] PHP Parse error:  syntax error, unexpected '"remaining"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 315
+[03-Jul-2022 09:36:08 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 216
+[03-Jul-2022 09:36:08 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 216
+[03-Jul-2022 09:36:30 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 284
+[03-Jul-2022 09:36:30 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 284
+[03-Jul-2022 09:36:30 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 284
+[03-Jul-2022 09:36:30 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:36:30 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:36:30 UTC] PHP Notice:  Undefined variable: create_at in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 306
+[03-Jul-2022 09:36:30 UTC] PHP Notice:  Undefined variable: update_at in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 307
+[03-Jul-2022 09:36:30 UTC] PHP Notice:  Undefined variable: create_at in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 325
+[03-Jul-2022 09:36:30 UTC] PHP Notice:  Undefined variable: update_at in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 326
+[03-Jul-2022 09:37:23 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:37:23 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:37:23 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:37:23 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 286
+[03-Jul-2022 09:37:23 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 286
+[03-Jul-2022 09:38:27 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:38:27 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:38:27 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:38:27 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 286
+[03-Jul-2022 09:38:27 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 286
+[03-Jul-2022 09:38:27 UTC] PHP Notice:  Undefined variable: create_at in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 307
+[03-Jul-2022 09:38:27 UTC] PHP Notice:  Undefined variable: update_at in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 308
+[03-Jul-2022 09:38:27 UTC] PHP Notice:  Undefined variable: create_at in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 326
+[03-Jul-2022 09:38:27 UTC] PHP Notice:  Undefined variable: update_at in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 327
+[03-Jul-2022 09:39:20 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:39:20 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:39:20 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:39:20 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 286
+[03-Jul-2022 09:39:20 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 286
+[03-Jul-2022 09:40:31 UTC] PHP Notice:  Undefined variable: create_at in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 326
+[03-Jul-2022 09:40:31 UTC] PHP Notice:  Undefined variable: update_at in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 327
+[03-Jul-2022 09:41:00 UTC] PHP Notice:  Undefined variable: create_at in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 326
+[03-Jul-2022 09:41:00 UTC] PHP Notice:  Undefined variable: update_at in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 327
+[03-Jul-2022 09:45:00 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:45:00 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:45:00 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:45:00 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 286
+[03-Jul-2022 09:45:00 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 286
+[03-Jul-2022 09:45:29 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:45:29 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:45:29 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:45:29 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 286
+[03-Jul-2022 09:45:29 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 286
+[03-Jul-2022 09:46:09 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:46:09 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:46:09 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:46:09 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 286
+[03-Jul-2022 09:46:09 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 286
+[03-Jul-2022 09:46:15 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:46:15 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:46:15 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
+[03-Jul-2022 09:46:15 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 286
+[03-Jul-2022 09:46:15 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 286

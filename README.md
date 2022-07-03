@@ -32,6 +32,8 @@ Trình tự xây dựng các controller của đồ án này, cái này các b�
 
 > Note: quy ước ở cái số 3 và 4 áp dụng cho tất cả Controller nào có dạng số ít và số nhiều như `3` và `4`
 
+> Note: các controller có tiền tố Admin ở đầu. Ví dụ: AdminProductsController, AdminCategoryController,.. là thuộc về quản trị viên. Những cái không có tiền tố ở đầu là của khách hàng
+
 1. Login Controller
 
 2. Sign Up Controller
@@ -57,6 +59,10 @@ Trình tự xây dựng các controller của đồ án này, cái này các b�
   1. C.R.U.D cho bảng `Users`
   2. Thêm model ProductCategories | ProductCategory | ProductsPhoto | ProductsPhotos
   3. Tạo ProductsController & chức năng truy vấn dữ liệu có bộ lọc nâng cao( Không khó nhưng lâu vãi *beep* 😖)
+
+- **03-07-2022**
+   1. Sửa lỗi truy vấn trong ProductsController getAll()
+   2. Create cho ProductsController()
 
 # [**Special Thank**](#our-team)
 

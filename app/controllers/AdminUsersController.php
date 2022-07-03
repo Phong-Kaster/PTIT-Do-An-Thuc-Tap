@@ -2,7 +2,7 @@
 /**
  * Users Controller
  */
-class UsersController extends Controller
+class AdminUsersController extends Controller
 {
     /**
      * Process

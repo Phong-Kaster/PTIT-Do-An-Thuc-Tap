@@ -1,9 +1,22 @@
 <?php
-
-    class ProductsController extends Controller
+    class AdminProductsController extends Controller
     {
         public function process()
         {
+            $AuthUser = $this->getVariable("AuthUser");
+            //Auth
+            if (!$AuthUser)
+            {
+                header("Location: ".APPURL."/login");
+                exit;
+            }
+            else if( !$AuthUser->isAdmin() )
+            {
+                header("Location: ".APPURL."/dashboard");
+                exit;
+            }
+            
+
             $request_method = Input::method();
 
             if($request_method === 'GET'){
@@ -149,8 +162,8 @@
                 /**Step 3 */
                 foreach($res as $element){
 
-                    // $avatar = $this->getAvatar($element->id);
-                    $avatar = "";
+                    $avatar = $this->getAvatar($element->id);
+                    // $avatar = "";
 
                     $data[] = array(
                         "id"            => $element->id,
@@ -186,9 +199,137 @@
          * @author Phong-Kaster
          * create a new product
          */
-        // private function save(){
-        //     #code
-        // }
+        private function save(){
+            /**Step 1 */
+            $this->resp->result = 0;
+
+            $required_fields = [
+                "name",
+                "manufacturer","price",
+                "screen_size","cpu",
+                "ram","graphic_card",
+                "rom","demand"
+            ];
+
+            foreach($required_fields as $field){
+                if( !Input::post($field))
+                {
+                    $this->resp->msg = "Missing required field " + $field;
+                    $this->jsonecho(); 
+                }
+            }
+
+            /**Step 2 */
+            /**Step 2.1 - name */
+            $name = Input::post("name");
+
+
+            $remaining = Input::post("remaining");
+            if( !$remaining ){
+                $remaining = 0;
+            }
+
+
+            /**Step 2.2 - manufacturer */
+            $manufacturer = Input::post("manufacturer");
+            if( is_numeric($manufacturer) ){
+                $this->resp->msg = "Manufacturer can not be a number !";
+                $this->jsonecho();
+            }
+
+
+            /**Step 2.3 - 0 < price < 200.000.00 */
+            $price = (int)Input::post("price");
+            if( $price < 0 || $price > 200000000 ){
+                $this->resp->msg = "Price range is 0 < price < 200.000.000";
+                $this->jsonecho(); 
+            }
+
+
+            /**Step 2.4 - screen_size */
+            $screen_size = (float)Input::post("screen_size");
+            if( $screen_size < 10){
+                $this->resp->msg = "Screen size must greater than 10 inch !";
+                $this->jsonecho();
+            }
+
+
+            /**Step 2.5 - cpu */
+            $cpu = Input::post("cpu");
+
+
+            /**Step 2.6 - ram */
+            $ram = Input::post("ram");
+
+
+            /**Step 2.7 - graphic card */
+            $graphic_card = Input::post("graphic_card");
+
+            
+            /**Step 2.8 - rom */
+            $rom = Input::post("rom");
+
+
+            /**Step 2.9 - demand */
+            $valid_demand = ["gaming","design","office","student","business","lightweight"];
+            $demand = Input::post("demand");
+
+            if( !in_array($demand, $valid_demand) ){
+                $this->resp->msg = "There are 5 types of valid demand: gaming, design, office, student, business, lightweight";
+                $this->jsonecho();
+            }
+
+            /**Step 2.10 - content */
+            (string)$content = (String)Input::post("content");
+            if( !$content ){
+                $content = __("Laptop ".(string)$name." từ nhà sản xuất ".
+                (string)$manufacturer." là một laptop hiện đại, đa dụng & rất thời trang !");
+            }
+
+            /**Step 3 - create */
+            $Product = Controller::model("Product", $name);
+            if( $Product->isAvailable() ){
+                $this->resp->msg = "There is another product having the same name !";
+                $this->jsonecho();
+            }
+
+
+            $Product->set("name", $name)
+                    ->set("remaining", $remaining)
+                    ->set("manufacturer", $manufacturer)
+                    ->set("price", $price)
+                    ->set("screen_size", $screen_size)
+                    ->set("cpu", $cpu)
+                    ->set("ram", $ram)
+                    ->set("graphic_card", $graphic_card)
+                    ->set("rom", $rom)
+                    ->set("demand", $demand)
+                    ->set("content", $content)
+                    ->set("create_at", date("Y-m-d H:i:s"))
+                    ->set("update_at", date("Y-m-d H:i:s"))
+                    ->save();
+
+                    
+            /**Step 4 - result */
+            $this->resp->result = 1;
+            $this->resp->msg = "Product is created successfully";
+            $this->resp->data = array([
+                "name" =>         $Product->get("name"),
+                "remaining" =>    $Product->get("remaining"),
+                "manufacturer" => $Product->get("manufacturer"),
+                "price" =>        $Product->get("price"),
+                "screen_size" =>  $Product->get("screen_size"),
+                "cpu" =>          $Product->get("cpu"),
+                "ram" =>          $Product->get("ram"),
+                "graphic_card" => $Product->get("graphic_card"),
+                "rom" =>          $Product->get("rom"),
+                "demand" =>       $Product->get("demand"),
+                "content" =>      $Product->get("content"),
+                "create_at" =>    $Product->get("create_at"),
+                "update_at" =>    $Product->get("update_at")
+            ]);
+            $this->jsonecho();
+        }
 
 
         private function getAvatar($id){
@@ -196,18 +337,18 @@
                 return;
             }
 
-            $query = DB::table(TABLE_PREFIX.TABLE_PRODUCTS)
-            ->leftJoin(TABLE_PREFIX.TABLE_PRODUCTS_PHOTO,
-                        TABLE_PREFIX.TABLE_PRODUCTS_PHOTO.".product_id",
-                        TABLE_PREFIX.TABLE_PRODUCTS.".id")
-            ->where(TABLE_PREFIX.TABLE_PRODUCTS_PHOTO.".is_avatar","=", "1")
+            $query = DB::table(TABLE_PREFIX.TABLE_PRODUCTS_PHOTO)
+            ->join(TABLE_PREFIX.TABLE_PRODUCTS,
+                        TABLE_PREFIX.TABLE_PRODUCTS.".id",
+                        "=",
+                        TABLE_PREFIX.TABLE_PRODUCTS_PHOTO.".product_id")
+            ->where(TABLE_PREFIX.TABLE_PRODUCTS_PHOTO.".is_avatar","=", 1)
             ->where(TABLE_PREFIX.TABLE_PRODUCTS.".id","=", $id)
-            ->limit(1)
             ->select([
                 TABLE_PREFIX.TABLE_PRODUCTS_PHOTO.".path"
             ]);
-            $res = $query->get();
-            $result = $res[0] ? $res[0] : UPLOAD_PATH."/default.png";
+            $res = $query->limit(1)->first();
+            $result = $res ? $res : UPLOAD_PATH."/default.png";
 
             return $result;
         }

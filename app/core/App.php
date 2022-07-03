@@ -218,6 +218,7 @@ class App
         $headers = apache_request_headers();
         $Authorization = null;
 
+        
 
         if(isset($headers['authorization'])){
             $Authorization = $headers['authorization'];
