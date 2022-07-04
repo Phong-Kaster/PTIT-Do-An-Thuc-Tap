@@ -105,6 +105,8 @@
                 $this->jsonecho();
             }
 
+            $is_avatar = Input::post("is_avatar") ? Input::post("is_avatar") : 0;
+
 
             $Product = Controller::model("Product", $Route->params->id);
             if( !$Product->isAvailable()){
@@ -141,6 +143,15 @@
                 $this->resp->msg = __("Oops! An error occured. Please try again later!");
                 $this->jsonecho();
             }
+
+            
+            /**Step 5 - create a record to the product */
+            $ProductsPhoto = Controller::model("ProductsPhoto" );
+            $ProductsPhoto->set("product_id", $Route->params->id)
+                        ->set("path", $tempname)
+                        ->set("is_avatar", $is_avatar )
+                        ->save();
+
 
 
             $this->resp->result = 1;

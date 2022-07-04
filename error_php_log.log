@@ -582,3 +582,11 @@ Stack trace:
 [04-Jul-2022 16:20:38 UTC] PHP Notice:  Trying to get property 'params' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 103
 [04-Jul-2022 16:20:38 UTC] PHP Notice:  Trying to get property 'id' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 103
 [04-Jul-2022 16:23:18 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 131
+[04-Jul-2022 16:31:50 UTC] PHP Fatal error:  Uncaught Exception: Undefined method: set in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\DataList.php:280
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php(149): DataList->__call('set', Array)
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php(26): AdminProductsPhotosController->save()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsPhotosController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\DataList.php on line 280
