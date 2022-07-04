@@ -547,3 +547,7 @@ Stack trace:
 [03-Jul-2022 09:46:15 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 285
 [03-Jul-2022 09:46:15 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 286
 [03-Jul-2022 09:46:15 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 286
+[04-Jul-2022 13:56:33 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductController.php on line 116
+[04-Jul-2022 13:56:33 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductController.php on line 116
+[04-Jul-2022 14:31:36 UTC] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductController.php on line 272
+[04-Jul-2022 14:32:52 UTC] PHP Notice:  Undefined property: PDOException::$getMessage in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductController.php on line 286

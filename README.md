@@ -56,13 +56,17 @@ Trình tự xây dựng các controller của đồ án này, cái này các b�
 
 - **02-07-2022** 
   
-  1. C.R.U.D cho bảng `Users`
-  2. Thêm model ProductCategories | ProductCategory | ProductsPhoto | ProductsPhotos
-  3. Tạo ProductsController & chức năng truy vấn dữ liệu có bộ lọc nâng cao( Không khó nhưng lâu vãi *beep* 😖)
+1. C.R.U.D cho bảng `Users`
+2. Thêm model ProductCategories | ProductCategory | ProductsPhoto | ProductsPhotos
+3. Tạo ProductsController & chức năng truy vấn dữ liệu có bộ lọc nâng cao( Không khó nhưng lâu vãi *beep* 😖)
 
 - **03-07-2022**
-   1. Sửa lỗi truy vấn trong ProductsController getAll()
-   2. Create cho ProductsController()
+1. Sửa lỗi truy vấn trong ProductsController getAll()
+2. Create cho ProductsController()
+
+- **04-07-2022**
+1. R.U.D cho ProductController
+2. Thêm model OrdersContent | OrdersContents Model
 
 # [**Special Thank**](#our-team)
 

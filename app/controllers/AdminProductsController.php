@@ -214,7 +214,7 @@
             foreach($required_fields as $field){
                 if( !Input::post($field))
                 {
-                    $this->resp->msg = "Missing required field " + $field;
+                    $this->resp->msg = "Missing required field ".$field;
                     $this->jsonecho(); 
                 }
             }
@@ -238,7 +238,7 @@
             }
 
 
-            /**Step 2.3 - 0 < price < 200.000.00 */
+            /**Step 2.3 - 0 < price < 200.000.000 */
             $price = (int)Input::post("price");
             if( $price < 0 || $price > 200000000 ){
                 $this->resp->msg = "Price range is 0 < price < 200.000.000";
@@ -313,7 +313,7 @@
             /**Step 4 - result */
             $this->resp->result = 1;
             $this->resp->msg = "Product is created successfully";
-            $this->resp->data = array([
+            $this->resp->data = array(
                 "name" =>         $Product->get("name"),
                 "remaining" =>    $Product->get("remaining"),
                 "manufacturer" => $Product->get("manufacturer"),
@@ -327,11 +327,14 @@
                 "content" =>      $Product->get("content"),
                 "create_at" =>    $Product->get("create_at"),
                 "update_at" =>    $Product->get("update_at")
-            ]);
+            );
             $this->jsonecho();
         }
 
-
+        /**
+         * @author Phong-Kaster
+         * this function is used to get avatar for products
+         */
         private function getAvatar($id){
             if( !$id ){
                 return;

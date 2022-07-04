@@ -21,3 +21,5 @@ define("TABLE_CONFIGURATION","configuration");
 define("TABLE_PRODUCTS","products");
 define("TABLE_PRODUCT_CATEGORY","product_category");
 define("TABLE_PRODUCTS_PHOTO", "productsphoto");
+define("TABLE_ORDERS_CONTENT", "orderscontent");
+define("TABLE_ORDERS", "orders");

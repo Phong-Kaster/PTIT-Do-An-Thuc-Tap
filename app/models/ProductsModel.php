@@ -1,5 +1,5 @@
 <?php 
-    Class Products extends DataList
+    Class ProductsModel extends DataList
     {
         public function __construct()
         {

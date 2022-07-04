@@ -30,7 +30,7 @@
 
 		/**
 		 * Session inputs
-		 * @param  string  $method 		name of method (get | post | put | request | session | cookie)
+		 * @param  string  $method 		name of method (get | post | put | delete | request | session | cookie)
 		 * @param  string  $input_name 	name of input
 		 * @param  int|bool  $index   	index in input array of treat as $trim
 		 * @param  boolean $trim      	trim input value (if it is string) or not
@@ -38,7 +38,7 @@
 		 */
 		public static function getInput($method, $input_name, $index = true, $trim = true)
 		{
-			if(!in_array($method, array("get", "post", "put", "request", "cookie", "session")))
+			if(!in_array($method, array("get", "post", "put","delete", "request", "cookie", "session")))
 				throw new \Exception('Invalid method!');
 
 			$input = null;
@@ -79,7 +79,7 @@
 			if($name == "req")
 				$name = "request";
 
-	        if (in_array($name, array("get", "post","put", "request", "cookie", "session"))) {
+	        if (in_array($name, array("get", "post","put","delete", "request", "cookie", "session"))) {
 	        	array_unshift($arguments, $name);
 	            return call_user_func_array(array('Input', 'getInput'), $arguments);
 	        } else {
@@ -95,7 +95,7 @@
 			if($name == "req")
 				$name = "request";
 
-	        if (in_array($name, array("get", "post","put", "request", "cookie", "session"))) {
+	        if (in_array($name, array("get", "post","put","delete", "request", "cookie", "session"))) {
 	        	array_unshift($arguments, $name);
 	            return call_user_func_array(array('Input', 'getInput'), $arguments);
 	        } else {
