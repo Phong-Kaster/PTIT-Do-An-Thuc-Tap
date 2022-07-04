@@ -551,3 +551,34 @@ Stack trace:
 [04-Jul-2022 13:56:33 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductController.php on line 116
 [04-Jul-2022 14:31:36 UTC] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductController.php on line 272
 [04-Jul-2022 14:32:52 UTC] PHP Notice:  Undefined property: PDOException::$getMessage in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductController.php on line 286
+[04-Jul-2022 16:00:19 UTC] PHP Notice:  Undefined variable: Route in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 49
+[04-Jul-2022 16:00:19 UTC] PHP Notice:  Trying to get property 'params' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 49
+[04-Jul-2022 16:00:19 UTC] PHP Notice:  Trying to get property 'id' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 49
+[04-Jul-2022 16:00:49 UTC] PHP Parse error:  syntax error, unexpected '"path"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\ProductsPhotoModel.php on line 66
+[04-Jul-2022 16:03:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::get() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php:77
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php(23): AdminProductsPhotosController->getAll()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsPhotosController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 77
+[04-Jul-2022 16:05:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::get() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php:77
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php(23): AdminProductsPhotosController->getAll()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsPhotosController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 77
+[04-Jul-2022 16:06:39 UTC] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 63
+[04-Jul-2022 16:07:34 UTC] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 63
+[04-Jul-2022 16:08:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::get() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php:77
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php(23): AdminProductsPhotosController->getAll()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsPhotosController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 77
+[04-Jul-2022 16:20:38 UTC] PHP Notice:  Undefined variable: Route in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 103
+[04-Jul-2022 16:20:38 UTC] PHP Notice:  Trying to get property 'params' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 103
+[04-Jul-2022 16:20:38 UTC] PHP Notice:  Trying to get property 'id' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 103
+[04-Jul-2022 16:23:18 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 131

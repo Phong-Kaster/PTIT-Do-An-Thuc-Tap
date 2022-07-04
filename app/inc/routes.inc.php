@@ -64,3 +64,6 @@ App::addRoute("GET|PUT|DELETE|PATCH", "/admin/users/[i:id]/?", "AdminUser");
 /**************************PRODUCTS CONTROLLER*****************************/
 App::addRoute("GET|POST", "/admin/products/?", "AdminProducts");
 App::addRoute("GET|PUT|DELETE", "/admin/products/[i:id]/?","AdminProduct");
+
+/**************************PRODUCTS PHOTO CONTROLLER*****************************/
+App::addRoute("GET|POST", "/admin/products/photos/[i:id]/?", "AdminProductsPhotos");

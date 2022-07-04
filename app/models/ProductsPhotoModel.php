@@ -62,9 +62,9 @@
 	    public function extendDefaults()
 	    {
 	    	$defaults = array(
-	    		"product_id" => ""
-                "path" => UPLOAD_PATH."/default.png"
-                "is_avatar" => "1"
+	    		"product_id" => "",
+                "path" => "default.png",
+                "is_avatar" => 1
 	    	);
 
 
