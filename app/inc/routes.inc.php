@@ -51,6 +51,11 @@ $settings_pages = [
 ];
 App::addRoute("GET|POST", "/settings/[".implode("|", $settings_pages).":page]?/?", "Settings");
 
+/*********************************************************************/
+/************************** ADMINISTRATOR ****************************/
+/*********************************************************************/
+
+
 
 /**************************CATEGORIES CONTROLLER*****************************/
 App::addRoute("GET", "/admin/categories/?", "AdminCategories");
@@ -66,4 +71,15 @@ App::addRoute("GET|POST", "/admin/products/?", "AdminProducts");
 App::addRoute("GET|PUT|DELETE", "/admin/products/[i:id]/?","AdminProduct");
 
 /**************************PRODUCTS PHOTO CONTROLLER*****************************/
-App::addRoute("GET|POST", "/admin/products/photos/[i:id]/?", "AdminProductsPhotos");
+/**this controller get all photo from a product | upload new photo for product */
+App::addRoute("GET|POST|PUT|DELETE", "/admin/products/photos/[i:product_id]/[i:photo_id]?", "AdminProductsPhotos");
+
+/**************************ORDERS CONTROLLER*****************************/
+App::addRoute("GET|POST","/admin/orders/?", "AdminOrders");
+
+
+
+
+/*********************************************************************/
+/****************************** CLIENT *******************************/
+/*********************************************************************/

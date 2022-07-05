@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 04, 2022 at 02:22 AM
+-- Generation Time: Jul 05, 2022 at 06:35 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -125,7 +125,7 @@ CREATE TABLE `ec_products` (
 --
 
 INSERT INTO `ec_products` (`id`, `name`, `remaining`, `manufacturer`, `price`, `screen_size`, `cpu`, `ram`, `graphic_card`, `rom`, `demand`, `content`, `create_at`, `update_at`) VALUES
-(1, 'Asus TUF Gaming FX506LHB-HN188W i5 10300H', 15, 'ASUS', 24990000, 15.6, 'Intel, Core i5, 10300H', '8GB', 'NVIDIA GeForce GTX 1', '512GB', 'Gaming', 'ASUS TUF Gaming FX506LHB HN188W là chiếc laptop gaming giá rẻ với thiết kế tuyệt đẹp, phong cách chuẩn game thủ và cấu hình mạnh mẽ cho cả học tập, công việc cũng như chơi game. Bên cạnh đó là độ bền chuẩn quân đội đã làm nên tên tuổi của dòng TUF.', NULL, NULL),
+(1, 'DELL Vostro 3500 i5-1135G7/8GB/ SSD 256GB/ 15.6FHD/WIN 10', 0, 'Dell Technology', 2000000, 14, 'Intel Core I7-1165G7', '8', 'Intel Iris XE, NVIDIA GEFORCE MX 330', '512GB', 'design', 'Laptop DELL Vostro 3500 i5-1135G7/8GB/ SSD 256GB/ 15.6FHD/WIN 10 từ nhà sản xuất Dell Technology là một laptop hiện đại, đa dụng & rất thời trang !', NULL, '2022-07-04 15:37:22'),
 (2, 'Laptop Lenovo IdeaPad Slim 5 15ITL05 i5 1135G7/8GB', 10, 'Lenovo', 14999000, 15.6, 'Intel Core i5 1', '8GB', 'Intel Iris Xe', '512GB', 'Văn phòng', 'Dòng Lenovo IdeaPad Slim 5 15ITL05 giờ đây đã được nâng cấp lên bộ vi xử lý Intel thế hệ thứ 11 vô cùng mạnh mẽ, trở thành chiếc laptop 15,6 inch nhỏ gọn, hiệu suất chuyên nghiệp, lý tưởng cho công việc.', '2022-06-30 22:13:16', '2022-06-30 22:13:16'),
 (3, 'Laptop Dell Vostro 3500', 10, 'Lenovo', 17999000, 15.6, 'Intel Core i7 1165G7', '8GB', 'NVIDIA GeForce MX330', '512GB', 'Van-phong', 'Dòng Dell vostro 3500 giờ đây đã được nâng cấp lên bộ vi xử lý Intel thế hệ thứ 11 vô cùng mạnh mẽ, trở thành chiếc laptop 15,6 inch nhỏ gọn, hiệu suất chuyên nghiệp, lý tưởng cho công việc.', '2022-06-30 22:13:34', '2022-06-30 22:13:34'),
 (4, 'Laptop Dell Vostroll 34', 0, 'Dell Techonology', 2000000, 14, 'Intel Core I7-1165G7', '8', 'Intel Irisxs, MX 330', '512GB', 'office', '0', '2022-07-03 09:36:30', '2022-07-03 09:36:30'),
@@ -143,6 +143,15 @@ CREATE TABLE `ec_productsphoto` (
   `path` varchar(255) DEFAULT NULL,
   `is_avatar` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `ec_productsphoto`
+--
+
+INSERT INTO `ec_productsphoto` (`id`, `product_id`, `path`, `is_avatar`) VALUES
+(12, 1, 'product_1_1657030442.png', 1),
+(13, 1, 'product_1_1657037632.png', 0),
+(17, 1, 'product_1_1657037730.png', 0);
 
 -- --------------------------------------------------------
 
@@ -308,7 +317,7 @@ ALTER TABLE `ec_products`
 -- AUTO_INCREMENT for table `ec_productsphoto`
 --
 ALTER TABLE `ec_productsphoto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `ec_productsreview`

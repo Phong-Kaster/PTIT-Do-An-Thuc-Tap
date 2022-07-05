@@ -590,3 +590,281 @@ Stack trace:
 #3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
 #4 {main}
   thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\DataList.php on line 280
+[05-Jul-2022 13:51:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Pixie\QueryBuilder\QueryBuilderHandler::set() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php:151
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php(26): AdminProductsPhotosController->save()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsPhotosController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 151
+[05-Jul-2022 13:54:15 UTC] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Pixie\QueryBuilder\Adapters\BaseAdapter::update() must be of the type array, string given, called in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 284 and defined in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\Adapters\BaseAdapter.php:248
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(284): Pixie\QueryBuilder\Adapters\BaseAdapter->update(Array, 'is_avatar')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(391): Pixie\QueryBuilder\QueryBuilderHandler->getQuery('update', 'is_avatar')
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php(151): Pixie\QueryBuilder\QueryBuilderHandler->update('is_avatar', 0)
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsP in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\Adapters\BaseAdapter.php on line 248
+[05-Jul-2022 14:05:09 UTC] PHP Notice:  Undefined property: stdClass::$id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 103
+[05-Jul-2022 14:07:28 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 167
+[05-Jul-2022 14:27:29 UTC] PHP Notice:  Undefined property: stdClass::$photo_id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 195
+[05-Jul-2022 14:28:35 UTC] PHP Notice:  Undefined property: stdClass::$photo_id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 30
+[05-Jul-2022 14:31:10 UTC] PHP Notice:  Undefined property: stdClass::$photo_id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 30
+[05-Jul-2022 14:33:47 UTC] PHP Notice:  Undefined property: stdClass::$photo_id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 30
+[05-Jul-2022 14:34:16 UTC] PHP Notice:  Undefined property: stdClass::$photo_id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 30
+[05-Jul-2022 14:35:04 UTC] PHP Notice:  Undefined property: stdClass::$photo_id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 195
+[05-Jul-2022 14:39:05 UTC] PHP Notice:  Undefined property: stdClass::$photo_id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 195
+[05-Jul-2022 14:40:50 UTC] PHP Notice:  Undefined property: stdClass::$photo_id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 198
+[05-Jul-2022 14:45:32 UTC] PHP Notice:  Undefined property: stdClass::$photo_id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 198
+[05-Jul-2022 14:46:15 UTC] PHP Notice:  Undefined property: stdClass::$photo_id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 32
+[05-Jul-2022 14:46:26 UTC] PHP Notice:  Undefined property: stdClass::$photo_id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 32
+[05-Jul-2022 14:47:44 UTC] PHP Notice:  Undefined property: stdClass::$photo_id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 200
+[05-Jul-2022 14:50:22 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 217
+[05-Jul-2022 14:50:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::jsonecho() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php:219
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php(34): AdminProductsPhotosController->update()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsPhotosController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 219
+[05-Jul-2022 15:05:56 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php:354
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(165): AdminProductsController->getAvatar('1')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(23): AdminProductsController->getAll()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:06:02 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php:354
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(165): AdminProductsController->getAvatar('1')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(23): AdminProductsController->getAll()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:06:13 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php:354
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(165): AdminProductsController->getAvatar('1')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(23): AdminProductsController->getAll()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:06:30 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php:354
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(165): AdminProductsController->getAvatar('1')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(23): AdminProductsController->getAll()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:06:38 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php:354
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(165): AdminProductsController->getAvatar('1')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(23): AdminProductsController->getAll()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:06:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::get() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php:354
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(165): AdminProductsController->getAvatar('1')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(23): AdminProductsController->getAll()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:07:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::get() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php:354
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(165): AdminProductsController->getAvatar('1')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(23): AdminProductsController->getAll()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:07:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::get() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php:355
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(165): AdminProductsController->getAvatar('1')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(23): AdminProductsController->getAll()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 355
+[05-Jul-2022 15:07:49 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php:355
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(165): AdminProductsController->getAvatar('1')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(23): AdminProductsController->getAll()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 355
+[05-Jul-2022 15:08:39 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php:354
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(165): AdminProductsController->getAvatar('1')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(23): AdminProductsController->getAll()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:08:58 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php:354
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(165): AdminProductsController->getAvatar('1')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(23): AdminProductsController->getAll()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:10:29 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php:354
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(165): AdminProductsController->getAvatar('1')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(23): AdminProductsController->getAll()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:10:41 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php:354
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(165): AdminProductsController->getAvatar('1')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(23): AdminProductsController->getAll()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:11:42 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:11:42 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:11:42 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:11:42 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:11:42 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:11:42 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php:357
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(165): AdminProductsController->getAvatar('1')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(23): AdminProductsController->getAll()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 357
+[05-Jul-2022 15:11:52 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php:356
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(165): AdminProductsController->getAvatar('1')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(23): AdminProductsController->getAll()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 356
+[05-Jul-2022 15:12:30 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php:356
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(165): AdminProductsController->getAvatar('1')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(23): AdminProductsController->getAll()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 356
+[05-Jul-2022 15:12:40 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:40 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:40 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:40 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:40 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:40 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:40 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:40 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:40 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php:354
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(165): AdminProductsController->getAvatar('1')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(23): AdminProductsController->getAll()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:49 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:49 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:49 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:49 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:49 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:49 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:49 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:49 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:49 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php:354
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(165): AdminProductsController->getAvatar('1')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(23): AdminProductsController->getAll()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:57 UTC] PHP Notice:  Undefined offset: 0 in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:57 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:57 UTC] PHP Notice:  Undefined offset: 0 in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:57 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:57 UTC] PHP Notice:  Undefined offset: 0 in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:57 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:57 UTC] PHP Notice:  Undefined offset: 0 in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:57 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:12:57 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php:354
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(165): AdminProductsController->getAvatar('1')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(23): AdminProductsController->getAll()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:13:34 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php:355
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(165): AdminProductsController->getAvatar('1')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(23): AdminProductsController->getAll()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 355
+[05-Jul-2022 15:14:54 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:14:54 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:14:55 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:14:55 UTC] PHP Notice:  Trying to access array offset on value of type null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:14:55 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php:354
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(165): AdminProductsController->getAvatar('1')
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php(23): AdminProductsController->getAll()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsController->process()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#4 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 354
+[05-Jul-2022 15:16:44 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 357
+[05-Jul-2022 15:16:44 UTC] PHP Notice:  Undefined variable: result in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 365
+[05-Jul-2022 15:16:44 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 357
+[05-Jul-2022 15:16:44 UTC] PHP Notice:  Undefined variable: result in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 365
+[05-Jul-2022 15:16:44 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 357
+[05-Jul-2022 15:16:44 UTC] PHP Notice:  Undefined variable: result in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 365
+[05-Jul-2022 15:16:44 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 357
+[05-Jul-2022 15:16:44 UTC] PHP Notice:  Undefined variable: result in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 365
+[05-Jul-2022 15:16:44 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 357
+[05-Jul-2022 15:16:44 UTC] PHP Notice:  Trying to get property 'path' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 359
+[05-Jul-2022 15:16:44 UTC] PHP Notice:  Undefined variable: result in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 365
+[05-Jul-2022 15:17:22 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 357
+[05-Jul-2022 15:17:22 UTC] PHP Notice:  Undefined variable: result in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 365
+[05-Jul-2022 15:17:22 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 357
+[05-Jul-2022 15:17:22 UTC] PHP Notice:  Undefined variable: result in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 365
+[05-Jul-2022 15:17:22 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 357
+[05-Jul-2022 15:17:22 UTC] PHP Notice:  Undefined variable: result in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 365
+[05-Jul-2022 15:17:22 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 357
+[05-Jul-2022 15:17:22 UTC] PHP Notice:  Undefined variable: result in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 365
+[05-Jul-2022 15:17:22 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 357
+[05-Jul-2022 15:17:22 UTC] PHP Notice:  Trying to get property 'path' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 359
+[05-Jul-2022 15:17:22 UTC] PHP Notice:  Undefined variable: result in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 365
+[05-Jul-2022 15:17:36 UTC] PHP Notice:  Undefined variable: result in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 365
+[05-Jul-2022 15:17:36 UTC] PHP Notice:  Undefined variable: result in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 365
+[05-Jul-2022 15:17:36 UTC] PHP Notice:  Undefined variable: result in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 365
+[05-Jul-2022 15:17:36 UTC] PHP Notice:  Undefined variable: result in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 365
+[05-Jul-2022 15:17:36 UTC] PHP Notice:  Undefined variable: result in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 365
+[05-Jul-2022 15:18:41 UTC] PHP Warning:  Use of undefined constant UPLOAD - assumed 'UPLOAD' (this will throw an Error in a future version of PHP) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsController.php on line 363
+[05-Jul-2022 17:07:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method AdminOrdersController::jsonencho() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php:59
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php(27): AdminOrdersController->save()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminOrdersController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 59
+[05-Jul-2022 17:19:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Controller() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php:65
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php(27): AdminOrdersController->save()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminOrdersController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 65

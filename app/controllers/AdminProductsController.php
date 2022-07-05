@@ -350,8 +350,23 @@
             ->select([
                 TABLE_PREFIX.TABLE_PRODUCTS_PHOTO.".path"
             ]);
-            $res = $query->limit(1)->first();
-            $result = $res ? $res : UPLOAD_PATH."/default.png";
+            $res = $query->limit(1)->get();
+            
+            $tempres = [];
+            $result = "";
+
+            if( count($res) > 0 ){
+                foreach($res as $r){
+                    $tempres[] = $r->path;
+                }
+
+                $result = UPLOAD_PATH."/".$tempres[0];
+            }
+            else{
+                $result = UPLOAD_PATH."/default.png";
+            }
+
+
 
             return $result;
         }

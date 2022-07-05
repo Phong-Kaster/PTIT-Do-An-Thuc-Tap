@@ -19,6 +19,7 @@
 - [**Controller Timeline**](#controller-timeline)
 - [**Timeline**](#timeline)
   - [**Phase 1: 29-06-2022 to xx-xx-2022**](#phase-1-29-06-2022-to-xx-xx-2022)
+- [**Post Script**](#post-script)
 - [**Special Thank**](#special-thank)
 - [**Made with 💘 and PHP <img src="https://www.vectorlogo.zone/logos/php/php-horizontal.svg" width="60">**](#made-with--and-php-)
 
@@ -38,8 +39,7 @@ Vài dòng mình để đây không có chủ đích xúc phạm giáo viên nà
 
 ## [**Nguyễn Thị Bích Nguyên**](#nguyen-thi-bich-nguyen)
 
-Nói thẳng luôn nhé ! Bạn nào mà trúng cô hướng dẫn làm đồ án thì cứ phải gọi là đen vãi cả l*n. 
-Vì mình là người bị phân trúng vào cô Nguyên nên mình cực khó chịu vì lý do sau: Thông thường, 
+Nói thẳng luôn nhé ! Bạn nào mà trúng cô hướng dẫn làm đồ án thì cứ phải gọi là đen vãi cả l*n. Vì mình là người bị phân trúng vào cô Nguyên nên mình cực khó chịu vì lý do sau: Thông thường, 
 một giáo viên hướng dẫn sẽ chủ động liên hệ với bạn để giao đề tài tốt nghiệp và chỉnh sửa thông tin các kiểu.
 Nhưng cô Nguyên thì lại ở cái thể loại hãm l*l hơn, cô éo bao giờ chủ động liên lạc với các bạn đâu nhé.
 
@@ -65,11 +65,11 @@ này ra rất nhiều yêu cầu nhưng cực kì mơ hồ, mông lung. Nếu b�
 
 ## [**Phan Thanh Hy**](#phan-thanh-hy)
 
-Dĩ nhiên, mình làm đồ án dưới sự hướng dẫn của thầy. Nhưng tiếng lành đồn xa😝😝, là `người hướng dẫn đồ án 
+Dĩ nhiên, mình không làm đồ án dưới sự hướng dẫn của thầy. Nhưng tiếng lành đồn xa😝😝, là `người hướng dẫn đồ án 
 tào lao bí đao nhất Học viện` nên hàng năm có cực kì nhiều sinh viên liên hệ với thầy để hướng 
-dẫn làm đồ án tốt nghiệp. Tại do `tào lao bí đao` quá nên thầy này chấm đồ án thực tập rất dễ. 
+dẫn làm đồ án thực tập. Tại do `tào lao bí đao` quá nên thầy này chấm đồ án thực tập rất dễ. 
 
-Mình khuyến khích bạn nào học yếu nên liên hệ trước với thầy này.
+Mình khuyến khích bạn nào học yếu nên liên hệ trước với thầy luôn để ra trường sẽ dễ thở hơn.
 
 ## [**Lưu Nguyễn Kì Thư**](#luu-nguyen-ki-thu)
 
@@ -119,6 +119,16 @@ Trình tự xây dựng các controller của đồ án này, cái này các b�
 2. Thêm model OrdersContent | OrdersContents Model
 3. Upload ảnh cho sản phẩm
    
+- **05-07-2022**
+1. U.D cho sản phẩm 
+2. Tinh chỉnh lại upload ảnh cho sản phẩm
+3. Create cho AdminOrdersController()
+# [**Post Script**](#post-script)
+
+[**11h41 PM Tuesday, 05-07-2022**]
+
+Cả tối mới làm được 2 chức năng ảnh cho sản phẩm. Lo quá 😥 còn phía người dùng nữa. Sợ thực sự.
+
 # [**Special Thank**](#our-team)
 
 <table>
