@@ -77,6 +77,8 @@ App::addRoute("GET|POST|PUT|DELETE", "/admin/products/photos/[i:product_id]/[i:p
 /**************************ORDERS CONTROLLER*****************************/
 App::addRoute("GET|POST","/admin/orders/?", "AdminOrders");
 
+/** (*) means uuid() instead of id */
+App::addRoute("GET|PUT|DELETE","/admin/orders/[*:id]/?", "AdminOrder");
 
 
 

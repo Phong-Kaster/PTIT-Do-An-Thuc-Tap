@@ -868,3 +868,103 @@ Stack trace:
 #2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
 #3 {main}
   thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 65
+[06-Jul-2022 14:00:30 UTC] PHP Notice:  Undefined variable: number_validation_regex in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 77
+[06-Jul-2022 14:00:30 UTC] PHP Warning:  preg_match(): Empty regular expression in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 77
+[06-Jul-2022 14:16:06 UTC] PHP Notice:  Undefined variable: receiver_phone in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\helpers\common.helper.php on line 576
+[06-Jul-2022 14:17:07 UTC] PHP Notice:  Undefined variable: receiver_phone in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\helpers\common.helper.php on line 576
+[06-Jul-2022 14:21:54 UTC] PHP Warning:  preg_match(): Unknown modifier '\' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\helpers\common.helper.php on line 582
+[06-Jul-2022 14:22:05 UTC] PHP Warning:  preg_match(): Unknown modifier '/' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\helpers\common.helper.php on line 582
+[06-Jul-2022 14:22:16 UTC] PHP Warning:  preg_match(): Unknown modifier '$' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\helpers\common.helper.php on line 582
+[06-Jul-2022 14:26:04 UTC] PHP Warning:  preg_match(): Unknown modifier '+' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\helpers\common.helper.php on line 582
+[06-Jul-2022 14:32:03 UTC] PHP Parse error:  syntax error, unexpected '}' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 95
+[06-Jul-2022 14:32:34 UTC] PHP Notice:  Undefined variable: name in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\helpers\common.helper.php on line 608
+[06-Jul-2022 14:36:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ecommerce`.`ec_orders`, CONSTRAINT `ec_orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `ec_users` (`id`)) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php(113): Pixie\QueryBuilde in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[06-Jul-2022 14:39:58 UTC] PHP Parse error:  syntax error, unexpected ',' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 102
+[06-Jul-2022 14:40:19 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ecommerce`.`ec_orders`, CONSTRAINT `ec_orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `ec_users` (`id`)) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php(118): Pixie\QueryBuilde in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[06-Jul-2022 14:41:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ecommerce`.`ec_orders`, CONSTRAINT `ec_orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `ec_users` (`id`)) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php(118): Pixie\QueryBuilde in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[06-Jul-2022 14:44:52 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ecommerce`.`ec_orders`, CONSTRAINT `ec_orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `ec_users` (`id`)) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php(118): Pixie\QueryBuilde in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[06-Jul-2022 14:45:25 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ecommerce`.`ec_orders`, CONSTRAINT `ec_orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `ec_users` (`id`)) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php(118): Pixie\QueryBuilde in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[06-Jul-2022 14:45:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ecommerce`.`ec_orders`, CONSTRAINT `ec_orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `ec_users` (`id`)) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php(118): Pixie\QueryBuilde in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[06-Jul-2022 14:56:52 UTC] PHP Parse error:  syntax error, unexpected '}' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 63
+[06-Jul-2022 14:58:23 UTC] PHP Parse error:  syntax error, unexpected '}' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 63
+[06-Jul-2022 14:59:32 UTC] PHP Parse error:  syntax error, unexpected '}' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 63
+[06-Jul-2022 15:00:41 UTC] PHP Parse error:  syntax error, unexpected '}' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 63
+[06-Jul-2022 15:01:06 UTC] PHP Parse error:  syntax error, unexpected '}' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 63
+[06-Jul-2022 15:02:28 UTC] PHP Parse error:  syntax error, unexpected '}' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 63
+[06-Jul-2022 15:03:08 UTC] PHP Parse error:  syntax error, unexpected '}' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 62
+[06-Jul-2022 15:03:27 UTC] PHP Parse error:  syntax error, unexpected '}' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 60
+[06-Jul-2022 15:08:58 UTC] PHP Parse error:  syntax error, unexpected 'user_id' (T_STRING), expecting ')' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 126
+[06-Jul-2022 15:09:38 UTC] PHP Parse error:  syntax error, unexpected 'user_id' (T_STRING), expecting ')' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 126
+[06-Jul-2022 15:27:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function replace() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php:129
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php(27): AdminOrdersController->save()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminOrdersController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 129
+[06-Jul-2022 15:27:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function replace() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php:129
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php(27): AdminOrdersController->save()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminOrdersController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 129
+[06-Jul-2022 15:36:48 UTC] PHP Notice:  Undefined variable: f82eb357-e20e-4734-abb2-747c646594ee in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 129
+[06-Jul-2022 15:38:46 UTC] PHP Parse error:  syntax error, unexpected 'print_r' (T_STRING) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 131
+[06-Jul-2022 15:38:56 UTC] PHP Parse error:  syntax error, unexpected 'print_r' (T_STRING) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 131
+[06-Jul-2022 15:39:06 UTC] PHP Parse error:  syntax error, unexpected 'print_r' (T_STRING) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 131
+[06-Jul-2022 15:40:23 UTC] PHP Notice:  Undefined offset: 0 in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 134
+[06-Jul-2022 15:53:46 UTC] PHP Parse error:  syntax error, unexpected 'd626565642d3438' (T_STRING) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 129
+[06-Jul-2022 16:07:28 UTC] PHP Fatal error:  Uncaught Error: Class 'AdminOrderController' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:508
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(570): App->route()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 508
+[06-Jul-2022 16:07:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method AdminOrderController::getProductById() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrderController.php:23
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminOrderController->process()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrderController.php on line 23
+[06-Jul-2022 16:08:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method AdminOrderController::getProductById() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrderController.php:23
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminOrderController->process()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrderController.php on line 23
+[06-Jul-2022 16:10:21 UTC] PHP Notice:  Undefined variable: col in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\OrderModel.php on line 35
+[06-Jul-2022 16:23:04 UTC] PHP Parse error:  syntax error, unexpected ':' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\OrderModel.php on line 32
+[06-Jul-2022 16:54:30 UTC] PHP Parse error:  syntax error, unexpected '"update_at"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrderController.php on line 154
+[06-Jul-2022 17:09:15 UTC] PHP Notice:  Undefined variable: required_fields in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrderController.php on line 28
+[06-Jul-2022 17:09:29 UTC] PHP Notice:  Undefined variable: id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrderController.php on line 220

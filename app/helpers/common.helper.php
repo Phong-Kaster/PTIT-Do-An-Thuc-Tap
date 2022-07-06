@@ -570,3 +570,41 @@ function generateUUID($data = null){
     return vsprintf('%s%s-%s-%s-%s-%s%s%s', str_split(bin2hex($data), 4));
 
 }
+
+/**
+ * @author Phong-Kaster
+ * check if a string has only numbers
+ * return 1 if correct
+ * return 0 if incorrect
+ */
+function isNumber($number){
+    $result = preg_match("/^\\d+$/", $number);
+    return $result;
+}
+
+/**
+ * @author Phong-Kaster
+ * check if a string can be vietnamese name or not ?
+ * Only accept letters & space
+ * return 1 if correct
+ * return 0 if incorrect
+ */
+function isVietnameseName($name){
+    $regex = "/[a-zA-Z_ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễếệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s]+$/u";
+    $result = preg_match($regex, $name);
+    return $result;
+}
+
+
+/**
+ * @author Phong-Kaster
+ * check if a string can be address or not ?
+ * Only accept letters & space, common
+ * return 1 if correct
+ * return 0 if incorrect
+ */
+function isAddress($address){
+    $regex = "/[a-zA-Z0-9_ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễếệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s,]+$/u";
+    $result = preg_match($regex, $address);
+    return $result;
+}

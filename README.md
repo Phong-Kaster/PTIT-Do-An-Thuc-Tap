@@ -26,7 +26,7 @@
 # [**Database**](#database)
 
 <p align="center">
-    <img src="./photo/mySQL-diagram-database2.png" width="640" />
+    <img src="./photo/database-diagram.png" width="640" />
 </p>
 <h3 align="center">
 
@@ -123,6 +123,10 @@ Trình tự xây dựng các controller của đồ án này, cái này các b�
 1. U.D cho sản phẩm 
 2. Tinh chỉnh lại upload ảnh cho sản phẩm
 3. Create cho AdminOrdersController()
+
+- **06-07-2022**
+1. C.R.U.D cho AdminOrders | Admin Order controller
+
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**]
