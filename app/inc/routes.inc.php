@@ -80,6 +80,8 @@ App::addRoute("GET|POST","/admin/orders/?", "AdminOrders");
 /** (*) means uuid() instead of id */
 App::addRoute("GET|PUT|DELETE","/admin/orders/[*:id]/?", "AdminOrder");
 
+/**************************ORDERS CONTENT CONTROLLER*****************************/
+App::addRoute("GET|POST|PUT|DELETE","/admin/orders-content/[*:id]/?", "AdminOrdersContent");
 
 
 /*********************************************************************/

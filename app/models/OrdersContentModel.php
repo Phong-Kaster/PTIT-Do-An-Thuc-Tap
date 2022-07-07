@@ -28,9 +28,7 @@
 	     */
 	    public function select($uniqid)
 	    {
-	    	if (is_int($uniqid) || ctype_digit($uniqid)) {
-	    		$col = $uniqid > 0 ? "id" : null;
-	    	}
+	    	$col = "id";
 
 	    	if ($col) {
 		    	$query = DB::table(TABLE_PREFIX.TABLE_ORDERS_CONTENT)

@@ -58,6 +58,8 @@ như họp với cô xong chả giải quyết vấn đề gì, chỉ có sự �
 
 ## [**Nguyễn Anh Hào**](#nguyen-anh-hao)
 
+Người thầy chọn mặt gửi vàng của Phong.
+
 ## [**Lê Hồng Sơn**](#le-hong-son)
 
 Là giám đốc của Học viện mình. Đứng ở cương vị là người quản lý cấp cao nhất của nhà trường, ông thầy 
@@ -72,6 +74,11 @@ dẫn làm đồ án thực tập. Tại do `tào lao bí đao` quá nên thầy
 Mình khuyến khích bạn nào học yếu nên liên hệ trước với thầy luôn để ra trường sẽ dễ thở hơn.
 
 ## [**Lưu Nguyễn Kì Thư**](#luu-nguyen-ki-thu)
+
+Giảng viên huyền thoại của trường PTIT. Người đã góp phần tạo nên bao nỗi ác mộng cho các thế hệ sinh viên Học viện. Tuy nhiên,
+nếu bạn nào muốn có 1 người thấy chi tiết, hỗ trợ nhiệt tình tới tận răng thì nên chọn thầy. 
+
+Lưu ý duy nhất là hãy suy nghĩ xem bạn học có đủ khá | giỏi không ? Vì thầy tuy chi tiết nhưng ra đề tài làm đồ án thực tập cũng tương đối phức tạp & chấm rất gắt 😨😨
 
 # [**Controller Timeline**](#controller-timeline)
 
@@ -95,6 +102,11 @@ Trình tự xây dựng các controller của đồ án này, cái này các b�
 
 7. Admin Products Photos Controller - lấy ra danh sách ảnh theo ID và upload ảnh cho một sản phẩm
 
+8. Admin Orders Controller
+
+9. Admin Order Controller
+
+10. Admin Orders Content Controller
 
 # [**Timeline**](#timeline)
 
@@ -127,11 +139,18 @@ Trình tự xây dựng các controller của đồ án này, cái này các b�
 - **06-07-2022**
 1. C.R.U.D cho AdminOrders | Admin Order controller
 
+- **07-07-2022**
+1. Admin Orders Content Controller với đọc nội dung đơn hàng và cập nhật số lượng sản phẩm trong đơn hàng - chức năng gì 
+mà loằng ngoằng quá 😴🥱. Mất mịa cả buổi tối rùi
+
 # [**Post Script**](#post-script)
 
-[**11h41 PM Tuesday, 05-07-2022**]
+[**11h41 PM Tuesday, 05-07-2022**](#)
 
 Cả tối mới làm được 2 chức năng ảnh cho sản phẩm. Lo quá 😥 còn phía người dùng nữa. Sợ thực sự.
+
+
+
 
 # [**Special Thank**](#our-team)
 

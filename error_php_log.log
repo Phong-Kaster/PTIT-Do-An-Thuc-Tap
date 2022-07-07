@@ -968,3 +968,32 @@ Stack trace:
 [06-Jul-2022 16:54:30 UTC] PHP Parse error:  syntax error, unexpected '"update_at"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrderController.php on line 154
 [06-Jul-2022 17:09:15 UTC] PHP Notice:  Undefined variable: required_fields in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrderController.php on line 28
 [06-Jul-2022 17:09:29 UTC] PHP Notice:  Undefined variable: id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrderController.php on line 220
+[07-Jul-2022 15:12:07 UTC] PHP Fatal error:  Uncaught Error: Class 'AdminOrdersContentController' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:508
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(570): App->route()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 508
+[07-Jul-2022 15:12:31 UTC] PHP Parse error:  syntax error, unexpected '}' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 43
+[07-Jul-2022 15:12:50 UTC] PHP Notice:  Undefined variable: col in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\OrderModel.php on line 36
+[07-Jul-2022 15:14:11 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\OrderModel.php on line 37
+[07-Jul-2022 15:35:39 UTC] PHP Parse error:  syntax error, unexpected '}' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\OrdersContentModel.php on line 33
+[07-Jul-2022 15:35:52 UTC] PHP Notice:  Undefined variable: col in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\OrdersContentModel.php on line 35
+[07-Jul-2022 15:48:50 UTC] PHP Notice:  Undefined variable: current in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 160
+[07-Jul-2022 15:53:25 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*) as quantity FROM `ec_orderscontent` WHERE `ec_orderscontent`.`order_id` = ...' at line 1 in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT COUNT(ec...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php(156): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php(25): Adm in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[07-Jul-2022 16:11:22 UTC] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 164
+[07-Jul-2022 16:12:30 UTC] PHP Parse error:  syntax error, unexpected '$queryUpdate' (T_VARIABLE) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 164
+[07-Jul-2022 16:21:44 UTC] PHP Notice:  Undefined variable: product_id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 135
+[07-Jul-2022 16:30:05 UTC] PHP Notice:  Undefined variable: price in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 188
+[07-Jul-2022 16:37:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getAvatar() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php:81
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php(22): AdminOrdersContentController->getOrderContent()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminOrdersContentController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 81
