@@ -9,6 +9,7 @@
 
 # [**Table Of Content**](#table-of-content)
 - [**Table Of Content**](#table-of-content)
+- [**Topic**](#topic)
 - [**Database**](#database)
 - [**Mentor**](#mentor)
   - [**Nguyễn Thị Bích Nguyên**](#nguyễn-thị-bích-nguyên)
@@ -22,6 +23,15 @@
 - [**Post Script**](#post-script)
 - [**Special Thank**](#special-thank)
 - [**Made with 💘 and PHP <img src="https://www.vectorlogo.zone/logos/php/php-horizontal.svg" width="60">**](#made-with--and-php-)
+
+# [**Topic**](#topic)
+<p align="center">
+    <img src="./photo/topic.png" width="640" />
+</p>
+<h3 align="center">
+
+***Đề tài thực tập do thầy Nguyễn Anh Hào soạn***
+</h3>
 
 # [**Database**](#database)
 
@@ -59,6 +69,15 @@ như họp với cô xong chả giải quyết vấn đề gì, chỉ có sự �
 ## [**Nguyễn Anh Hào**](#nguyen-anh-hao)
 
 Người thầy chọn mặt gửi vàng của Phong.
+
+Do trúng cô Nguyên nên thực sự là mình không muốn đề người hướng dẫn là cô Nguyên. Qua sự tư vấn từ bạn `Huỳnh Phước Sang` nên mình quyết tâm liên 
+lạc với thầy để nhận được sự giúp đỡ từ thầy.
+
+Thật may mắn là sự nỗ lực đã được đền đáp xứng đáng. Thầy Hào cho đã chấp nhận sẽ hướng dẫn cho mình và đồng ý với đề tài mà mình tự 
+chọn tại nơi thực tập thay vì phải làm đề tài của thầy soạn.
+
+Từ lúc nhận đề tài(ngày 29-06-2022) tới khi viết những dòng lưu bút này(10-07-2022) thầy vẫn chưa có hồi âm gì về hướng dẫn cả. Có lẽ do thầy bận hoặc 
+thầy muốn để sinh viên tự làm đúng hay không ? Mình cũng không biết nữa.
 
 ## [**Lê Hồng Sơn**](#le-hong-son)
 
@@ -108,6 +127,8 @@ Trình tự xây dựng các controller của đồ án này, cái này các b�
 
 10. Admin Orders Content Controller
 
+11. Admin Reviews Controller
+
 # [**Timeline**](#timeline)
 
 ## [**Phase 1: 29-06-2022 to xx-xx-2022**](#phase-1-29-06-2022-to-xx-xx-2022)
@@ -143,14 +164,26 @@ Trình tự xây dựng các controller của đồ án này, cái này các b�
 1. Admin Orders Content Controller với đọc nội dung đơn hàng và cập nhật số lượng sản phẩm trong đơn hàng - chức năng gì 
 mà loằng ngoằng quá 😴🥱. Mất mịa cả buổi tối rùi
 
+- **09-07-2022**
+1. Hoàn thiện các tính năng cập nhật, thay đổi thông tin của một đơn hàng
+2. Liệt kê toàn bộ bình luận & thêm mới bình luận ở vai trò Admin
+
+
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)
 
 Cả tối mới làm được 2 chức năng ảnh cho sản phẩm. Lo quá 😥 còn phía người dùng nữa. Sợ thực sự.
 
+[**11:58 PM Thursday, 08-07-2022**](#)
 
+Sài gòn hôm nay mưa to quá ☔. Đi làm về muộn mệt ghê. Thêm quả chứ năng chỉnh sửa nội dung đơn hàng cồng kềnh thật sự. 
 
+[**12:11 AM Thursday, 10-07-2022**](#)
+
+Nửa đêm rồi, sài gòn lại mưa thật hối hả ⛈. Phần API gần xong rùi, cháy hết mình nào 🔥. Chào chiến thắng ✌
+
+À mai thứ 6 rồi 😍😍😎😎. Sắp tới ngày cuối tuần rùi😘😍. Mong thứ 6 qua thật nhanh
 
 # [**Special Thank**](#our-team)
 

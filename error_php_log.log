@@ -997,3 +997,94 @@ Stack trace:
 #2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
 #3 {main}
   thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 81
+[09-Jul-2022 13:24:53 UTC] PHP Parse error:  syntax error, unexpected 'try' (T_TRY) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 238
+[09-Jul-2022 13:25:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::get() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php:234
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php(25): AdminOrdersContentController->save()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminOrdersContentController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 234
+[09-Jul-2022 13:25:52 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php:236
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php(25): AdminOrdersContentController->save()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminOrdersContentController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 236
+[09-Jul-2022 13:26:16 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php:236
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php(25): AdminOrdersContentController->save()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminOrdersContentController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 236
+[09-Jul-2022 13:28:19 UTC] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php:237
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php(25): AdminOrdersContentController->save()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminOrdersContentController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 237
+[09-Jul-2022 13:30:13 UTC] PHP Notice:  Array to string conversion in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 237
+[09-Jul-2022 13:30:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::get() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php:235
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php(25): AdminOrdersContentController->save()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminOrdersContentController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 235
+[09-Jul-2022 13:34:58 UTC] PHP Parse error:  syntax error, unexpected 'try' (T_TRY) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 239
+[09-Jul-2022 13:37:09 UTC] PHP Parse error:  syntax error, unexpected 'try' (T_TRY) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 243
+[09-Jul-2022 13:37:16 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 240
+[09-Jul-2022 13:39:26 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 251
+[09-Jul-2022 13:54:57 UTC] PHP Parse error:  syntax error, unexpected '}' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 228
+[09-Jul-2022 13:56:49 UTC] PHP Parse error:  syntax error, unexpected '$product_price' (T_VARIABLE) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 179
+[09-Jul-2022 14:47:22 UTC] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 337
+[09-Jul-2022 14:47:37 UTC] PHP Parse error:  syntax error, unexpected 'try' (T_TRY) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 341
+[09-Jul-2022 14:49:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ec_orderscontent.quantity as productQuantity' in 'field list' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT `ec_orde...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php(337): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php(28): AdminOrdersContentController->delete()
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminOrdersContentController->process()
+#5 D:\xampp\htdocs\PTIT-Do-An in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[09-Jul-2022 14:50:33 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ec_orderscontent.quantity as productQuantity' in 'field list' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT `ec_orde...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php(338): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php(28): AdminOrdersContentController->delete()
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminOrdersContentController->process()
+#5 D:\xampp\htdocs\PTIT-Do-An in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[09-Jul-2022 14:54:16 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 362
+[09-Jul-2022 14:58:39 UTC] PHP Parse error:  syntax error, unexpected 'print_r' (T_STRING) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 353
+[09-Jul-2022 14:59:19 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 362
+[09-Jul-2022 15:00:42 UTC] PHP Notice:  Undefined offset: 0 in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 340
+[09-Jul-2022 15:00:42 UTC] PHP Notice:  Trying to get property 'productQuantity' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersContentController.php on line 340
+[09-Jul-2022 16:00:09 UTC] PHP Parse error:  syntax error, unexpected '}' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 25
+[09-Jul-2022 16:40:48 UTC] PHP Notice:  Undefined variable: col in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\ReviewModel.php on line 36
+[09-Jul-2022 16:41:27 UTC] PHP Notice:  Undefined variable: col in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\ReviewModel.php on line 36
+[09-Jul-2022 16:44:20 UTC] PHP Notice:  Undefined variable: col in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\ReviewModel.php on line 36
+[09-Jul-2022 16:44:25 UTC] PHP Notice:  Undefined variable: col in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\ReviewModel.php on line 36
+[09-Jul-2022 16:44:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT count(*)...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(252): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(235): Pixie\QueryBuilder\QueryBuilderHandler->aggregate('count')
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\ReviewModel.php(45): Pixie\QueryBuilde in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[09-Jul-2022 16:47:13 UTC] PHP Notice:  Undefined variable: col in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\ReviewModel.php on line 38
+[09-Jul-2022 16:51:15 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 184
+[09-Jul-2022 16:51:15 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 184
+[09-Jul-2022 16:51:15 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 184
+[09-Jul-2022 16:51:41 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 184
+[09-Jul-2022 16:51:41 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 184
+[09-Jul-2022 16:51:41 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 184
+[09-Jul-2022 16:52:08 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 184
+[09-Jul-2022 16:52:08 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 184
+[09-Jul-2022 16:52:08 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 184
+[09-Jul-2022 16:54:10 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 184
+[09-Jul-2022 16:54:10 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 184
+[09-Jul-2022 16:54:10 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 184

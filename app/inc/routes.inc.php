@@ -70,19 +70,26 @@ App::addRoute("GET|PUT|DELETE|PATCH", "/admin/users/[i:id]/?", "AdminUser");
 App::addRoute("GET|POST", "/admin/products/?", "AdminProducts");
 App::addRoute("GET|PUT|DELETE", "/admin/products/[i:id]/?","AdminProduct");
 
+
 /**************************PRODUCTS PHOTO CONTROLLER*****************************/
 /**this controller get all photo from a product | upload new photo for product */
 App::addRoute("GET|POST|PUT|DELETE", "/admin/products/photos/[i:product_id]/[i:photo_id]?", "AdminProductsPhotos");
 
+
 /**************************ORDERS CONTROLLER*****************************/
 App::addRoute("GET|POST","/admin/orders/?", "AdminOrders");
+
 
 /** (*) means uuid() instead of id */
 App::addRoute("GET|PUT|DELETE","/admin/orders/[*:id]/?", "AdminOrder");
 
-/**************************ORDERS CONTENT CONTROLLER*****************************/
-App::addRoute("GET|POST|PUT|DELETE","/admin/orders-content/[*:id]/?", "AdminOrdersContent");
 
+/**************************ORDERS CONTENT CONTROLLER*****************************/
+App::addRoute("GET|POST|DELETE","/admin/orders-content/[*:id]/?", "AdminOrdersContent");
+
+
+/**************************REVIEWS CONTROLLER*****************************/
+App::addRoute("GET|POST","/admin/reviews/?", "AdminReviews");
 
 /*********************************************************************/
 /****************************** CLIENT *******************************/
