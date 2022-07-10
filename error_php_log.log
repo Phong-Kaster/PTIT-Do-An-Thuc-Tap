@@ -1088,3 +1088,14 @@ Stack trace:
 [09-Jul-2022 16:54:10 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 184
 [09-Jul-2022 16:54:10 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 184
 [09-Jul-2022 16:54:10 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 184
+[10-Jul-2022 09:17:35 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 267
+[10-Jul-2022 09:20:08 UTC] PHP Notice:  Undefined variable: Route in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 252
+[10-Jul-2022 09:20:08 UTC] PHP Notice:  Trying to get property 'params' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 252
+[10-Jul-2022 09:20:08 UTC] PHP Notice:  Trying to get property 'id' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 252
+[10-Jul-2022 09:22:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Pixie\QueryBuilder\QueryBuilderHandler::set() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php:272
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php(29): AdminReviewsController->delete()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminReviewsController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 272

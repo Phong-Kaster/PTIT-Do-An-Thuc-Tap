@@ -19,7 +19,8 @@
   - [**Lưu Nguyễn Kì Thư**](#lưu-nguyễn-kì-thư)
 - [**Controller Timeline**](#controller-timeline)
 - [**Timeline**](#timeline)
-  - [**Phase 1: 29-06-2022 to xx-xx-2022**](#phase-1-29-06-2022-to-xx-xx-2022)
+  - [**Phase 1: 29-06-2022 to 10-07-2022**](#phase-1-29-06-2022-to-10-07-2022)
+  - [**Phase 2: 10-07-2022 to xx-xx-2022**](#phase-2-10-07-2022-to-xx-xx-2022)
 - [**Post Script**](#post-script)
 - [**Special Thank**](#special-thank)
 - [**Made with 💘 and PHP <img src="https://www.vectorlogo.zone/logos/php/php-horizontal.svg" width="60">**](#made-with--and-php-)
@@ -131,7 +132,9 @@ Trình tự xây dựng các controller của đồ án này, cái này các b�
 
 # [**Timeline**](#timeline)
 
-## [**Phase 1: 29-06-2022 to xx-xx-2022**](#phase-1-29-06-2022-to-xx-xx-2022)
+## [**Phase 1: 29-06-2022 to 10-07-2022**](#phase-1-29-06-2022-to-10-07-2022)
+
+Ý nghĩa: Giai đoạn này phát triển API cho phía người quản trị viên.
 
 - **29-06-2022** - khởi tạo dự án, chức năng đăng nhập và tạo mã JWT token
 
@@ -168,6 +171,12 @@ mà loằng ngoằng quá 😴🥱. Mất mịa cả buổi tối rùi
 1. Hoàn thiện các tính năng cập nhật, thay đổi thông tin của một đơn hàng
 2. Liệt kê toàn bộ bình luận & thêm mới bình luận ở vai trò Admin
 
+- **10-07-2022**
+1. Xong toàn bộ tính năng quản lý bình luận
+
+## [**Phase 2: 10-07-2022 to xx-xx-2022**](#phase-2-10-07-2022-to-xx-xx-2022)
+
+Ý nghĩa: Giai đoạn này phát triển API cho phía người người dùng.
 
 # [**Post Script**](#post-script)
 

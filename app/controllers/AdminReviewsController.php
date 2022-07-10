@@ -1,4 +1,8 @@
 <?php 
+    /**
+     * there are 2 status of reviews: published and removed
+     * the table contains every reviews include questions, feedback,..
+     */
     class AdminReviewsController extends Controller
     {
         public function process()
@@ -23,7 +27,13 @@
                 $this->getAll();
             }
             else if( $request_method === 'POST'){
-                $this->save();
+                $this->reply();
+            }
+            else if( $request_method === 'DELETE'){
+                $this->delete();
+            }
+            else if( $request_method === 'PUT'){
+                $this->restore();
             }
         }
 
@@ -124,8 +134,9 @@
 
         /**
          * @author Phong-Kaster
+         * create or reply a comment in a product
          */
-        private function save(){
+        private function reply(){
             /**Step 1 */
             $this->resp->result = 0;
             $AuthUser = $this->getVariable("AuthUser");
@@ -235,6 +246,99 @@
             }
             $this->jsonecho();
 
+        }
+
+
+        /**
+         * @author Phong-Kaster
+         * change review's status and sub-reviews' status from 'published' to 'removed'
+         */
+        private function delete(){
+            /**Step 0 */
+            $this->resp->result = 0;
+            $AuthUser = $this->getVariable("AuthUser");
+            $Route = $this->getVariable("Route");
+
+            /**Step 1 */
+            if( !$Route->params->id ){
+                $this->resp->msg = "Review ID is required !";
+                $this->jsonecho();
+            }
+
+            /**Step 2 */
+            $Review = Controller::model("Review",  $Route->params->id);
+            if( !$Review->isAvailable() ){
+                $this->resp->msg = "Review doesn't exits";
+                $this->jsonecho();
+            }
+
+            $id = $Route->params->id;
+
+            /**Step 3 */
+            try 
+            {
+                $query = DB::table(TABLE_PREFIX.TABLE_REVIEWS)
+                    ->where(TABLE_PREFIX.TABLE_REVIEWS.'.id', "=", $id)
+                    ->orWhere(TABLE_PREFIX.TABLE_REVIEWS.'.parent_id', "=", $id)
+                    ->update(array(
+                        "status"=>"removed"
+                    ));
+
+                $this->resp->result = 1;
+                $this->resp->msg = "Review is removed successfully !";
+            } 
+            catch (\Exception $ex) 
+            {
+                $this->resp->msg = $ex->getMessage();
+            }
+            $this->jsonecho();
+        }
+
+
+        /**
+         * @author Phong-Kaster
+         * change review's status from 'removed' to 'published'
+         */
+        private function restore(){
+            /**Step 0 */
+            $this->resp->result = 0;
+            $AuthUser = $this->getVariable("AuthUser");
+            $Route = $this->getVariable("Route");
+
+
+            /**Step 1 */
+            if( !$Route->params->id ){
+                $this->resp->msg = "Review ID is required !";
+                $this->jsonecho();
+            }
+
+
+            /**Step 2 */
+            $Review = Controller::model("Review",  $Route->params->id);
+            if( !$Review->isAvailable() ){
+                $this->resp->msg = "Review doesn't exits";
+                $this->jsonecho();
+            }
+
+            $id = $Route->params->id;
+
+            /**Step 3 */
+            try 
+            {
+                $query = DB::table(TABLE_PREFIX.TABLE_REVIEWS)
+                    ->where(TABLE_PREFIX.TABLE_REVIEWS.'.id', "=", $id)
+                    ->update(array(
+                        "status"=>"published"
+                    ));
+
+                $this->resp->result = 1;
+                $this->resp->msg = "Review is restored successfully !";
+            } 
+            catch (\Exception $ex) 
+            {
+                $this->resp->msg = $ex->getMessage();
+            }
+            $this->jsonecho();
         }
     }
 ?>
