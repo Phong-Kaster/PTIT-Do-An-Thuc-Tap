@@ -56,7 +56,19 @@
 
 
             /**Step 3 - get its photos */
-           
+            $photos = [];
+            $queryPhotos = DB::table(TABLE_PREFIX.TABLE_PRODUCTS_PHOTO)
+                        ->where(TABLE_PREFIX.TABLE_PRODUCTS_PHOTO.".product_id", "=", $Product->get("id"));
+            
+            $result = $queryPhotos->get();
+
+            foreach($result as $element){
+                $photos[] = array(
+                    "id" => $element->id,
+                    "path"=> $element->path,
+                    "is_avatar"=>(int)$element->is_avatar
+                );
+            };
 
             /**Step 4 - return */
             $this->resp->result = 1;
@@ -77,6 +89,7 @@
                 "create_at" =>    $Product->get("create_at"),
                 "update_at" =>    $Product->get("update_at")
             );
+            $this->resp->photos = $photos;
 
             $this->jsonecho();
         }

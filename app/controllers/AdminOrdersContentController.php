@@ -113,6 +113,7 @@
 
         /**
          * @author Phong-Kaster
+         * modify order's content
          * price is calculated by product_price * quantity;
          * this price is the amount of money with one product
          * Step 1: declare local variable

@@ -1099,3 +1099,125 @@ Stack trace:
 #2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
 #3 {main}
   thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminReviewsController.php on line 272
+[10-Jul-2022 14:00:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method ProductsController::getAvatar() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php:162
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php(22): ProductsController->getAll()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): ProductsController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 162
+[10-Jul-2022 14:12:38 UTC] PHP Parse error:  syntax error, unexpected '$queryPhotos' (T_VARIABLE) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductController.php on line 60
+[10-Jul-2022 14:12:47 UTC] PHP Parse error:  syntax error, unexpected '$queryPhotos' (T_VARIABLE) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductController.php on line 60
+[10-Jul-2022 14:13:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method ProductsController::getById() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php:23
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): ProductsController->process()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 23
+[10-Jul-2022 14:14:05 UTC] PHP Notice:  Undefined variable: Route in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 43
+[10-Jul-2022 14:14:05 UTC] PHP Notice:  Trying to get property 'params' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 43
+[10-Jul-2022 14:14:05 UTC] PHP Notice:  Trying to get property 'id' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductsController.php on line 43
+[10-Jul-2022 14:22:21 UTC] PHP Fatal error:  Uncaught Error: Class 'ProductController' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:508
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(570): App->route()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 508
+[10-Jul-2022 14:22:33 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function ProductController::getProductById(), 0 passed in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductController.php on line 11 and exactly 1 expected in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductController.php:20
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductController.php(11): ProductController->getProductById()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): ProductController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ProductController.php on line 20
+[11-Jul-2022 15:12:15 UTC] PHP Notice:  Trying to get property 'id' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 8
+[11-Jul-2022 15:15:40 UTC] PHP Notice:  Undefined variable: data in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 100
+[11-Jul-2022 15:16:31 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 27
+[11-Jul-2022 15:17:12 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 51
+[11-Jul-2022 15:17:12 UTC] PHP Notice:  Undefined offset: 0 in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 55
+[11-Jul-2022 15:17:12 UTC] PHP Notice:  Trying to get property 'id' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 58
+[11-Jul-2022 15:17:12 UTC] PHP Notice:  Trying to get property 'user_id' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 59
+[11-Jul-2022 15:17:12 UTC] PHP Notice:  Trying to get property 'receiver_phone' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 60
+[11-Jul-2022 15:17:12 UTC] PHP Notice:  Trying to get property 'receiver_address' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 61
+[11-Jul-2022 15:17:12 UTC] PHP Notice:  Trying to get property 'receiver_name' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 62
+[11-Jul-2022 15:17:12 UTC] PHP Notice:  Trying to get property 'description' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 63
+[11-Jul-2022 15:17:12 UTC] PHP Notice:  Trying to get property 'status' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 64
+[11-Jul-2022 15:17:12 UTC] PHP Notice:  Trying to get property 'total' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 65
+[11-Jul-2022 15:17:12 UTC] PHP Notice:  Trying to get property 'create_at' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 66
+[11-Jul-2022 15:17:12 UTC] PHP Notice:  Trying to get property 'update_at' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 67
+[11-Jul-2022 15:18:15 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 51
+[11-Jul-2022 15:18:15 UTC] PHP Notice:  Undefined offset: 0 in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 55
+[11-Jul-2022 15:18:15 UTC] PHP Notice:  Trying to get property 'id' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 58
+[11-Jul-2022 15:18:15 UTC] PHP Notice:  Trying to get property 'user_id' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 59
+[11-Jul-2022 15:18:15 UTC] PHP Notice:  Trying to get property 'receiver_phone' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 60
+[11-Jul-2022 15:18:15 UTC] PHP Notice:  Trying to get property 'receiver_address' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 61
+[11-Jul-2022 15:18:15 UTC] PHP Notice:  Trying to get property 'receiver_name' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 62
+[11-Jul-2022 15:18:15 UTC] PHP Notice:  Trying to get property 'description' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 63
+[11-Jul-2022 15:18:15 UTC] PHP Notice:  Trying to get property 'status' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 64
+[11-Jul-2022 15:18:15 UTC] PHP Notice:  Trying to get property 'total' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 65
+[11-Jul-2022 15:18:15 UTC] PHP Notice:  Trying to get property 'create_at' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 66
+[11-Jul-2022 15:18:15 UTC] PHP Notice:  Trying to get property 'update_at' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 67
+[11-Jul-2022 15:19:05 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id' cannot be null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\OrderModel.php(107): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\DataEntry.php(179): OrderModel->insert()
+#5 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[11-Jul-2022 15:37:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id' cannot be null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\OrderModel.php(107): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php(94): OrderModel->insert(Array)
+#5 D:\xampp\htdocs\P in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[11-Jul-2022 15:38:15 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id' cannot be null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\OrderModel.php(107): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php(95): OrderModel->insert(Array)
+#5 D:\xampp\htdocs\P in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[11-Jul-2022 15:39:11 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id' cannot be null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\OrderModel.php(107): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php(94): OrderModel->insert(Array)
+#5 D:\xampp\htdocs\P in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[11-Jul-2022 15:39:55 UTC] PHP Notice:  Undefined variable: msg in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 114
+[11-Jul-2022 15:41:00 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id' cannot be null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\OrderModel.php(107): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php(94): OrderModel->insert(Array)
+#5 D:\xampp\htdocs\P in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[11-Jul-2022 15:42:40 UTC] PHP Notice:  Undefined variable: msg in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 114
+[11-Jul-2022 16:11:51 UTC] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 84
+[11-Jul-2022 16:11:58 UTC] PHP Parse error:  syntax error, unexpected '"quantity"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 96
+[11-Jul-2022 16:12:12 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ec_orderscontent*' in 'field list' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT `ec_orde...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php(84): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php(10): OrdersController->getLatestOrder()
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): OrdersController->process()
+#5 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#6 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[11-Jul-2022 16:30:04 UTC] PHP Parse error:  syntax error, unexpected ';' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 14
+[11-Jul-2022 16:30:37 UTC] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) or const (T_CONST) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 304
+[11-Jul-2022 16:35:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method stdClass::getProductAvatar() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php:92
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php(9): OrdersController->getLatestOrder()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): OrdersController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 92
+[11-Jul-2022 16:35:39 UTC] PHP Notice:  Undefined variable: id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 92

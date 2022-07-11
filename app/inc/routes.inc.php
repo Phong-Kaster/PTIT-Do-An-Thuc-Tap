@@ -91,6 +91,15 @@ App::addRoute("GET|POST|DELETE","/admin/orders-content/[*:id]/?", "AdminOrdersCo
 /**************************REVIEWS CONTROLLER*****************************/
 App::addRoute("GET|POST|DELETE|PUT","/admin/reviews/[i:id]?", "AdminReviews");
 
+
+
 /*********************************************************************/
 /****************************** CLIENT *******************************/
 /*********************************************************************/
+
+/**************************PRODUCTS CONTROLLER*****************************/
+App::addRoute("GET","/products/?", "Products");
+App::addRoute("GET","/products/[i:id]/?", "Product");
+
+/**************************ORDERS CONTROLLER*****************************/
+App::addRoute("GET|POST","/orders/[*:id]/?", "Orders");

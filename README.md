@@ -130,11 +130,17 @@ Trình tự xây dựng các controller của đồ án này, cái này các b�
 
 11. Admin Reviews Controller
 
+12. Products Controller 
+
+13. Product Controller
+
+14. Orders Controller - lấy ra giỏ hàng mới nhất chưa thanh toán & tùy biến nội dung của giỏ hàng.
+
 # [**Timeline**](#timeline)
 
 ## [**Phase 1: 29-06-2022 to 10-07-2022**](#phase-1-29-06-2022-to-10-07-2022)
 
-Ý nghĩa: Giai đoạn này phát triển API cho phía người quản trị viên.
+> Ý nghĩa: Giai đoạn này phát triển API cho phía người quản trị viên.
 
 - **29-06-2022** - khởi tạo dự án, chức năng đăng nhập và tạo mã JWT token
 
@@ -176,8 +182,14 @@ mà loằng ngoằng quá 😴🥱. Mất mịa cả buổi tối rùi
 
 ## [**Phase 2: 10-07-2022 to xx-xx-2022**](#phase-2-10-07-2022-to-xx-xx-2022)
 
-Ý nghĩa: Giai đoạn này phát triển API cho phía người người dùng.
+> Ý nghĩa: Giai đoạn này phát triển API cho phía người người dùng.
 
+- **10-07-2022**
+1. Products Controller - lấy danh sách sản phẩm 
+2. Product Controller - chi tiết 1 sản phẩm theo ID truyền vào
+
+- **11-07-2022**
+1. Orders Controller - lấy ra giỏ hàng cho người sử dụng và thay đổi nội dung trong giỏ hàng
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)

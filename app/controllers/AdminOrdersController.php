@@ -192,7 +192,7 @@
                         "description" => $description,
                         "create_at" => $create_at,
                         "update_at" => $update_at,
-                        "status" => "pending",
+                        "status" => "processing",
                         "total" => 0
                     ));
 
