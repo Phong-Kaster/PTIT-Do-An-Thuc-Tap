@@ -190,6 +190,11 @@ mà loằng ngoằng quá 😴🥱. Mất mịa cả buổi tối rùi
 
 - **11-07-2022**
 1. Orders Controller - lấy ra giỏ hàng cho người sử dụng và thay đổi nội dung trong giỏ hàng
+
+- **12-07-2022**
+1. Tinh chỉnh lại cách xử lý giỏ hàng ở phía người dùng. Nếu không có đủ hàng sẽ không cho đơn hàng đó
+tiếp tục
+
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)
@@ -205,6 +210,11 @@ Sài gòn hôm nay mưa to quá ☔. Đi làm về muộn mệt ghê. Thêm qu�
 Nửa đêm rồi, sài gòn lại mưa thật hối hả ⛈. Phần API gần xong rùi, cháy hết mình nào 🔥. Chào chiến thắng ✌
 
 À mai thứ 6 rồi 😍😍😎😎. Sắp tới ngày cuối tuần rùi😘😍. Mong thứ 6 qua thật nhanh
+
+[**12:49 PM Tuesday, 12-07-2022**](#)
+
+Buồn ngủ quá 😪. Cái giỏ hàng coi vậy mà phức tạp ra phết ấy chứ bộ !. Hên là đã xong được phía người dùng rồi.
+Còn phía quản trị viên chưa làm. 
 
 # [**Special Thank**](#our-team)
 

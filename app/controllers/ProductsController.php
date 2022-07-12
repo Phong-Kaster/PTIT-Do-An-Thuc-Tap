@@ -56,11 +56,12 @@
             $demand         = Input::get("demand");
 
             
-            /**Step 2 - get all products from database */
+            /**Step 2 - get all products from database that their remaining > 0 */
             $data = [];
             try 
             {
                 $query = DB::table(TABLE_PREFIX.TABLE_PRODUCTS)
+                        ->where(TABLE_PREFIX.TABLE_PRODUCTS.".remaining", ">", 0)
                         ->select([
                             TABLE_PREFIX.TABLE_PRODUCTS.".*"
                         ]);

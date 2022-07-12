@@ -113,7 +113,7 @@
 
         /**
          * @author Phong-Kaster
-         * create a order
+         * create an order
          * 
          * generateUUID is from helper/common.helper.php
          */
@@ -175,7 +175,7 @@
 
             /**Step 3 - create order with default status is pending 
              * valid status is pending | packing | delivered | cancel */
-            $valid_status = ["processing", "packed", "being transported", "delivered", "cancel"];
+            $valid_status = ["processing", "verified", "packed", "being transported", "delivered", "cancel"];
             if( !in_array($status, $valid_status)){
                 $this->resp->msg = "Status is not valid, only has processing, packed, being transported, delivered, cancel";
                 $this->jsonecho();

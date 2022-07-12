@@ -1221,3 +1221,10 @@ Stack trace:
 #3 {main}
   thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 92
 [11-Jul-2022 16:35:39 UTC] PHP Notice:  Undefined variable: id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 92
+[12-Jul-2022 14:09:21 UTC] PHP Fatal error:  Uncaught TypeError: Argument 2 passed to Pixie\QueryBuilder\Adapters\BaseAdapter::update() must be of the type array, object given, called in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 284 and defined in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\Adapters\BaseAdapter.php:248
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(284): Pixie\QueryBuilder\Adapters\BaseAdapter->update(Array, Object(Pixie\QueryBuilder\Raw))
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(391): Pixie\QueryBuilder\QueryBuilderHandler->getQuery('update', Object(Pixie\QueryBuilder\Raw))
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrderController.php(186): Pixie\QueryBuilder\QueryBuilderHandler->update(Object(Pixie\QueryBuilder\Raw))
+#3 D:\xampp\htdocs\PTIT- in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\Adapters\BaseAdapter.php on line 248
+[12-Jul-2022 14:14:22 UTC] PHP Parse error:  syntax error, unexpected ')' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrderController.php on line 187

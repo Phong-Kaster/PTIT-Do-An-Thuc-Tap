@@ -81,9 +81,9 @@
                         "product_id" => $element->product_id,
                         "product_name" => $element->product_name,
                         "product_avatar" => $this->getAvatar($element->id),
-                        "product_price" => $element->product_price,
-                        "quantity" => $element->quantity,
-                        "price" => $element->price
+                        "product_price" => (int)$element->product_price,
+                        "quantity" => (int)$element->quantity,
+                        "price" => (int)$element->price
                     );
                 }
 

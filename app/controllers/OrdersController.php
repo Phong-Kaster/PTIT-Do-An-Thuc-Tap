@@ -10,14 +10,17 @@
             }
             else if( $request_method === 'POST')
             {
-                //print_r($request_method);
                 $this->modifyOrder();
+            }
+            else if( $request_method === 'PUT')
+            {
+                $this->confirmOrder();
             }
         }
 
         /**
          * @author Phong-Kaster
-         * get the latest order whose status is still processing.
+         * get the latest order whose status is still "processing".
          * if there is no any order like this, create a new order for the user.
          * 
          * data is an array storing order's information
@@ -61,7 +64,7 @@
                     $msg = "Latest order is picked up successfully !";
                     $data = array(
                         "id" => $order->id,
-                        "user_id" => $order->user_id,
+                        "user_id" => (int)$AuthUser->get("id"),
                         "receiver_phone" => $order->receiver_phone,
                         "receiver_address" => $order->receiver_address,
                         "receiver_name" => $order->receiver_name,
@@ -92,8 +95,8 @@
                         $product_avatar = getProductAvatar($element->product_id);
 
                         $content[] = array(
-                            "id" => $element->id,
-                            "product_id" => $element->product_id,
+                            "id" => (int)$element->id,
+                            "product_id" => (int)$element->product_id,
                             "product_name" => $element->product_name,
                             "product_price" => (int)$element->product_price,
                             "product_avatar" => $product_avatar,
@@ -120,13 +123,13 @@
                             ->insert(
                                 array(
                                     "id" => $id,
-                                    "user_id" => $user_id,
+                                    "user_id" => (int)$user_id,
                                     "receiver_phone" => $receiver_phone,
                                     "receiver_address" => $receiver_address,
                                     "receiver_name" => $receiver_name,
                                     "description" => $description,
                                     "status" => $status,
-                                    "total" => $total,
+                                    "total" => (int)$total,
                                     "create_at" => $create_at,
                                     "update_at" => $update_at
                             ));
@@ -135,7 +138,7 @@
 
                     $data = array(
                         "id" => $id,
-                        "user_id" => $user_id,
+                        "user_id" => (int)$user_id,
                         "receiver_phone" => $receiver_phone,
                         "receiver_address" => $receiver_address,
                         "receiver_name" => $receiver_name,
@@ -155,7 +158,19 @@
             $this->jsonecho();
         }
 
-
+        /**
+         * @author Phong-Kaster
+         * client modify order's content
+         * Step 1: declare local variable
+         * Step 2: get the order with id
+         * Step 2.1: order is able to be modified when it's processing | packed | being transported
+         * Step 3: check product exists or not ?
+         * Step 4: declare product_id, quantity, product_price to calculate total & quantity
+         * Step 5: check product_id exists in current order ?
+         *      Situation 1: if product_id exits but quantity = 0 => delete
+         *      Situation 2: if product_id have existed then increase its quantity one unit
+         *      Situation 3: if product_id doesn't exist then create a new order's content
+         */
         private function modifyOrder(){
             /**Step 1 */
             $this->resp->result = 0;
@@ -174,8 +189,8 @@
                 $this->jsonecho();
             }
 
-            /**Step 2.1 - order is able to be modified when it's processing or packed */
-            $invalid_status = ["being transported", "delivered", "cancel"];
+            /**Step 2.1 - order is able to be modified when it's processing | packed | being transported */
+            $invalid_status = ["delivered", "cancel"];
             $current_status = $Order->get("status");
             if( in_array($current_status, $invalid_status)){
                 $this->resp->msg = "This order can't be modified because it's ".$current_status;
@@ -300,6 +315,133 @@
                 //throw $th;
                 $this->resp->msg = $ex->getMessage();
             }
+            $this->jsonecho();
+        }
+
+
+        /**
+         * @author Phong-Kaster
+         * determine the status of order
+         * 
+         * Situation 1: if status = "verified" then check products in the order_content, if all quantity of 
+         * products > 0, then update product's remaining and update order's status as verified
+         * 
+         * Situation 2: if status = "cancel" then all quantity of products in the order 
+         * content increase equaling with quantity
+         * 
+         * Step 1: check id
+         * Step 2: check order exists or not ? 
+         * Step 3: the current order's status must be processing or verified !
+         * Step 4: status only accepts 2 value: verified & cancel
+         * Step 5a: if change to verified then decrease product's quantity
+         * Step 5b: if change to cancel then increase product's quantity
+         */
+        private function confirmOrder(){
+            $this->resp->result = 0;
+            $msg = "";
+            $Route = $this->getVariable("Route");
+
+
+            /**Step 1 - check id */
+            if( !isset($Route->params->id) ){
+                $this->resp->msg = "ID is required !";
+                $this->jsonecho();
+            }
+
+
+            /**Step 2 - check order exists or not ?  */
+            $Order = Controller::model("Order", $Route->params->id);
+            if( !$Order->isAvailable() ){
+                $this->resp->msg = "This order is not available !";
+                $this->jsonecho();
+            }
+
+
+            /**Step 3 - the current order's status must be processing or verified ! */
+            // if( $Order->get("status") != "processing" || $Order->get("status") != "verified"){
+            //     $this->resp->msg = "The status of the order is not processing !";
+            //     $this->jsonecho();
+            // }
+
+
+            /**Step 4 - status only accepts 2 value: verified & cancel */
+            $status = Input::put("status");
+            $valid_status = ["verified", "cancel"];
+            if( !in_array($status, $valid_status)){
+                $this->resp->msg = "There are only 2 status accepted: verified & cancel";
+            }
+
+
+            /**Step 5 - query to get products from the order */
+            $query = DB::table(TABLE_PREFIX.TABLE_ORDERS_CONTENT)
+                        ->leftJoin(TABLE_PREFIX.TABLE_PRODUCTS, 
+                                TABLE_PREFIX.TABLE_PRODUCTS.".id",
+                                "=",
+                                TABLE_PREFIX.TABLE_ORDERS_CONTENT.".product_id")
+                        ->where(TABLE_PREFIX.TABLE_ORDERS_CONTENT.".order_id", "=", $Order->get("id"))
+                        ->select([
+                            DB::raw(TABLE_PREFIX.TABLE_ORDERS_CONTENT.".product_id"),
+                            DB::raw(TABLE_PREFIX.TABLE_PRODUCTS.".remaining"),
+                            DB::raw(TABLE_PREFIX.TABLE_ORDERS_CONTENT.".quantity"),
+                            DB::raw(TABLE_PREFIX.TABLE_PRODUCTS.".name as product_name")
+                        ]);
+                    
+            $result = $query->get();
+            if( count($result) == 0 ){
+                $this->resp->msg = "Your order is empty now !";
+                $this->jsonecho();
+            }
+
+            /**Step 5a - if change from processing to verified then decrease product's quantity */
+            if($Order->get("status") == "processing" && $status == "verified"){
+                
+
+                /** does product's remaining greater than required quantity, does it ? */
+                foreach($result as $element){
+                    if( $element->remaining < $element->quantity ){
+                        $this->resp->msg = "Oops ! ".$element->product_name." is out of stock !";
+                        $this->jsonecho();
+                    }
+                }  
+                
+
+                /** if product's remaining greater than required quantity, update their remaining */
+                foreach ($result as $element) {
+                    $query = DB::table(TABLE_PREFIX.TABLE_PRODUCTS)
+                            ->where(TABLE_PREFIX.TABLE_PRODUCTS.".id", "=", $element->product_id)
+                            ->update(array(
+                                "remaining" => DB::raw("remaining - ".$element->quantity)
+                            ));
+                }
+
+                
+                /**update order's status from processing to verified */
+                $msg = "Your order is verified successfully !";
+                $Order->set("status", "verified")
+                        ->save();
+            }
+            /**Step 5b - if change verified to cancel then increase product's quantity */
+            else if( $Order->get("status") == "verified" && $status == "cancel"){
+                foreach ($result as $element) {
+                    $query = DB::table(TABLE_PREFIX.TABLE_PRODUCTS)
+                            ->where(TABLE_PREFIX.TABLE_PRODUCTS.".id", "=", $element->product_id)
+                            ->update(array(
+                                "remaining" => DB::raw("remaining + ".$element->quantity)
+                            ));
+                }
+
+                /**update order's status from processing to verified */
+                $msg = "Your order is cancelled successfully !";
+                $Order->set("status", "cancel")
+                        ->save();
+            }
+            else
+            {
+                $msg = "Your order's status now is ".$Order->get("status")." & can do this action !";
+            }
+
+            $this->resp->result = 1;
+            $this->resp->msg = $msg;
             $this->jsonecho();
         }
     }

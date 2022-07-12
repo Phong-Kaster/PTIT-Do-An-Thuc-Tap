@@ -23,7 +23,7 @@
                 $this->getOrderById();
             }
             else if( $request_method === 'PUT'){
-                $this->save();
+                $this->modifyOrder();
             }
             else if( $request_method === 'DELETE'){
                 $this->delete();
@@ -33,7 +33,7 @@
 
         /**
          * @author Phong-Kaster
-         * get product by id
+         * get order by id
          */
         private function getOrderById(){
 
@@ -80,9 +80,21 @@
 
         /**
          * @author Phong-Kaster
-         * modify a product
+         * modify an order
+         * 
+         * Step 1 - declare local variable
+         * Step 2 - check required fields
+         * Step 3 - check product exists or not
+         * Step 3.1 - only processing | verified | packed | being transported then order can be modified
+         * Step 3.2 - check phone number
+         * Step 3.3 - check name - only letters and space
+         * Step 3.4 - check address - only letters and space
+         * Step 4 - create order with default status is processing
+         * valid status is processing | verified | packed | "being transported" | delivered | cancel
+         *      Situation 1:  if the order's status is delivered, it can not be modified any more
+         *      Situation 2:  
          */
-        private function save(){
+        private function modifyOrder(){
             /**Step 1 */
             $Route = $this->getVariable("Route");
             $this->resp->result = 0;
@@ -114,7 +126,7 @@
 
 
 
-            /**Step 2 - get the product  */
+            /**Step 3 - get the product  */
             $Order = Controller::model("Order", $id);
             if( !$Order->isAvailable() ){
                 $this->resp->msg = "This Order is not available !";
@@ -124,16 +136,16 @@
 
             $user_id = $Order->get("user_id") != NULL ? $Order->get("user_id") : NULL;
 
-            /**Step 2.1 - only processing | packed then order can be modified */
-            $invalid_status = ["being transported", "delivered", "cancel"];
+            /**Step 3.1 - only processing | verified | packed | being transported then order can be modified */
+            $invalid_status = ["delivered", "cancel"];
             $current_status = $Order->get("status");
             if( in_array($current_status, $invalid_status)){
-                $this->resp->msg = "This order can not be modified when being transported, delivered or canceled !";
+                $this->resp->msg = "This order can not be modified when delivered or canceled !";
                 $this->jsonecho();
             }
 
 
-            /**Step 2.2 - check phone number */
+            /**Step 3.2 - check phone number */
             if( strlen($receiver_phone) < 10 ){
                 $this->resp->msg = "Phone number has at least 10 number !";
                 $this->jsonecho();
@@ -145,7 +157,7 @@
                 $this->jsonecho();
             }
 
-            /**Step 2.3 - check name - only letters and space */
+            /**Step 3.3 - check name - only letters and space */
             $name_validation = isVietnameseName($receiver_name);
             if( $name_validation != 1 ){
                 $this->resp->msg = "Receiver name only has letters and space";
@@ -153,7 +165,7 @@
             }
 
 
-            /**Step 2.4 - check name - only letters and space */
+            /**Step 3.4 - check address - only letters and space */
             $address_validation = isAddress($receiver_address);
             if( $address_validation != 1){
                 $this->resp->msg = "Address only has letters, space & comma";
@@ -161,13 +173,39 @@
             }
 
 
-            /**Step 3 - create order with default status is pending 
-             * valid status is pending | packing | delivered | cancel */
-            $valid_status = ["processing", "packed", "being transported", "delivered", "cancel"];
+
+            /**Step 4 - create order with default status is processing 
+             * valid status is processing | verified | packed | "being transported" | delivered | cancel */
+            $valid_status = ["processing", "verified", "packed", "being transported", "delivered", "cancel"];
             if( !in_array($status, $valid_status)){
                 $this->resp->msg = "Status is not valid, only has processing, packed, being transported, delivered, cancel";
                 $this->jsonecho();
             }
+
+            /**if the order's status is delivered, it can not be modified any more */
+            if( $Order->get("status") == 'delivered' ){
+                $this->resp->msg = "This order is delivered, it no longer can be modified !";
+                $this->jsonecho();
+            }
+
+
+            /**Step 4 - if $status == verified then update products quality */
+            // if( $status == 'verified' )
+            // {
+            //     $query = DB::table(TABLE_PREFIX.TABLE_ORDERS_CONTENT)
+            //             ->where(TABLE_PREFIX.TABLE_ORDERS_CONTENT.".order_id", "=", $Order->get("id"))
+            //             ->select([
+            //                 DB::raw(TABLE_PREFIX.TABLE_ORDERS_CONTENT.".product_id")
+            //             ]);
+                
+            //     $result = $query->get();
+
+            //     foreach($result as $element){
+            //         $query = DB::query("update ".TABLE_PREFIX.TABLE_PRODUCTS." 
+            //         set ".TABLE_PREFIX.TABLE_PRODUCTS.".remaining = ".TABLE_PREFIX.TABLE_PRODUCTS.".remaining - 1 
+            //         where ".TABLE_PREFIX.TABLE_PRODUCTS.".id = ".$element->product_id);
+            //     }
+            // }
 
             try 
             {
@@ -185,7 +223,7 @@
                 $this->resp->msg = "Order is modified successfully !";
                 $this->resp->data = array(
                     "id" => $Order->get("id"),
-                    "user_id" => $Order->get("user_id"),
+                    "user_id" => (int)$Order->get("user_id"),
                     "receiver_name"=> $Order->get("receiver_name"),
                     "receiver_address"=> $Order->get("receiver_address"),
                     "receiver_phone"=> $Order->get("receiver_phone"),
