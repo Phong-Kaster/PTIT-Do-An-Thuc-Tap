@@ -11,16 +11,18 @@
 - [**Table Of Content**](#table-of-content)
 - [**Topic**](#topic)
 - [**Database**](#database)
+- [**Important Modules**](#important-modules)
 - [**Mentor**](#mentor)
-  - [**Nguyễn Thị Bích Nguyên**](#nguyễn-thị-bích-nguyên)
-  - [**Nguyễn Anh Hào**](#nguyễn-anh-hào)
-  - [**Lê Hồng Sơn**](#lê-hồng-sơn)
-  - [**Phan Thanh Hy**](#phan-thanh-hy)
-  - [**Lưu Nguyễn Kì Thư**](#lưu-nguyễn-kì-thư)
+  - [**1. Nguyễn Thị Bích Nguyên**](#1-nguyễn-thị-bích-nguyên)
+  - [**2. Nguyễn Anh Hào**](#2-nguyễn-anh-hào)
+  - [**3. Lê Hồng Sơn**](#3-lê-hồng-sơn)
+  - [**4. Phan Thanh Hy**](#4-phan-thanh-hy)
+  - [**6. Lưu Nguyễn Kì Thư**](#6-lưu-nguyễn-kì-thư)
 - [**Controller Timeline**](#controller-timeline)
 - [**Timeline**](#timeline)
   - [**Phase 1: 29-06-2022 to 10-07-2022**](#phase-1-29-06-2022-to-10-07-2022)
-  - [**Phase 2: 10-07-2022 to xx-xx-2022**](#phase-2-10-07-2022-to-xx-xx-2022)
+  - [**Phase 2: 10-07-2022 to 13-07-2022**](#phase-2-10-07-2022-to-13-07-2022)
+  - [**Phase 3: 14-07-2022 to xx-xx-2022**](#phase-3-14-07-2022-to-xx-xx-2022)
 - [**Post Script**](#post-script)
 - [**Special Thank**](#special-thank)
 - [**Made with 💘 and PHP <img src="https://www.vectorlogo.zone/logos/php/php-horizontal.svg" width="60">**](#made-with--and-php-)
@@ -44,11 +46,25 @@
 ***Bản thiết kế tiêu chuẩn cơ sở dữ liệu cho đồ án thực tập***
 </h3>
 
+# [**Important Modules**](#important-modules)
+
+Có 2 controller quan trọng mà có giá trị cao nhất trong đồ án này. Đó là phần xử lý giỏ hàng. 
+Xử lý giỏ hàng có lẽ sẽ là phần củ khoai nhất trong đề tài thương mại điện tử.
+
+Hãy chú ý coi qua các controller sau đây: 
+
+1. Admin Order Controller 
+
+2. Admin Orders Controller 
+
+3. Orders Controller
+
+
 # [**Mentor**](#mentor)
 
 Vài dòng mình để đây không có chủ đích xúc phạm giáo viên nào nhưng mình bức xúc quá nên đánh phá luận vậy
 
-## [**Nguyễn Thị Bích Nguyên**](#nguyen-thi-bich-nguyen)
+## [**1. Nguyễn Thị Bích Nguyên**](#nguyen-thi-bich-nguyen)
 
 Nói thẳng luôn nhé ! Bạn nào mà trúng cô hướng dẫn làm đồ án thì cứ phải gọi là đen vãi cả l*n. Vì mình là người bị phân trúng vào cô Nguyên nên mình cực khó chịu vì lý do sau: Thông thường, 
 một giáo viên hướng dẫn sẽ chủ động liên hệ với bạn để giao đề tài tốt nghiệp và chỉnh sửa thông tin các kiểu.
@@ -67,7 +83,7 @@ Một điều hãi hùng nữa là cô Nguyên có đam mê họp lúc 1-2h sán
 đi thực tập về đã mỏi mệt lắm rùi + cố gắng làm đồ án thực tập nữa. Theo mình nghe ngóng thì hầu 
 như họp với cô xong chả giải quyết vấn đề gì, chỉ có sự áp lực từ việc bị chửi mắng là tăng lên rõ rệt 😡😡.
 
-## [**Nguyễn Anh Hào**](#nguyen-anh-hao)
+## [**2. Nguyễn Anh Hào**](#nguyen-anh-hao)
 
 Người thầy chọn mặt gửi vàng của Phong.
 
@@ -80,12 +96,12 @@ chọn tại nơi thực tập thay vì phải làm đề tài của thầy so�
 Từ lúc nhận đề tài(ngày 29-06-2022) tới khi viết những dòng lưu bút này(10-07-2022) thầy vẫn chưa có hồi âm gì về hướng dẫn cả. Có lẽ do thầy bận hoặc 
 thầy muốn để sinh viên tự làm đúng hay không ? Mình cũng không biết nữa.
 
-## [**Lê Hồng Sơn**](#le-hong-son)
+## [**3. Lê Hồng Sơn**](#le-hong-son)
 
 Là giám đốc của Học viện mình. Đứng ở cương vị là người quản lý cấp cao nhất của nhà trường, ông thầy 
 này ra rất nhiều yêu cầu nhưng cực kì mơ hồ, mông lung. Nếu bạn muốn làm đồ án cẩn thận thì nên né ông này luôn 
 
-## [**Phan Thanh Hy**](#phan-thanh-hy)
+## [**4. Phan Thanh Hy**](#phan-thanh-hy)
 
 Dĩ nhiên, mình không làm đồ án dưới sự hướng dẫn của thầy. Nhưng tiếng lành đồn xa😝😝, là `người hướng dẫn đồ án 
 tào lao bí đao nhất Học viện` nên hàng năm có cực kì nhiều sinh viên liên hệ với thầy để hướng 
@@ -93,7 +109,7 @@ dẫn làm đồ án thực tập. Tại do `tào lao bí đao` quá nên thầy
 
 Mình khuyến khích bạn nào học yếu nên liên hệ trước với thầy luôn để ra trường sẽ dễ thở hơn.
 
-## [**Lưu Nguyễn Kì Thư**](#luu-nguyen-ki-thu)
+## [**6. Lưu Nguyễn Kì Thư**](#luu-nguyen-ki-thu)
 
 Giảng viên huyền thoại của trường PTIT. Người đã góp phần tạo nên bao nỗi ác mộng cho các thế hệ sinh viên Học viện. Tuy nhiên,
 nếu bạn nào muốn có 1 người thấy chi tiết, hỗ trợ nhiệt tình tới tận răng thì nên chọn thầy. 
@@ -180,7 +196,7 @@ mà loằng ngoằng quá 😴🥱. Mất mịa cả buổi tối rùi
 - **10-07-2022**
 1. Xong toàn bộ tính năng quản lý bình luận
 
-## [**Phase 2: 10-07-2022 to xx-xx-2022**](#phase-2-10-07-2022-to-xx-xx-2022)
+## [**Phase 2: 10-07-2022 to 13-07-2022**](#phase-2-10-07-2022-to-13-07-2022)
 
 > Ý nghĩa: Giai đoạn này phát triển API cho phía người người dùng.
 
@@ -194,6 +210,15 @@ mà loằng ngoằng quá 😴🥱. Mất mịa cả buổi tối rùi
 - **12-07-2022**
 1. Tinh chỉnh lại cách xử lý giỏ hàng ở phía người dùng. Nếu không có đủ hàng sẽ không cho đơn hàng đó
 tiếp tục
+
+- **13-07-2022**
+1. Tinh chỉnh lại cách xử lý giỏ hàng ở phía người quản trị. Nếu không đủ hàng sẽ không cho đơn hàng đó
+tiếp tục
+2. Tối ưu hóa quy trình kiểm tra dữ liệu đầu vào cho Sign Up Controller với bộ lọc cho firt_name và last_name.
+
+## [**Phase 3: 14-07-2022 to xx-xx-2022**](#phase-3-14-07-2022-to-xx-xx-2022)
+1. Dựng thư mục đồ án Android
+2. Hoàn thành màn hình đăng nhập và hiệu ứng loading screen
 
 # [**Post Script**](#post-script)
 

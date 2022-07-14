@@ -78,7 +78,7 @@
                 foreach($result as $element){
                     $data[] = array(
                         "id" => $element->id,
-                        "product_id" => $element->product_id,
+                        "product_id" => (int)$element->product_id,
                         "product_name" => $element->product_name,
                         "product_avatar" => $this->getAvatar($element->id),
                         "product_price" => (int)$element->product_price,
@@ -90,7 +90,7 @@
                 $this->resp->result = 1;
                 $this->resp->order = array(
                     "id" => $Order->get("id"),
-                    "user_id" => $Order->get("user_id"),
+                    "user_id" => (int)$Order->get("user_id"),
                     "receiver_phone" => $Order->get("receiver_phone"),
                     "receiver_address" => $Order->get("receiver_address"),
                     "receiver_name" => $Order->get("receiver_name"),

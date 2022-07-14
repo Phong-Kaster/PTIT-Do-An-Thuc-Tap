@@ -66,6 +66,22 @@ class SignupController extends Controller
             $this->jsonecho();
         }
 
+
+        /**Step 3.3 - check name - only letters and space */
+        $first_name = Input::post("first_name");
+        $first_name_validation = isVietnameseName($first_name);
+        if( $first_name_validation != 1 ){
+            $this->resp->msg = "First name only has letters and space";
+            $this->jsonecho();
+        }
+
+        $last_name = Input::post("last_name");
+        $last_name_validation = isVietnameseName($last_name);
+        if( $first_name_validation != 1 ){
+            $this->resp->msg = "Last name only has letters and space";
+            $this->jsonecho();
+        }
+
        
         try 
         {        

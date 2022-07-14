@@ -84,18 +84,21 @@
          * 
          * Step 1 - declare local variable
          * Step 2 - check required fields
-         * Step 3 - check product exists or not
+         * Step 3 - try to pick the order up with id
          * Step 3.1 - only processing | verified | packed | being transported then order can be modified
          * Step 3.2 - check phone number
          * Step 3.3 - check name - only letters and space
          * Step 3.4 - check address - only letters and space
-         * Step 4 - create order with default status is processing
+         * Step 4 - is status of the order valid ?
          * valid status is processing | verified | packed | "being transported" | delivered | cancel
-         *      Situation 1:  if the order's status is delivered, it can not be modified any more
-         *      Situation 2:  
+         * Step 5 - query from TABLE ORDER'S CONTENT and get product_id, remaining, quantity & product_name
+         *      Step 5a - if $status == processing and status change to ("verified", "packed", "being transported", "delivered") 
+         * then decrease products remaining
+         *      Step 5b - if $status == ("verified", "packed", "being transported") and status change to (cancel) 
+         * then increase products remaining
          */
         private function modifyOrder(){
-            /**Step 1 */
+            /**Step 1 - declare local variable */
             $Route = $this->getVariable("Route");
             $this->resp->result = 0;
 
@@ -105,7 +108,7 @@
             }
 
 
-            /**Step 2 - no need to check duplicate with id */
+            /**Step 2 - check required fields - no need to check duplicate with id */
             $required_fields = ["receiver_phone","receiver_address","receiver_name"];
 
             foreach($required_fields as $field){
@@ -126,7 +129,7 @@
 
 
 
-            /**Step 3 - get the product  */
+            /**Step 3 - get the order  */
             $Order = Controller::model("Order", $id);
             if( !$Order->isAvailable() ){
                 $this->resp->msg = "This Order is not available !";
@@ -140,7 +143,7 @@
             $invalid_status = ["delivered", "cancel"];
             $current_status = $Order->get("status");
             if( in_array($current_status, $invalid_status)){
-                $this->resp->msg = "This order can not be modified when delivered or canceled !";
+                $this->resp->msg = "This order can not be modified when delivered or cancelled !";
                 $this->jsonecho();
             }
 
@@ -174,39 +177,92 @@
 
 
 
-            /**Step 4 - create order with default status is processing 
+            /**Step 4 - is status of the order valid ?
              * valid status is processing | verified | packed | "being transported" | delivered | cancel */
             $valid_status = ["processing", "verified", "packed", "being transported", "delivered", "cancel"];
             if( !in_array($status, $valid_status)){
-                $this->resp->msg = "Status is not valid, only has processing, packed, being transported, delivered, cancel";
-                $this->jsonecho();
-            }
-
-            /**if the order's status is delivered, it can not be modified any more */
-            if( $Order->get("status") == 'delivered' ){
-                $this->resp->msg = "This order is delivered, it no longer can be modified !";
+                $this->resp->msg = "Status is not valid, only has processing, verified, packed, being transported, delivered, cancel";
                 $this->jsonecho();
             }
 
 
-            /**Step 4 - if $status == verified then update products quality */
-            // if( $status == 'verified' )
-            // {
-            //     $query = DB::table(TABLE_PREFIX.TABLE_ORDERS_CONTENT)
-            //             ->where(TABLE_PREFIX.TABLE_ORDERS_CONTENT.".order_id", "=", $Order->get("id"))
-            //             ->select([
-            //                 DB::raw(TABLE_PREFIX.TABLE_ORDERS_CONTENT.".product_id")
-            //             ]);
-                
-            //     $result = $query->get();
+            /**Step 5 - query from TABLE ORDER'S CONTENT and get product_id, remaining, quantity & product_name*/
+            $query = DB::table(TABLE_PREFIX.TABLE_ORDERS_CONTENT)
+                        ->leftJoin(TABLE_PREFIX.TABLE_PRODUCTS, 
+                                TABLE_PREFIX.TABLE_PRODUCTS.".id",
+                                "=",
+                                TABLE_PREFIX.TABLE_ORDERS_CONTENT.".product_id")
+                        ->where(TABLE_PREFIX.TABLE_ORDERS_CONTENT.".order_id", "=", $Order->get("id"))
+                        ->select([
+                            DB::raw(TABLE_PREFIX.TABLE_ORDERS_CONTENT.".product_id"),
+                            DB::raw(TABLE_PREFIX.TABLE_PRODUCTS.".remaining"),
+                            DB::raw(TABLE_PREFIX.TABLE_ORDERS_CONTENT.".quantity"),
+                            DB::raw(TABLE_PREFIX.TABLE_PRODUCTS.".name as product_name")
+                        ]);
+                    
+            $result = $query->get();
 
-            //     foreach($result as $element){
-            //         $query = DB::query("update ".TABLE_PREFIX.TABLE_PRODUCTS." 
-            //         set ".TABLE_PREFIX.TABLE_PRODUCTS.".remaining = ".TABLE_PREFIX.TABLE_PRODUCTS.".remaining - 1 
-            //         where ".TABLE_PREFIX.TABLE_PRODUCTS.".id = ".$element->product_id);
-            //     }
-            // }
 
+            /**Step 5a - if $status == processing and status change to ("verified", "packed", "being transported", "delivered") 
+             * then decrease products remaining
+             */
+            
+            /**valid_increase_status is status accepted to decrease products remaining */
+            $valid_decrease_status = ['verified', 'packed', 'being transported', 'delivered' ];
+
+            if($Order->get("status") == 'processing' && 
+                in_array($status, $valid_decrease_status))
+            {
+                /** is the current order empty ? if yes, stop this function */
+                if( count($result) == 0 ){
+                    $this->resp->msg = "Your order is empty now !";
+                    $this->jsonecho();
+                }
+
+                /** does product's remaining greater than required quantity, does it ? */
+                foreach($result as $element){
+                    if( $element->remaining < $element->quantity ){
+                        $this->resp->msg = "Oops ! ".$element->product_name." is out of stock !";
+                        $this->jsonecho();
+                    }
+                }
+
+                /** if product's remaining greater than required quantity, update their remaining */
+                foreach ($result as $element) {
+                    $query = DB::table(TABLE_PREFIX.TABLE_PRODUCTS)
+                            ->where(TABLE_PREFIX.TABLE_PRODUCTS.".id", "=", $element->product_id)
+                            ->update(array(
+                                "remaining" => DB::raw("remaining - ".$element->quantity)
+                            ));
+                }
+            }
+
+
+            /**Step 5b - if $status == ("verified", "packed", "being transported") and status change to (cancel) then
+             * increase products remaining
+             */
+            $valid_increase_status = ['verified', 'packed', 'being transported'];
+
+            if( in_array($Order->get("status"), $valid_increase_status) &&
+                $status == 'cancel')
+            {
+                /** is the current order empty ? if yes, stop this function */
+                if( count($result) == 0 ){
+                    $this->resp->msg = "Your order is empty now !";
+                    $this->jsonecho();
+                }
+
+                foreach ($result as $element) {
+                    $query = DB::table(TABLE_PREFIX.TABLE_PRODUCTS)
+                            ->where(TABLE_PREFIX.TABLE_PRODUCTS.".id", "=", $element->product_id)
+                            ->update(array(
+                                "remaining" => DB::raw("remaining + ".$element->quantity)
+                            ));
+                }
+            }
+
+
+            /**Step 6 - store the order's information */
             try 
             {
                 //code...

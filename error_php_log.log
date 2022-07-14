@@ -1228,3 +1228,10 @@ Stack trace:
 #2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrderController.php(186): Pixie\QueryBuilder\QueryBuilderHandler->update(Object(Pixie\QueryBuilder\Raw))
 #3 D:\xampp\htdocs\PTIT- in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\Adapters\BaseAdapter.php on line 248
 [12-Jul-2022 14:14:22 UTC] PHP Parse error:  syntax error, unexpected ')' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrderController.php on line 187
+[13-Jul-2022 09:28:23 UTC] PHP Parse error:  syntax error, unexpected end of file in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\inc\routes.inc.php on line 108
+[13-Jul-2022 09:28:52 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ReviewsController.php on line 26
+[13-Jul-2022 09:32:37 UTC] PHP Parse error:  syntax error, unexpected '$author_name' (T_VARIABLE) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ReviewsController.php on line 55
+[13-Jul-2022 10:02:09 UTC] PHP Notice:  Undefined variable: Route in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ReviewsController.php on line 213
+[13-Jul-2022 10:02:09 UTC] PHP Notice:  Trying to get property 'params' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ReviewsController.php on line 213
+[13-Jul-2022 10:02:09 UTC] PHP Notice:  Trying to get property 'id' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ReviewsController.php on line 213
+[13-Jul-2022 10:02:09 UTC] PHP Notice:  Undefined variable: col in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\ReviewModel.php on line 38

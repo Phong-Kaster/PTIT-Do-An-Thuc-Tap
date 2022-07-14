@@ -190,7 +190,7 @@
             }
 
             /**Step 2.1 - order is able to be modified when it's processing | packed | being transported */
-            $invalid_status = ["delivered", "cancel"];
+            $invalid_status = ["verified","packed", "being transported","delivered", "cancel"];
             $current_status = $Order->get("status");
             if( in_array($current_status, $invalid_status)){
                 $this->resp->msg = "This order can't be modified because it's ".$current_status;
@@ -437,7 +437,7 @@
             }
             else
             {
-                $msg = "Your order's status now is ".$Order->get("status")." & can do this action !";
+                $msg = "Your order's status now is ".$Order->get("status")." & can't do this action !";
             }
 
             $this->resp->result = 1;
