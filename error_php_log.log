@@ -1235,3 +1235,8 @@ Stack trace:
 [13-Jul-2022 10:02:09 UTC] PHP Notice:  Trying to get property 'params' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ReviewsController.php on line 213
 [13-Jul-2022 10:02:09 UTC] PHP Notice:  Trying to get property 'id' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\ReviewsController.php on line 213
 [13-Jul-2022 10:02:09 UTC] PHP Notice:  Undefined variable: col in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\ReviewModel.php on line 38
+[16-Jul-2022 09:19:44 UTC] PHP Notice:  Undefined property: stdClass::$name in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 411
+[16-Jul-2022 09:19:44 UTC] PHP Notice:  Undefined variable: message in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 411
+[16-Jul-2022 09:19:44 UTC] PHP Notice:  Undefined property: stdClass::$name in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 411
+[16-Jul-2022 09:20:06 UTC] PHP Notice:  Undefined variable: message in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 411
+[16-Jul-2022 10:49:52 UTC] PHP Parse error:  syntax error, unexpected end of file in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\inc\routes.inc.php on line 111

@@ -152,6 +152,8 @@ Trình tự xây dựng các controller của đồ án này, cái này các b�
 
 14. Orders Controller - lấy ra giỏ hàng mới nhất chưa thanh toán & tùy biến nội dung của giỏ hàng.
 
+15. Profile Controller - lấy ra thông tin tài khoản bằng access Token.
+
 # [**Timeline**](#timeline)
 
 ## [**Phase 1: 29-06-2022 to 10-07-2022**](#phase-1-29-06-2022-to-10-07-2022)
@@ -217,8 +219,15 @@ tiếp tục
 2. Tối ưu hóa quy trình kiểm tra dữ liệu đầu vào cho Sign Up Controller với bộ lọc cho firt_name và last_name.
 
 ## [**Phase 3: 14-07-2022 to xx-xx-2022**](#phase-3-14-07-2022-to-xx-xx-2022)
+
+- **14-07-2022**
 1. Dựng thư mục đồ án Android
 2. Hoàn thành màn hình đăng nhập và hiệu ứng loading screen
+
+- **16-07-2022**
+1. Thêm Profile Controller để lấy ra thông tin người dùng
+2. Màn hình intro, đăng nhập cho Android
+
 
 # [**Post Script**](#post-script)
 

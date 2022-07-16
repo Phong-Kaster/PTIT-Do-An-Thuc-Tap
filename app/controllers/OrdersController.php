@@ -396,13 +396,25 @@
             if($Order->get("status") == "processing" && $status == "verified"){
                 
 
+                $out_of_stock = [];
                 /** does product's remaining greater than required quantity, does it ? */
                 foreach($result as $element){
                     if( $element->remaining < $element->quantity ){
-                        $this->resp->msg = "Oops ! ".$element->product_name." is out of stock !";
-                        $this->jsonecho();
+                        $out_of_stock[] = $element;
+                        // $this->resp->msg = "Oops ! ".$element->product_name." is out of stock !";
+                        // $this->jsonecho();
                     }
-                }  
+                }
+
+                $message = "Sorry ! ";
+                if( count($out_of_stock) > 0 ){
+                    foreach( $out_of_stock as $element ){
+                        $message .= $element->product_name.",";
+                    }
+
+                    $this->resp->msg = $message." are out of stock !";
+                    $this->jsonecho();
+                }
                 
 
                 /** if product's remaining greater than required quantity, update their remaining */

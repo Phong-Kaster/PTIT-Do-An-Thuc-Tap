@@ -106,3 +106,6 @@ App::addRoute("GET|POST|PUT","/orders/?[*:id]/?", "Orders");
 
 /**************************REVIEWS CONTROLLER*****************************/
 App::addRoute("POST|PUT|DELETE","/reviews/?[i:id]/?", "Reviews");
+
+/**************************PROFILE CONTROLLER*****************************/
+App::addRoute("GET", "/profile/?", "Profile");
