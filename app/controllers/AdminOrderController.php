@@ -318,7 +318,7 @@
             }
 
             /**Step 2.1 - only processing | packed then order can be modified */
-            $invalid_status = ["being transported"];
+            $invalid_status = ["being transported","delivered","verified"];
             $current_status = $Order->get("status");
             if( in_array($current_status, $invalid_status)){
                 $this->resp->msg = "This order can not be delete when being transported !";

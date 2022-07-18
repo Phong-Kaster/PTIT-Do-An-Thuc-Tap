@@ -165,12 +165,12 @@
                     // $avatar = "";
 
                     $data[] = array(
-                        "id"            => $element->id,
+                        "id"            => (int)$element->id,
                         "name"          => $element->name,
-                        "remaining"     => $element->remaining,
+                        "remaining"     => (int)$element->remaining,
                         "manufacturer"  => $element->manufacturer,
-                        "price"         => $element->price,
-                        "screen_size"   => $element->screen_size,
+                        "price"         => (int)$element->price,
+                        "screen_size"   => (float)$element->screen_size,
                         "cpu"           => $element->cpu,
                         "ram"           => $element->ram,
                         "graphic_card"  => $element->graphic_card,

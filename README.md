@@ -12,6 +12,12 @@
 - [**Topic**](#topic)
 - [**Database**](#database)
 - [**Important Modules**](#important-modules)
+  - [**1. Admin Order Controller**](#1-admin-order-controller)
+    - [**1.1. Get Order By Id**](#11-get-order-by-id)
+    - [**1.2 - Modify Order**](#12---modify-order)
+    - [**1.3. Delete**](#13-delete)
+  - [**2. Admin Orders Controller**](#2-admin-orders-controller)
+  - [**3. Orders Controller**](#3-orders-controller)
 - [**Mentor**](#mentor)
   - [**1. Nguyễn Thị Bích Nguyên**](#1-nguyễn-thị-bích-nguyên)
   - [**2. Nguyễn Anh Hào**](#2-nguyễn-anh-hào)
@@ -53,11 +59,51 @@ Xử lý giỏ hàng có lẽ sẽ là phần củ khoai nhất trong đề tài
 
 Hãy chú ý coi qua các controller sau đây: 
 
-1. Admin Order Controller 
+## [**1. Admin Order Controller**](#1-admin-order-controller)
 
-2. Admin Orders Controller 
+Controller này có những chức năng chính như sau: tìm giỏ hàng theo Id, thay đổi nội dung của giỏ hàng & xóa giỏ món hàng trong giỏ hàng
 
-3. Orders Controller
+### [**1.1. Get Order By Id**](#11-get-order-by-id)
+
+Tìm kiếm theo Id - chức năng như tên gọi, truyền một ID vào thì sẽ tìm ra giỏ hàng và các món hàng trong giỏ hàng đó. 
+
+### [**1.2 - Modify Order**](#12---modify-order-thay-đổi-nội-dung-giỏ-hàng) 
+
+Tức là thay đổi nội dung giỏ hàng
+
+**Bước 1** - Cần truyền cho controller này: OrderId, Receiver_phone, receiver_address & receiver_phone. Đây sẽ là những trường dữ liệu bắt buộc phải có. 
+
+**Bước 2** - Giỏ hàng chỉ có thể được thay đổi tùy thích trừ khi trạng thái của nó là một trong hai trạng thái sau: delivered & cancel.
+
+**Bước 3**
+
+- Trường hợp 1 - Khi trạng thái giỏ đang là **processing** => **['verified', 'packed', 'being transported', 'delivered' ]** thì số lượng tồn của các sản phẩm sẽ giảm đi tương ứng với số lượng có trong giỏ hàng.
+
+Ví dụ: Mình mua 3 sản phẩm A và 1 sản phẩm B thì số lượng tồn của nó sẽ bị trừ đi lần lượt là 3 và 2.
+
+Trường hợp mua hàng nhưng có sản phẩm không đủ số lượng thì chương trình sẽ xuất ra thông báo.
+
+> Oops ! Sản phẩm Laptop MSI, Laptop MSi 14 đã hết hàng
+
+- Trường hợp 2 - Khi trạng thái giỏ đang là **["verified", "packed", "being transported"]** => **cancel** thì số lượng sản phẩm sẽ được hoàn trả về như cũ.
+
+Ví dụ: Mình mua 1 sản phẩm A và 1 sản phẩm B, nếu mình hủy giỏ hàng thì số lượng tồn sẽ được cộng lên 1 đơn vị mỗi món hàng.
+
+**Bước 4** - Các quá trình xử lý trên hoàn tất thì sẽ lưu dữ liệu vào cơ sở dữ liệu
+
+### [**1.3. Delete**](#13-delete)
+
+**Bước 1** - Truyền vào OrderID 
+
+**Bước 2** - Nếu giỏ hàng đang ở các trạng thái **["being transported", "deliverd", "verified"]** thì sẽ không cho xóa.
+
+**Bước 3** - Ta chỉ xóa giỏ hàng nếu nó không ở thuộc các trạng thái bước 2 + không có bất kì món hàng trong giỏ hàng này.
+
+**Bước 4** - Lưu các thay đổi vào cơ sở dữ liệu nếu các bước 2 và 3 không bị vi phạm.
+
+## [**2. Admin Orders Controller**](#2-admin-orders-controller)
+
+## [**3. Orders Controller**](#3-orders-controller)
 
 
 # [**Mentor**](#mentor)
@@ -228,6 +274,13 @@ tiếp tục
 1. Thêm Profile Controller để lấy ra thông tin người dùng
 2. Màn hình intro, đăng nhập cho Android
 
+- **17-07-2022**
+1. Hoàn thiện trang chủ ứng dụng Android
+2. Hoàn thiện màn hình kết quả tìm kiếm
+
+- **18-07-2022**
+1. Xong các thao tác tìm kiếm bằng SearchView và chọn theo nhu cầu ở trang chủ
+2. Phác họa xong màn hình giao diện bộ lọc sản phẩm.
 
 # [**Post Script**](#post-script)
 

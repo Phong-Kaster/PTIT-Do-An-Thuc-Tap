@@ -13,7 +13,7 @@
 
         private function getProfile()
         {
-            $this->resp->msg = 0;
+            $this->resp->result = 0;
             $AuthUser = $this->getVariable("AuthUser");
 
 
