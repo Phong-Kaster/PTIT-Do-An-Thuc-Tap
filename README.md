@@ -282,6 +282,10 @@ tiếp tục
 1. Xong các thao tác tìm kiếm bằng SearchView và chọn theo nhu cầu ở trang chủ
 2. Phác họa xong màn hình giao diện bộ lọc sản phẩm.
 
+- **19-07-2022**
+1. Xong xử lý logic cho màn hình giao diện bộ lọc sản phẩm
+2. Dựng khung hình màn hình chi tiết sản phẩm
+
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)
