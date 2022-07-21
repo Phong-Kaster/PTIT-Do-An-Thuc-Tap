@@ -286,6 +286,13 @@ tiếp tục
 1. Xong xử lý logic cho màn hình giao diện bộ lọc sản phẩm
 2. Dựng khung hình màn hình chi tiết sản phẩm
 
+- **20-07-2022**
+1. Chinh sửa lại cách trả về đường dẫn hình ảnh của getProductById()
+2. Xong màn hình thông tin sản phẩm
+
+- **21-07-2022**
+1. Modal Bottom Sheet để chọn số lượng sản phẩm 
+2. Lấy được API liên quan tới giỏ hàng gần nhất
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)

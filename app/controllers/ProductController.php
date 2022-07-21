@@ -42,7 +42,7 @@
             foreach($result as $element){
                 $photos[] = array(
                     "id" => $element->id,
-                    "path"=> $element->path,
+                    "path"=> UPLOAD_PATH."/".$element->path,
                     "is_avatar"=>(int)$element->is_avatar
                 );
             };
