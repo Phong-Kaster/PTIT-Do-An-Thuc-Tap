@@ -96,8 +96,8 @@
 		    		"id" => null,
 		    		"name" => $this->get("name"),
                     "description" => $this("description"),
-                    "position" => $this("position")
-                    "parent_id" => $this("parent_id")
+                    "position" => $this("position"),
+                    "parent_id" => $this("parent_id"),
                     "slug" => $this("slug")
 		    	));
 
@@ -122,8 +122,8 @@
 		    	->update(array(
 		    		"name" => $this->get("name"),
                     "description" => $this("description"),
-                    "position" => $this("position")
-                    "parent_id" => $this("parent_id")
+                    "position" => $this("position"),
+                    "parent_id" => $this("parent_id"),
                     "slug" => $this("slug")
 		    	));
 

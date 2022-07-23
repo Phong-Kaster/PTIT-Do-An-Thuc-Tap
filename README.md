@@ -200,6 +200,10 @@ Trình tự xây dựng các controller của đồ án này, cái này các b�
 
 15. Profile Controller - lấy ra thông tin tài khoản bằng access Token.
 
+16. Category Controller - lấy ra các Product thuộc một danh mục
+
+17. Categories Controller - lấy ra các danh mục và các thông tin liên quan của một danh mục
+
 # [**Timeline**](#timeline)
 
 ## [**Phase 1: 29-06-2022 to 10-07-2022**](#phase-1-29-06-2022-to-10-07-2022)
@@ -293,6 +297,11 @@ tiếp tục
 - **21-07-2022**
 1. Modal Bottom Sheet để chọn số lượng sản phẩm 
 2. Lấy được API liên quan tới giỏ hàng gần nhất
+
+- **22-07-2022**
+1. Nằm đáp chăn + bật quạt
+- **23-07-2022**
+1. Xong chức năng Thêm vào giỏ hàng.
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)

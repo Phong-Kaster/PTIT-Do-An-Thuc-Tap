@@ -1240,3 +1240,34 @@ Stack trace:
 [16-Jul-2022 09:19:44 UTC] PHP Notice:  Undefined property: stdClass::$name in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 411
 [16-Jul-2022 09:20:06 UTC] PHP Notice:  Undefined variable: message in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrdersController.php on line 411
 [16-Jul-2022 10:49:52 UTC] PHP Parse error:  syntax error, unexpected end of file in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\inc\routes.inc.php on line 111
+[23-Jul-2022 13:35:07 UTC] PHP Parse error:  syntax error, unexpected '"parent_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\CategoriesController.php on line 38
+[23-Jul-2022 13:56:09 UTC] PHP Notice:  Undefined variable: id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\CategoriesController.php on line 44
+[23-Jul-2022 13:56:09 UTC] PHP Fatal error:  Uncaught Error: Cannot access protected property PDOException::$message in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\CategoriesController.php:84
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\CategoriesController.php(13): CategoriesController->getProductsByCategoryId()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): CategoriesController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\CategoriesController.php on line 84
+[23-Jul-2022 13:56:26 UTC] PHP Notice:  Undefined variable: id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\CategoriesController.php on line 44
+[23-Jul-2022 13:56:35 UTC] PHP Notice:  Undefined variable: id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\CategoriesController.php on line 44
+[23-Jul-2022 13:56:57 UTC] PHP Notice:  Undefined variable: id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\CategoriesController.php on line 44
+[23-Jul-2022 13:57:23 UTC] PHP Notice:  Undefined variable: id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\CategoriesController.php on line 44
+[23-Jul-2022 13:57:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method CategoriesController::getAvatar() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\CategoriesController.php:63
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\CategoriesController.php(13): CategoriesController->getProductsByCategoryId()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): CategoriesController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\CategoriesController.php on line 63
+[23-Jul-2022 13:57:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function getAvatar() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\CategoriesController.php:63
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\CategoriesController.php(13): CategoriesController->getProductsByCategoryId()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): CategoriesController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\CategoriesController.php on line 63
+[23-Jul-2022 14:04:58 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\CategoriesController.php on line 44
+[23-Jul-2022 14:05:27 UTC] PHP Parse error:  syntax error, unexpected '"parent_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\CategoryModel.php on line 100
+[23-Jul-2022 14:05:48 UTC] PHP Parse error:  syntax error, unexpected '"slug"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\CategoryModel.php on line 101
+[23-Jul-2022 14:06:41 UTC] PHP Notice:  Undefined property: CategoryModel::$id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\CategoriesController.php on line 94
