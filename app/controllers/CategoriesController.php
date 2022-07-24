@@ -30,8 +30,8 @@
             {
                 //code...
                 $query = DB::table(TABLE_PREFIX.TABLE_CATEGORIES)
-                            ->where(TABLE_PREFIX.TABLE_CATEGORIES.".id", ">", 1)
-                            ->select("*");
+                            ->select("*")
+                            ->orderBy(TABLE_PREFIX.TABLE_CATEGORIES.".id", "asc");
 
                 $result   = $query->get();
                 $quantity = count($result);

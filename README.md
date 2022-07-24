@@ -429,9 +429,14 @@ tiếp tục
 
 - **22-07-2022**
 1. Nằm đáp chăn + bật quạt
+   
 - **23-07-2022**
 1. Xong chức năng Thêm vào giỏ hàng.
 2. Dựng khung màn hình Danh mục
+
+- **24-07-2022**
+1. Hoàn thiện màn hình danh mục
+2. Xóa nút trở về và giỏ hàng ở màn hình chi tiết sản phẩm
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)
@@ -452,6 +457,10 @@ Nửa đêm rồi, sài gòn lại mưa thật hối hả ⛈. Phần API gần 
 
 Buồn ngủ quá 😪. Cái giỏ hàng coi vậy mà phức tạp ra phết ấy chứ bộ !. Hên là đã xong được phía người dùng rồi.
 Còn phía quản trị viên chưa làm. 
+
+[** 09:54 PM Sunday, 24-07-2022**](#)
+
+Nay ngủ cả buổi chiều mà sao giờ đã buồn ngủ thế nhỉ ? Thui kệ tới sao thì tới.
 
 # [**Special Thank**](#our-team)
 
