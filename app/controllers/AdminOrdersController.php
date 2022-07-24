@@ -84,25 +84,26 @@
                 /**Step 2.3 - length filter * start filter*/
                 $query->limit($length ? $length : 10)->offset($start ? $start : 0);
                 $res = $query->get();
-
+                $quantity = count($res);
 
                 /**Step 3 */
                 foreach($res as $element){
                     $data[] = array(
                         "id" => $element->id,
-                        "user_id" => $element->user_id,
+                        "user_id" => (int)$element->user_id,
                         "receiver_phone" => $element->receiver_phone,
                         "receiver_address" => $element->receiver_address,
                         "receiver_name" => $element->receiver_name,
                         "description" => $element->description,
                         "status" => $element->status,
-                        "total" => $element->total,
+                        "total" => (int)$element->total,
                         "create_at" => $element->create_at,
                         "update_at" => $element->update_at
                     );
                 }
 
                 $this->resp->result = 1;
+                $this->resp->quantity = $quantity;
                 $this->resp->data = $data;
 
             } catch (\Exception $ex) {
@@ -177,7 +178,7 @@
              * valid status is pending | packing | delivered | cancel */
             $valid_status = ["processing", "verified", "packed", "being transported", "delivered", "cancel"];
             if( !in_array($status, $valid_status)){
-                $this->resp->msg = "Status is not valid, only has processing, packed, being transported, delivered, cancel";
+                $this->resp->msg = "Status is not valid, only has processing, verified, packed, being transported, delivered, cancel";
                 $this->jsonecho();
             }
 

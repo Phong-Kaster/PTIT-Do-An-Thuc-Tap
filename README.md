@@ -17,7 +17,12 @@
     - [**1.2 - Modify Order**](#12---modify-order)
     - [**1.3. Delete**](#13-delete)
   - [**2. Admin Orders Controller**](#2-admin-orders-controller)
+    - [**2.1. Get All**](#21-get-all)
+    - [**2.2. Save**](#22-save)
   - [**3. Orders Controller**](#3-orders-controller)
+    - [**3.1. Get Latest Order**](#31-get-latest-order)
+    - [**3.2. Modify Order**](#32-modify-order)
+    - [**3.3. Confirm Order**](#33-confirm-order)
 - [**Mentor**](#mentor)
   - [**1. Nguyễn Thị Bích Nguyên**](#1-nguyễn-thị-bích-nguyên)
   - [**2. Nguyễn Anh Hào**](#2-nguyễn-anh-hào)
@@ -77,7 +82,8 @@ Tức là thay đổi nội dung giỏ hàng
 
 **Bước 3**
 
-- Trường hợp 1 - Khi trạng thái giỏ đang là **processing** => **['verified', 'packed', 'being transported', 'delivered' ]** thì số lượng tồn của các sản phẩm sẽ giảm đi tương ứng với số lượng có trong giỏ hàng.
+- Trường hợp 1 - Khi trạng thái giỏ đang là **processing** => **['verified', 'packed', 'being transported', 'delivered' ]** thì số lượng tồn của các sản phẩm sẽ giảm đi tương ứng 
+với số lượng có trong giỏ hàng. Tương đương việc người dùng cho sản phẩm vào giỏ hàng và nhấn **Xác nhận** sẽ mua những món hàng này
 
 Ví dụ: Mình mua 3 sản phẩm A và 1 sản phẩm B thì số lượng tồn của nó sẽ bị trừ đi lần lượt là 3 và 2.
 
@@ -85,9 +91,10 @@ Trường hợp mua hàng nhưng có sản phẩm không đủ số lượng th�
 
 > Oops ! Sản phẩm Laptop MSI, Laptop MSi 14 đã hết hàng
 
-- Trường hợp 2 - Khi trạng thái giỏ đang là **["verified", "packed", "being transported"]** => **cancel** thì số lượng sản phẩm sẽ được hoàn trả về như cũ.
+- Trường hợp 2 - Khi trạng thái giỏ đang là **["verified", "packed", "being transported"]** => **cancel** thì số lượng 
+sản phẩm sẽ được hoàn trả về như cũ. Tức người dùng lựa chọn **Hủy đơn**
 
-Ví dụ: Mình mua 1 sản phẩm A và 1 sản phẩm B, nếu mình hủy giỏ hàng thì số lượng tồn sẽ được cộng lên 1 đơn vị mỗi món hàng.
+Ví dụ: Mình mua 2 sản phẩm A và 2 sản phẩm B, nếu mình hủy giỏ hàng thì số lượng tồn sẽ được cộng lên 2 đơn vị mỗi món hàng.
 
 **Bước 4** - Các quá trình xử lý trên hoàn tất thì sẽ lưu dữ liệu vào cơ sở dữ liệu
 
@@ -103,8 +110,130 @@ Ví dụ: Mình mua 1 sản phẩm A và 1 sản phẩm B, nếu mình hủy gi�
 
 ## [**2. Admin Orders Controller**](#2-admin-orders-controller)
 
+Controller này phụ trách 2 nhiệm vụ chính hỗ trợ cho người quản trị, gồm: 
+getAll() - liệt kê các đơn hàng và save() - tạo mới đơn hàng.
+
+### [**2.1. Get All**](#get-all)
+
+Chức năng này như tên gọi của nó, chỉ đơn thuần liệt kê các thông tin của các đơn hàng trong cơ sở dữ liệu
+
+<p align="center">
+    <img src="./photo/screen1.png" width="640" />
+</p>
+<h3 align="center">
+
+***Dữ liệu trả về liệt kê thông tin các giỏ hàng***
+</h3>
+
+### [**2.2. Save**](#save)
+Chức năng này giúp người quản trị viên tạo giỏ hàng thay cho khách hàng nếu cần thiết.
+
+**Bước 1** - lấy ra tất cả các dữ liệu từ phía website gửi lên, bao gồm các thông tin cơ bản. Trong số này, 
+thông tin người nhận hàng là các dữ liệu bắt buộc phải có - receiver_phone, receiver_name, receiver_address. 
+
+Trong đó, riêng mã đơn hàng(OrderId) sẽ là một UUID - Universally Unique IDentifier - chuỗi có 16 kí tự để tránh trường hợp có 
+tin tặc phát hiện ra mã đơn hàng tiếp theo. Dẫn tới chiếm quyền các đơn hàng sau này.
+
+**Bước 2** - vì đây là giỏ hàng nên các thông tin về người nhận hàng cần được kiểm tra kĩ càng. Thông tin người nhận hàng 
+phải thỏa mãn các yêu cầu sau: 
+
+- Số điện thoại(receiver_phone) phải có ít nhất 10 số.
+
+- Tên người(receiver_name) chỉ bao gồm chữ cái và các dấu trong tiếng Việt.
+
+- Địa chỉ nhận hàng(receiver_address) chỉ bao gồm chữ cái, các dấu trong tiếng việt, khoảng trắng & dấu phẩy.
+
+**Bước 3** - Kiểm tra trạng thái của đơn hàng có hợp lệ hay là không. Một đơn hàng sẽ có 6 trạng thái sau là hợp lệ: 
+
+- Processing - tức đang xử lý, người dùng và quản trị viên vẫn đang mua và vẫn có thể thay đổi nội dung giỏ hàng.
+
+- Verified - tức người dùng xác nhận mua hàng hoặc người quản trị viên xác nhận giúp người dùng qua điện thoại rằng họ sẽ mua hàng. 
+
+- Packed - tức đơn hàng đã đóng gói.
+
+- Being transported - tức đơn hàng đang vận chuyển
+
+- Delivered - tức đơn hàng đã vận chuyển thành công tới người dùng.
+
+- Cancel - tức đơn hàng bị hủy bởi người dùng hoặc quản trị viên
+
+**Bước 4** - nếu các bước xử lý ở bên trên là hợp lệ thì tiến hành tạo mới đơn hàng.
+
+<p align="center">
+    <img src="./photo/screen2.png" width="640" />
+</p>
+<h3 align="center">
+
+***Dữ liệu trả về nếu giỏ hàng được tạo thành công***
+</h3>
+
 ## [**3. Orders Controller**](#3-orders-controller)
 
+Đây là chức năng xử lý giỏ hàng cho phía khách hàng. Có 3 hàm chính trong Controller này bao gồm 
+
+1. Get Latest Order - lấy ra giỏ hàng gần nhất của người dùng mà trạng thái là Processing.
+
+2. Modify Order - cập nhật lại các món hàng trong giỏ hàng của người dùng 
+
+3. Confirm Order - xử lý khi người dùng ấn nút **XÁC NHẬN** mua hàng. Chức năng này liên quan đến xử lý 
+số lượng hàng tồn kho hay nói cách khác là xử lý tranh chấp.
+
+### [**3.1. Get Latest Order**](#31-get-latest-order)
+
+Lấy ra giỏ hàng gần nhất của người dùng mà trạng thái là processing. Nếu có giỏ hàng tồn tại thì tiếp tục cho người 
+dùng chỉnh sửa nội dung các món hàng trong giỏ hàng này.
+
+<p align="center">
+    <img src="./photo/screen3.png" width="640" />
+</p>
+<h3 align="center">
+
+***Giỏ hàng được tạo mới thì msg là Latest order is picked up successfully***
+</h3>
+
+Nếu không có giỏ hàng nào tồn tại thì tạo mới cho người dùng.
+
+<p align="center">
+    <img src="./photo/screen4.png" width="640" />
+</p>
+<h3 align="center">
+
+***Giỏ hàng được tạo mới thì msg là Order is created successfully***
+</h3>
+
+### [**3.2. Modify Order**](#32-modify-order)
+
+Chức này này cập nhật lại các món hàng trong giỏ hàng của người dùng.
+
+Luồng xử lý chính sẽ như sau:
+
+**Bước nhận và kiểm thử** - kiểm tra tính đúng sai của dữ liệu nhận vào. Ví dụ: có đơn hàng nào với mã đơn nhận được không ? Có món hàng nào với ID đó hay không ?
+
+**Bước xử lý** - sẽ có 3 trường hợp xảy ra khi chỉnh sửa một đơn hàng như sau 
+
+- Có món hàng(product_id) trong giỏ hàng nhưng người dùng cập nhật số lượng của nó về 0 => xóa món hàng này khỏi giỏ hàng.
+
+- Có món hàng(product_id) trong giỏ hàng nhưng số lượng bị thay đổi và số lượng này khác 0 => tiến hành cập nhật lại.
+
+- Không có món hàng(product_id) trong giỏ hàng => tiến hành tạo mới một order content với product_id và order_id đó.
+
+### [**3.3. Confirm Order**](#33-confirm-order)
+
+Chức năng này sinh ra để xử lý tranh chấp khi người dùng xác nhận mua món hàng. Có thể hiểu đơn giản như sau, khi người dùng chọn 3 món hàng 
+A, B và C cho vào giỏ hàng. Số lượng họ chọn mua các mặt hàng là không bị giới hạn.
+
+Tuy nhiên, khi họ quyết định mua và nhấn **XÁC NHẬN** mua hàng. Hệ thống sẽ tiến hành kiểm tra số lượng tồn với số lượng họ mua. Điều này sẽ dẫn tới 4 kết quả 
+như sau:
+
+**Trường hợp 1** - số lượng tồn của món hàng(product_id) lớn hơn số lượng người dùng mua thì tiến hành trừ đi số lượng tương ứng. Ví dụ: số lượng 
+tồn là 10, người dùng mua 2 thì số lượng tồn còn lại là 8.
+
+**Trường hợp 2** - số lượng tồn của món hàng(product_id) nhỏ hơn số lượng người dùng mua thì lúc này sẽ xuất ra thông báo để người dùng biết và thay đổi 
+
+**Trường hợp 3** - người dùng mua 3 món hàng thì A có số lượng tồn đáp ứng nhưng số lượng tồn của B và C thì đã hết => Xuất ra thông báo rằng B và C đã hết hàng và dừng lại luôn
+
+**Trường hợp 4** - người dùng đã **XÁC NHẬN** mua hàng nhưng sau đó thay đổi suy nghĩ và chọn **HỦY ĐƠN HÀNG** thì số lượng tồn của các món hàng sẽ được hoàn trả lại. 
+Ví dụ: người dùng mua món hàng A với số lượng 2 món và sau đó nhấn hủy đơn thì số lượng tồn của món hàng A sẽ tăng lên 2 đơn vị.
 
 # [**Mentor**](#mentor)
 
@@ -302,6 +431,7 @@ tiếp tục
 1. Nằm đáp chăn + bật quạt
 - **23-07-2022**
 1. Xong chức năng Thêm vào giỏ hàng.
+2. Dựng khung màn hình Danh mục
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)

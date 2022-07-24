@@ -1271,3 +1271,5 @@ Stack trace:
 [23-Jul-2022 14:05:27 UTC] PHP Parse error:  syntax error, unexpected '"parent_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\CategoryModel.php on line 100
 [23-Jul-2022 14:05:48 UTC] PHP Parse error:  syntax error, unexpected '"slug"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\CategoryModel.php on line 101
 [23-Jul-2022 14:06:41 UTC] PHP Notice:  Undefined property: CategoryModel::$id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\CategoriesController.php on line 94
+[24-Jul-2022 01:56:44 UTC] PHP Notice:  Undefined variable: result in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 106
+[24-Jul-2022 01:56:44 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 106
