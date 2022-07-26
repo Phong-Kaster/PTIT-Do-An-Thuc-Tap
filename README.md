@@ -441,6 +441,10 @@ tiếp tục
 - **25-07-2022**
 1. Dựng xong màn hình giỏ hàng và đổ dữ liệu vào.
 
+- **26-07-2022**
+1. Viết báo cáo thực tập cho thầy Hào - lần 1.
+2. Xử lý khi người dùng cập nhật số lượng sản phẩm thì tổng số tiền cũng thay đổi theo. (Không khó mà làm lâu vãi beep)
+
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)
