@@ -445,6 +445,10 @@ tiếp tục
 1. Viết báo cáo thực tập cho thầy Hào - lần 1.
 2. Xử lý khi người dùng cập nhật số lượng sản phẩm thì tổng số tiền cũng thay đổi theo. (Không khó mà làm lâu vãi beep)
 
+- **27-07-2022**
+1. Xử lý đồng bộ số lượng sản phẩm với tổng đơn giá.
+2. Dựng màn hình thanh toán & đổ 1 nửa dữ liệu vào.
+
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)
@@ -474,6 +478,10 @@ Nay ngủ cả buổi chiều mà sao giờ đã buồn ngủ thế nhỉ ? Thui
 
 Dựng xong màn hình giỏ hàng là thấy vui rồi 🤣🤣🤣. Phần Android đã xong được 3/4 chặng đường, chỉ còn màn hình cài đặt nữa là xong.
 Thui đi ngủ mai viết báo cáo cho thầy.
+
+[** 11:34 PM Wednesday, 27-07-2022 **](#)
+Hi vọng đến hết tuần này thì sẽ xong được hết Android. Mỏi mệt quá rồi 😥
+
 
 # [**Special Thank**](#our-team)
 

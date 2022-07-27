@@ -44,6 +44,8 @@ class LoginController extends Controller
                     "email" => $User->get("email"),
                     "first_name" => $User->get("first_name"),
                     "last_name" => $User->get("last_name"),
+                    "phone" => $User->get("phone"),
+                    "address" => $User->get("address"),
                     "role" => $User->get("role"),
                     "active" => (int)$User->get("active"),
                     "create_at" => $User->get("create_at"),

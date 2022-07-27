@@ -33,6 +33,10 @@
 	    	} else if (filter_var($uniqid, FILTER_VALIDATE_EMAIL)) {
 	    		$col = "email";
 	    	}
+			else 
+			{
+				$col = "phone";
+			}
 
 	    	if ($col) {
 		    	$query = DB::table(TABLE_PREFIX.TABLE_USERS)
@@ -68,6 +72,8 @@
 	    		"password" => "",
 	    		"first_name" => "",
 	    		"last_name" => "",
+				"phone" => "",
+				"address" => "",
 				"role" => "admin",
 				"active" => "1",
 				"create_at" => date("Y-m-d H:i:s"),
@@ -99,6 +105,8 @@
 		    		"password" => $this->get("password"),
 		    		"first_name" => $this->get("first_name"),
 		    		"last_name" => $this->get("last_name"),
+					"phone" => $this->get("phone"),
+					"address" => $this->get("address"),
 					"role" => $this->get("role"),
 					"active" => $this->get("active"),
 					"create_at" => date("Y-m-d H:i:s"),
@@ -128,6 +136,8 @@
 		    		"password" => $this->get("password"),
 		    		"first_name" => $this->get("first_name"),
 		    		"last_name" => $this->get("last_name"),
+					"phone" => $this->get("phone"),
+					"address" => $this->get("address"),
 					"role" => $this->get("role"),
 					"active" => $this->get("active"),
 					"create_at" => date("Y-m-d H:i:s"),

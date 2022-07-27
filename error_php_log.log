@@ -1273,3 +1273,29 @@ Stack trace:
 [23-Jul-2022 14:06:41 UTC] PHP Notice:  Undefined property: CategoryModel::$id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\CategoriesController.php on line 94
 [24-Jul-2022 01:56:44 UTC] PHP Notice:  Undefined variable: result in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 106
 [24-Jul-2022 01:56:44 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminOrdersController.php on line 106
+[27-Jul-2022 14:11:26 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminUsersController.php on line 182
+[27-Jul-2022 14:12:20 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0366253623' for key 'phone' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\UserModel.php(109): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\DataEntry.php(179): UserModel->insert()
+#5 D:\xampp\htdocs\PTI in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[27-Jul-2022 14:13:22 UTC] PHP Parse error:  syntax error, unexpected '}' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\UserModel.php on line 39
+[27-Jul-2022 14:13:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0366253623' for key 'phone' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\UserModel.php(113): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\DataEntry.php(179): UserModel->insert()
+#5 D:\xampp\htdocs\PTI in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[27-Jul-2022 14:14:00 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0366253623' for key 'phone' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\UserModel.php(113): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\DataEntry.php(179): UserModel->insert()
+#5 D:\xampp\htdocs\PTI in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152

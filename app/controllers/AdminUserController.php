@@ -68,6 +68,8 @@ class AdminUserController extends Controller
             "email"       => $User->get("email"),
             "first_name"   => $User->get("first_name"),
             "last_name"    => $User->get("last_name"),
+            "phone" => $User->get("phone"),
+            "address" => $User->get("address"),
             "active"    => (bool)$User->get("active"),
             "create_at" => $User->get("create_at"),
             "update_at" => $User->get("update_at")
@@ -180,6 +182,16 @@ class AdminUserController extends Controller
         $activeStatus = Input::put("active") == "true" ? 1 : 0;
 
 
+        $query = DB::table(TABLE_PREFIX.TABLE_USERS)
+                ->where(TABLE_PREFIX.TABLE_USERS.".phone", "=", Input::put("phone"));
+        
+        $result = $query->get();
+        if(count($result) > 0)
+        {
+            $this->resp->msg = __("This phone number is used by someone !");
+            $this->jsonecho();
+        }
+
 
         // Step 2.3 - only admin can change user's role
         $validAccount_type = ["admin", "member"];
@@ -204,6 +216,8 @@ class AdminUserController extends Controller
             /**Step 4 */
             $User->set("first_name", Input::put("first_name") )
                 ->set("last_name", Input::put("last_name") )
+                ->set("phone", Input::put("phone") )
+                ->set("address", Input::put("address") )
                 ->set("role", $account_type)
                 ->set("active", $activeStatus)
                 ->set("update_at", date("Y-m-d H:i:s"))
@@ -217,6 +231,8 @@ class AdminUserController extends Controller
                 "email" => $User->get("email"),
                 "first_name" => $User->get("first_name"),
                 "last_name" => $User->get("last_name"),
+                "phone" => $User->get("phone"),
+                "address" => $User->get("address"),
                 "role" => $User->get("role"),
                 "active" => $User->get("active"),
                 "create_at" => $User->get("create_at"),
@@ -278,6 +294,8 @@ class AdminUserController extends Controller
                 "email" => $User->get("email"),
                 "first_name" => $User->get("first_name"),
                 "last_name" => $User->get("last_name"),
+                "phone" => $User->get("phone"),
+                "address" => $User->get("address"),
                 "role" => $User->get("role"),
                 "active" => $User->get("active"),
                 "create_at" => $User->get("create_at"),

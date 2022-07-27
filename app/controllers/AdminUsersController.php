@@ -68,6 +68,8 @@ class AdminUsersController extends Controller
                             "password",
                             "first_name",
                             "last_name",
+                            "phone",
+                            "address",
                             "role",
                             "active",
                             "create_at",
@@ -80,6 +82,7 @@ class AdminUsersController extends Controller
                     {
                         $q->where(TABLE_PREFIX.TABLE_USERS.".first_name", 'LIKE', $search_query.'%')
                         ->orWhere(TABLE_PREFIX.TABLE_USERS.".last_name", 'LIKE', $search_query.'%')
+                        ->orWhere(TABLE_PREFIX.TABLE_USERS.".address", 'LIKE', $search_query.'%')
                         ->orWhere(TABLE_PREFIX.TABLE_USERS.".role", 'LIKE', $search_query.'%')
                         ->orWhere(TABLE_PREFIX.TABLE_USERS.".email", 'LIKE', $search_query.'%');
                     });     
@@ -109,6 +112,8 @@ class AdminUsersController extends Controller
                     "role" => $r->role,
                     "first_name" => $r->first_name,
                     "last_name" => $r->last_name,
+                    "phone" => $r->phone,
+                    "address" => $r->address,
                     "active" => (bool)$r->active,
                     "create_at" => $r->create_at,
                     "update_at" => $r->update_at
@@ -173,6 +178,15 @@ class AdminUsersController extends Controller
             $this->jsonecho();
         }
 
+        $query = DB::table(TABLE_PREFIX.TABLE_USERS)
+                ->where(TABLE_PREFIX.TABLE_USERS.".phone", "=", Input::post("phone"));
+        
+        $result = $query->get();
+        if(count($result) > 0)
+        {
+            $this->resp->msg = __("This phone number is used by someone !");
+            $this->jsonecho();
+        }
 
         /**Step 3 */
         
@@ -185,6 +199,8 @@ class AdminUsersController extends Controller
                 ->set("password",     $hashPassword)
                 ->set("first_name",    Input::post("first_name") )
                 ->set("last_name",     Input::post("last_name") )
+                ->set("phone",         Input::post("phone") )
+                ->set("address",       Input::post("address") )
                 ->set("role", Input::post("role"))
                 ->set("active",    $activeStatus)
                 ->set("create_at",         date("Y-m-d H:i:s"))
@@ -208,6 +224,8 @@ class AdminUsersController extends Controller
             "email" => $User->get("email"),
             "first_name" => $User->get("first_name"),
             "last_name" => $User->get("last_name"),
+            "phone" => $User->get("phone"),
+            "address" => $User->get("address"),
             "role" => $User->get("role"),
             "active" => $User->get("active"),
             "create_at" => $User->get("create_at"),
