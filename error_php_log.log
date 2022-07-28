@@ -1299,3 +1299,10 @@ Stack trace:
 #3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\UserModel.php(113): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
 #4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\DataEntry.php(179): UserModel->insert()
 #5 D:\xampp\htdocs\PTI in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[28-Jul-2022 14:44:49 UTC] PHP Notice:  Undefined variable: id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrderController.php on line 93
+[28-Jul-2022 14:44:49 UTC] PHP Notice:  Undefined variable: user_id in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrderController.php on line 94
+[28-Jul-2022 14:44:49 UTC] PHP Notice:  Undefined variable: description in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrderController.php on line 98
+[28-Jul-2022 14:44:49 UTC] PHP Notice:  Undefined variable: status in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrderController.php on line 99
+[28-Jul-2022 14:44:49 UTC] PHP Notice:  Undefined variable: total in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrderController.php on line 100
+[28-Jul-2022 14:44:49 UTC] PHP Notice:  Undefined variable: create_at in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrderController.php on line 101
+[28-Jul-2022 14:44:49 UTC] PHP Notice:  Undefined variable: update_at in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrderController.php on line 102

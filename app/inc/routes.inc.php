@@ -103,6 +103,7 @@ App::addRoute("GET","/products/[i:id]/?", "Product");
 
 /**************************ORDERS CONTROLLER*****************************/
 App::addRoute("GET|POST|PUT","/orders/?[*:id]/?", "Orders");
+App::addRoute("GET|POST", "/order-information/[*:id]/?", "Order");
 
 /**************************REVIEWS CONTROLLER*****************************/
 App::addRoute("POST|PUT|DELETE","/reviews/?[i:id]/?", "Reviews");

@@ -10,7 +10,7 @@
             }
             else if( $request_method === 'POST')
             {
-                $this->modifyOrder();
+                $this->modifyOrderContent();
             }
             else if( $request_method === 'PUT')
             {
@@ -171,7 +171,7 @@
          *      Situation 2: if product_id have existed then increase its quantity one unit
          *      Situation 3: if product_id doesn't exist then create a new order's content
          */
-        private function modifyOrder(){
+        private function modifyOrderContent(){
             /**Step 1 */
             $this->resp->result = 0;
             $Route = $this->getVariable("Route");

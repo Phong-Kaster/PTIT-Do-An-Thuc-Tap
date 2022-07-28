@@ -333,6 +333,8 @@ Trình tự xây dựng các controller của đồ án này, cái này các b�
 
 17. Categories Controller - lấy ra các danh mục và các thông tin liên quan của một danh mục
 
+18. Order Controller - sửa đổi thông tin người nhận hàng
+
 # [**Timeline**](#timeline)
 
 ## [**Phase 1: 29-06-2022 to 10-07-2022**](#phase-1-29-06-2022-to-10-07-2022)
@@ -449,6 +451,11 @@ tiếp tục
 1. Xử lý đồng bộ số lượng sản phẩm với tổng đơn giá.
 2. Dựng màn hình thanh toán & đổ 1 nửa dữ liệu vào.
 
+- **28-07-2022**
+1. Tạo Order controller để cho phép người dùng sửa thông tin người nhận.
+2. Dựng màn hình sửa thông tin người nhận và api gửi nhận thông tin.
+
+
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)
@@ -482,6 +489,8 @@ Thui đi ngủ mai viết báo cáo cho thầy.
 [** 11:34 PM Wednesday, 27-07-2022 **](#)
 Hi vọng đến hết tuần này thì sẽ xong được hết Android. Mỏi mệt quá rồi 😥
 
+[** 11:24 PM Thursday, 28-07-2022 **](#)
+Tự dưng tụt cảm xúc quá 😅. Không muốn làm nữa
 
 # [**Special Thank**](#our-team)
 
