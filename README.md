@@ -485,18 +485,21 @@ Còn phía quản trị viên chưa làm.
 
 Nay ngủ cả buổi chiều mà sao giờ đã buồn ngủ thế nhỉ ? Thui kệ tới sao thì tới.
 
-[**12:13 PM Tuesday, 26-07-2022 **](#)
+[**12:13 PM Tuesday, 26-07-2022**](#)
 
 Dựng xong màn hình giỏ hàng là thấy vui rồi 🤣🤣🤣. Phần Android đã xong được 3/4 chặng đường, chỉ còn màn hình cài đặt nữa là xong.
 Thui đi ngủ mai viết báo cáo cho thầy.
 
-[**11:34 PM Wednesday, 27-07-2022 **](#)
+[**11:34 PM Wednesday, 27-07-2022**](#)
+
 Hi vọng đến hết tuần này thì sẽ xong được hết Android. Mỏi mệt quá rồi 😥
 
-[**11:24 PM Thursday, 28-07-2022 **](#)
+[**11:24 PM Thursday, 28-07-2022**](#)
+
 Tự dưng tụt cảm xúc quá 😅. Không muốn làm nữa
 
 [**11:59 PM Friday, 29-07-2022**](#)
+
 95% rồi 🔥. Còn một chút nữa thôi. 
 
 # [**Special Thank**](#our-team)
