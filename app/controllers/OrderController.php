@@ -38,14 +38,36 @@
             $receiver_name = Input::post("receiver_name");
             $receiver_phone = Input::post("receiver_phone");
             $description = Input::post("description");
-            // $required_fields = ["receiver_phone","receiver_address","receiver_name"];
+            $total = Input::post("total") ? Input::post("total") : 0;// this is total amount of the order, not price of product
 
-            // foreach($required_fields as $field){
-            //     if( !Input::post($field) ){
-            //         $this->resp->msg = "Missing field ".$field;
-            //         $this->jsonecho();
-            //     }
-            // }
+            /**does order have any product ? if not, refuse update total amount of the order */
+            $query = DB::table(TABLE_PREFIX.TABLE_ORDERS_CONTENT)
+                        ->leftJoin(TABLE_PREFIX.TABLE_PRODUCTS, 
+                                TABLE_PREFIX.TABLE_PRODUCTS.".id",
+                                "=",
+                                TABLE_PREFIX.TABLE_ORDERS_CONTENT.".product_id")
+                        ->where(TABLE_PREFIX.TABLE_ORDERS_CONTENT.".order_id", "=", $Order->get("id"))
+                        ->select([
+                            DB::raw(TABLE_PREFIX.TABLE_ORDERS_CONTENT.".product_id"),
+                            DB::raw(TABLE_PREFIX.TABLE_PRODUCTS.".remaining"),
+                            DB::raw(TABLE_PREFIX.TABLE_ORDERS_CONTENT.".quantity"),
+                            DB::raw(TABLE_PREFIX.TABLE_PRODUCTS.".name as product_name")
+                        ]);
+                    
+            $result = $query->get();
+            if( count($result) == 0 && $total > 0 ){
+                $this->resp->msg = "Your order is empty now then can not update order's total amount !";
+                $this->jsonecho();
+            }
+
+            $required_fields = ["receiver_phone","receiver_address","receiver_name"];
+
+            foreach($required_fields as $field){
+                if( !Input::post($field) ){
+                    $this->resp->msg = "Missing field ".$field;
+                    $this->jsonecho();
+                }
+            }
 
             /**Step 2 - check phone number */
             if( strlen($receiver_phone) < 10 ){
@@ -84,6 +106,7 @@
                     ->set("receiver_address", $receiver_address)
                     ->set("receiver_name", $receiver_name)
                     ->set("description", $description)
+                    ->set("total", $total)
                     ->set("update_at", date("Y-m-d H:i:s"))
                     ->save();
 

@@ -455,6 +455,10 @@ tiếp tục
 1. Tạo Order controller để cho phép người dùng sửa thông tin người nhận.
 2. Dựng màn hình sửa thông tin người nhận và api gửi nhận thông tin.
 
+- **29-07-2022**
+1. Tinh chỉnh các sự kiện để khi nhấn giỏ hàng thì giỏ hàng tự động làm mới lại
+2. Thêm màn hình xác nhận đặt hàng thành công 
+3. Dựng màn hình cá nhân và các cài đặt quan trọng.
 
 # [**Post Script**](#post-script)
 

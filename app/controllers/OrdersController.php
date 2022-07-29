@@ -110,8 +110,8 @@
                 {
                     $id = generateUUID();
                     $user_id = $AuthUser->get("id");
-                    $receiver_phone = $AuthUser->get("receiver_phone");
-                    $receiver_address = $AuthUser->get("receiver_address");
+                    $receiver_phone = $AuthUser->get("phone");
+                    $receiver_address = $AuthUser->get("address");
                     $receiver_name = $AuthUser->get("first_name")." ".$AuthUser->get("last_name");
                     $description = "";
                     $status = "processing";
