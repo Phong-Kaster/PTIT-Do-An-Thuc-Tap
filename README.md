@@ -50,7 +50,7 @@
 # [**Database**](#database)
 
 <p align="center">
-    <img src="./photo/database-diagram.png" width="640" />
+    <img src="./photo/DoAnThucTap-Diagram.png" width="640" />
 </p>
 <h3 align="center">
 
@@ -459,6 +459,10 @@ tiếp tục
 1. Tinh chỉnh các sự kiện để khi nhấn giỏ hàng thì giỏ hàng tự động làm mới lại
 2. Thêm màn hình xác nhận đặt hàng thành công 
 3. Dựng màn hình cá nhân và các cài đặt quan trọng.
+
+- **30-07-2022**
+1. Viết báo cáo định kì lần 1 cho nhà trường 
+2. Viết báo cáo hàng tuần cho thầy Hào
 
 # [**Post Script**](#post-script)
 
