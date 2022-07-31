@@ -464,6 +464,11 @@ tiếp tục
 1. Viết báo cáo định kì lần 1 cho nhà trường 
 2. Viết báo cáo hàng tuần cho thầy Hào
 
+- **31-07-2022**
+1. Thêm chức năng tìm kiếm order bằng ID cho phía khách hàng 
+2. Tái tổ chức các chức năng trong order và orders để dễ đọc hơn
+3. Xong màn hình xem toàn bộ các giỏ hàng và xem chi tiết đơn hàng Android
+4. Tách riêng biệt việc lấy danh sách đơn hàng ra khỏi lấy một đơn hàng mới nhất 
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)
