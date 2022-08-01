@@ -89,6 +89,8 @@ class SignupController extends Controller
                 ->set("password", password_hash(Input::post("password"), PASSWORD_DEFAULT))
                 ->set("first_name", Input::post("first_name"))
                 ->set("last_name", Input::post("last_name"))
+                ->set("phone", "")
+                ->set("address","Vietnam")
                 ->set("role", "member")
                 ->set("active", 1)
                 ->set("create_at", date("Y-m-d H:i:s"))
@@ -96,10 +98,12 @@ class SignupController extends Controller
                 ->save();
 
             $data = array(
-                "id"    => $User->get("id"),
+                "id"    => (int)$User->get("id"),
                 "email" => $User->get("email"),
                 "first_name" => $User->get("first_name"),
                 "last_name" => $User->get("last_name"),
+                "phone" => $User->get("phone"),
+                "address" => $User->get("address"),
                 "role" => $User->get("role"),
                 "active" => $User->get("active"),
                 "create_at" => $User->get("create_at"),
@@ -113,7 +117,9 @@ class SignupController extends Controller
 
             // $jwt = Firebase\JWT\JWT::encode($payload, EC_SALT);
             $jwt = Firebase\JWT\JWT::encode($payload, EC_SALT, 'HS256');
-                
+            
+            //Email::sendNotification("new-user",$response=["user"=>$User,"password"=>Input::post("password")]);
+
             $this->resp->result = 1;
             $this->resp->msg = __("Your account has been created successfully!");
             $this->resp->accessToken = $jwt;

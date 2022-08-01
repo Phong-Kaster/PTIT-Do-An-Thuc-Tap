@@ -96,12 +96,20 @@ class Email extends PHPMailer{
      * @return boolen          Sending result
      */
     public function sendmail($content){
-        $html = self::getTemplate();
-        $html = str_replace("{{email_content}}", $content, $html);
+        try 
+        {
+            //code...
+            $html = self::getTemplate();
+            $html = str_replace("{{email_content}}", $content, $html);
 
-        $this->Body = $html;
-
-        return $this->send();
+            $this->Body = $html;
+            return $this->send();
+        } 
+        catch (\Exception $ex) 
+        {
+            print_r($ex->getMessage());
+        }
+        
     }
 
 

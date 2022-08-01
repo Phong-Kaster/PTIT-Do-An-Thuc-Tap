@@ -469,6 +469,10 @@ tiếp tục
 2. Tái tổ chức các chức năng trong order và orders để dễ đọc hơn
 3. Xong màn hình xem toàn bộ các giỏ hàng và xem chi tiết đơn hàng Android
 4. Tách riêng biệt việc lấy danh sách đơn hàng ra khỏi lấy một đơn hàng mới nhất 
+
+- **01-08-2022**
+1. Xong màn hình đăng kí tài khoản với email và mật khẩu
+2. Tìm hiểu lý thuyết về Oath 2.0
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)

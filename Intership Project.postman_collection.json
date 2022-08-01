@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "0f7491de-ae2c-42e1-a7c2-d246bf999422",
+		"_postman_id": "fc7969fc-0c42-4daa-8fa5-5d1d947db020",
 		"name": "Intership Project",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "4725791"
+		"_exporter_id": "18964045"
 	},
 	"item": [
 		{
@@ -51,7 +51,7 @@
 							"urlencoded": [
 								{
 									"key": "email",
-									"value": "phong1@gmail.com",
+									"value": "n18dccn147@student.ptithcm.edu.vn",
 									"type": "text"
 								},
 								{
@@ -121,7 +121,7 @@
 							"query": [
 								{
 									"key": "search",
-									"value": null
+									"value": ""
 								},
 								{
 									"key": "start",
@@ -129,7 +129,7 @@
 								},
 								{
 									"key": "length",
-									"value": null
+									"value": ""
 								},
 								{
 									"key": "order[dir]",
@@ -167,7 +167,7 @@
 							"urlencoded": [
 								{
 									"key": "email",
-									"value": "n18dccn148@student.ptithcm.edu.vn",
+									"value": "n18dccn149@student.ptithcm.edu.vn",
 									"type": "text"
 								},
 								{
@@ -183,6 +183,16 @@
 								{
 									"key": "role",
 									"value": "member",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0366253623",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "Germany",
 									"type": "text"
 								}
 							]
@@ -461,19 +471,19 @@
 								},
 								{
 									"key": "cpu",
-									"value": null
+									"value": ""
 								},
 								{
 									"key": "ram",
-									"value": null
+									"value": ""
 								},
 								{
 									"key": "graphicCard",
-									"value": null
+									"value": ""
 								},
 								{
 									"key": "rom",
-									"value": null
+									"value": ""
 								},
 								{
 									"key": "demand",
@@ -1283,15 +1293,15 @@
 								},
 								{
 									"key": "order[column]",
-									"value": null
+									"value": ""
 								},
 								{
 									"key": "length",
-									"value": null
+									"value": ""
 								},
 								{
 									"key": "start",
-									"value": null
+									"value": ""
 								}
 							]
 						}
@@ -1454,7 +1464,7 @@
 							"query": [
 								{
 									"key": "search",
-									"value": null
+									"value": ""
 								},
 								{
 									"key": "order[dir]",
@@ -1462,47 +1472,47 @@
 								},
 								{
 									"key": "order[column]",
-									"value": null
+									"value": ""
 								},
 								{
 									"key": "length",
-									"value": null
+									"value": ""
 								},
 								{
 									"key": "start",
-									"value": null
+									"value": ""
 								},
 								{
 									"key": "manufacturer",
-									"value": null
+									"value": ""
 								},
 								{
 									"key": "priceFrom",
-									"value": null
+									"value": ""
 								},
 								{
 									"key": "priceTo",
-									"value": null
+									"value": ""
 								},
 								{
 									"key": "screenSize",
-									"value": null
+									"value": ""
 								},
 								{
 									"key": "cpu",
-									"value": null
+									"value": ""
 								},
 								{
 									"key": "ram",
-									"value": null
+									"value": ""
 								},
 								{
 									"key": "graphicCard",
-									"value": null
+									"value": ""
 								},
 								{
 									"key": "rom",
-									"value": null
+									"value": ""
 								},
 								{
 									"key": "demand",
@@ -1544,7 +1554,7 @@
 			"name": "Client Order",
 			"item": [
 				{
-					"name": "Get Latest Order | AuthUser",
+					"name": "Get Order By ID | Auth User",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -1555,18 +1565,71 @@
 							},
 							{
 								"key": "Content-Type",
-								"value": "application/x-www-form-urlencoded",
+								"value": "application/json",
 								"type": "text"
 							}
 						],
 						"url": {
-							"raw": "{{ENDPOINT_URL}}/orders/",
+							"raw": "{{ENDPOINT_URL}}/order/e9c5cc56-d591-47",
 							"host": [
 								"{{ENDPOINT_URL}}"
 							],
 							"path": [
-								"orders",
-								""
+								"order",
+								"e9c5cc56-d591-47"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify Order Information | Auth User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "receiver_phone",
+									"value": "0977777777",
+									"type": "text"
+								},
+								{
+									"key": "receiver_address",
+									"value": "TP Hải Phòng, Việt Nam",
+									"type": "text"
+								},
+								{
+									"key": "receiver_name",
+									"value": "Nguyễn Thành Phong",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Chào chiến thắng !",
+									"type": "text"
+								},
+								{
+									"key": "total",
+									"value": "15499000",
+									"type": "text"
+								},
+								{
+									"key": "action",
+									"value": "orderInformation",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{ENDPOINT_URL}}/order/e9c5cc56-d591-47",
+							"host": [
+								"{{ENDPOINT_URL}}"
+							],
+							"path": [
+								"order",
+								"e9c5cc56-d591-47"
 							]
 						}
 					},
@@ -1600,17 +1663,22 @@
 									"key": "quantity",
 									"value": "1",
 									"type": "text"
+								},
+								{
+									"key": "action",
+									"value": "orderContent",
+									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "{{ENDPOINT_URL}}/orders/5ed3cb74-62c3-45",
+							"raw": "{{ENDPOINT_URL}}/order/e9c5cc56-d591-47",
 							"host": [
 								"{{ENDPOINT_URL}}"
 							],
 							"path": [
-								"orders",
-								"5ed3cb74-62c3-45"
+								"order",
+								"e9c5cc56-d591-47"
 							]
 						}
 					},
@@ -1632,13 +1700,106 @@
 							]
 						},
 						"url": {
-							"raw": "{{ENDPOINT_URL}}/orders/54f28c25-e360-43",
+							"raw": "{{ENDPOINT_URL}}/order/e9c5cc56-d591-47",
+							"host": [
+								"{{ENDPOINT_URL}}"
+							],
+							"path": [
+								"order",
+								"e9c5cc56-d591-47"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Client Orders",
+			"item": [
+				{
+					"name": "Get All Orders",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{ACCESS_TOKEN}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{ENDPOINT_URL}}/orders/?search=7&status=",
 							"host": [
 								"{{ENDPOINT_URL}}"
 							],
 							"path": [
 								"orders",
-								"54f28c25-e360-43"
+								""
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "7"
+								},
+								{
+									"key": "status",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get The Latest Order",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{ACCESS_TOKEN}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "action",
+									"value": "latestOrder",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{ENDPOINT_URL}}/latest-order/",
+							"host": [
+								"{{ENDPOINT_URL}}"
+							],
+							"path": [
+								"latest-order",
+								""
 							]
 						}
 					},
@@ -1825,7 +1986,7 @@
 					"query": [
 						{
 							"key": null,
-							"value": null,
+							"value": "",
 							"description": "Kiểm tra xem api có hoạt động hay không"
 						}
 					]
@@ -1857,12 +2018,12 @@
 	"variable": [
 		{
 			"key": "ENDPOINT_URL",
-			"value": "{{ENDPOINT_URL}}",
+			"value": "ENDPOINT_URL",
 			"type": "string"
 		},
 		{
 			"key": "ACCESS_TOKEN",
-			"value": "{{ACCESS_TOKEN}}",
+			"value": "ACCESS_TOKEN",
 			"type": "string"
 		}
 	]

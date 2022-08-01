@@ -120,3 +120,10 @@ Stack trace:
 [31-Jul-2022 14:48:47 UTC] PHP Notice:  Trying to get property 'create_at' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrderController.php on line 101
 [31-Jul-2022 14:48:47 UTC] PHP Notice:  Trying to get property 'update_at' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrderController.php on line 102
 [31-Jul-2022 14:49:19 UTC] PHP Warning:  count(): Parameter must be an array or an object that implements Countable in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrderController.php on line 83
+[01-Aug-2022 15:44:47 UTC] PHP Fatal error:  Uncaught Error: Call to private method Email::sendNewUserNotification() from context 'SignupController' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\SignupController.php:117
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\SignupController.php(21): SignupController->signup()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): SignupController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\SignupController.php on line 117
