@@ -11,6 +11,8 @@ return array(
     'Pixie' => array($vendorDir . '/usmanhalalit/pixie/src'),
     'PayPal' => array($vendorDir . '/paypal/rest-api-sdk-php/lib'),
     'Neutron' => array($vendorDir . '/neutron/temporary-filesystem/src'),
+    'Google_Service_' => array($vendorDir . '/google/apiclient-services/src'),
+    'Google_' => array($vendorDir . '/google/apiclient/src'),
     'FFMpeg' => array($vendorDir . '/php-ffmpeg/php-ffmpeg/src'),
     'Evenement' => array($vendorDir . '/evenement/evenement/src'),
     'Alchemy' => array($vendorDir . '/alchemy/binary-driver/src'),

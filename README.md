@@ -335,6 +335,8 @@ Trình tự xây dựng các controller của đồ án này, cái này các b�
 
 18. Order Controller - sửa đổi thông tin người nhận hàng
 
+19. Auth With Google Controller - tạo tài khoản bằng Google
+
 # [**Timeline**](#timeline)
 
 ## [**Phase 1: 29-06-2022 to 10-07-2022**](#phase-1-29-06-2022-to-10-07-2022)
@@ -473,6 +475,15 @@ tiếp tục
 - **01-08-2022**
 1. Xong màn hình đăng kí tài khoản với email và mật khẩu
 2. Tìm hiểu lý thuyết về Oath 2.0
+
+- **02-08-2022**
+1. Làm báo cáo thực tập định kì 1
+
+- **03-08-2022**
+1. Nộp báo cáo thực tập lần 1
+2. Thiết kế nút đăng nhập với Google cho Android
+3. Tạo controller Auth With Google để tạo tài khoản bằng Google 
+
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)

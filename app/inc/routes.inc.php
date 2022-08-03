@@ -39,7 +39,7 @@ App::addRoute("GET|POST", "/login/?", "Login");
 //  disable signup page. This might be useful in case 
 //  of self use of the script
 App::addRoute("GET|POST", "/".$langslug."?/signup/?", "Signup");
-
+App::addRoute("POST", "/login/google/?", "AuthWithGoogle");
 
 // Settings
 $settings_pages = [

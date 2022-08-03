@@ -28,29 +28,37 @@ class SignupController extends Controller
      */
     private function signup()
     {
-        /**Step 1 - declare required_fields */
+        /**Step 0 - declare required_fields */
         $this->resp->result = 0;
-        $required_fields  = [
+        
+        $required_fields  = array(
             "email", 
-            "password", "password-confirm",
-            "first_name", "last_name"
-        ];
+            "password", "password-confirm"
+        );
 
 
         foreach ($required_fields as $field) 
         {
             if (!Input::post($field)) {
-                $this->resp->msg = __("Missing field: " + $field);
+                $this->resp->msg = __("Missing field: ".$field);
                 $this->jsonecho();
             }
         }
 
+        /** Step 1 - declare variable to store value that HTTP sends us */
+        $email = strtolower(Input::post("email"));
+        $password = Input::post("password");
+        $firstName = Input::post("first_name") ? Input::post("first_name") : Input::post("email");
+        $lastName = Input::post("last_name") ? Input::post("last_name") : "";
 
+
+        /**Step 3 - filter email */
         if (!filter_var(Input::post("email"), FILTER_VALIDATE_EMAIL)) {
             $this->resp->msg = __("Email is not valid!");
             $this->jsonecho();
         } 
-        else {
+        else 
+        {
             $User = Controller::model("User", Input::post("email"));
             if ($User->isAvailable()) {
                 $this->resp->msg = __("This email is used by someone!");
@@ -82,13 +90,13 @@ class SignupController extends Controller
             $this->jsonecho();
         }
 
-       
+        
         try 
         {        
-            $User->set("email", strtolower(Input::post("email")))
-                ->set("password", password_hash(Input::post("password"), PASSWORD_DEFAULT))
-                ->set("first_name", Input::post("first_name"))
-                ->set("last_name", Input::post("last_name"))
+            $User->set("email", $email)
+                ->set("password", password_hash($password, PASSWORD_DEFAULT))
+                ->set("first_name", $firstName)
+                ->set("last_name", $lastName)
                 ->set("phone", "")
                 ->set("address","Vietnam")
                 ->set("role", "member")
@@ -128,7 +136,7 @@ class SignupController extends Controller
         } 
         catch (\Exception $ex) 
         {
-            $this->resp->msg = __("Oops! Something went wrong. Please try again!");
+            $this->resp->msg = $ex->getMessage();
         }
         $this->jsonecho();
     }

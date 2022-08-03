@@ -127,3 +127,68 @@ Stack trace:
 #2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
 #3 {main}
   thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\SignupController.php on line 117
+[03-Aug-2022 14:19:43 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\SignupController.php on line 43
+[03-Aug-2022 14:19:43 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\SignupController.php on line 43
+[03-Aug-2022 14:29:13 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\SignupController.php on line 43
+[03-Aug-2022 14:29:13 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\SignupController.php on line 43
+[03-Aug-2022 14:30:07 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\SignupController.php on line 43
+[03-Aug-2022 14:30:07 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\SignupController.php on line 43
+[03-Aug-2022 14:30:20 UTC] PHP Parse error:  syntax error, unexpected '{' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\SignupController.php on line 33
+[03-Aug-2022 14:31:09 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\SignupController.php on line 43
+[03-Aug-2022 14:31:09 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\SignupController.php on line 43
+[03-Aug-2022 14:31:25 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\SignupController.php on line 43
+[03-Aug-2022 14:31:25 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\SignupController.php on line 43
+[03-Aug-2022 14:35:10 UTC] PHP Parse error:  syntax error, unexpected ':' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\SignupController.php on line 48
+[03-Aug-2022 14:35:24 UTC] PHP Parse error:  syntax error, unexpected ':' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\SignupController.php on line 48
+[03-Aug-2022 15:21:42 UTC] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\SignupController.php on line 113
+[03-Aug-2022 16:31:30 UTC] PHP Fatal error:  Uncaught Error: Class 'AuthWithGoogleController' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:508
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(570): App->route()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 508
+[03-Aug-2022 16:32:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method AuthWithGoogleController::login() in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php:12
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AuthWithGoogleController->process()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 12
+[03-Aug-2022 16:32:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Google_Client' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php:28
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php(12): AuthWithGoogleController->loginWithGoogle()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AuthWithGoogleController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 28
+[03-Aug-2022 16:34:54 UTC] PHP Fatal error:  Uncaught Error: Class 'Google_Client' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php:28
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php(12): AuthWithGoogleController->loginWithGoogle()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AuthWithGoogleController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 28
+[03-Aug-2022 16:34:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Google_Client' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php:28
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php(12): AuthWithGoogleController->loginWithGoogle()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AuthWithGoogleController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 28
+[03-Aug-2022 16:37:23 UTC] PHP Fatal error:  Uncaught Error: Class 'Google_Client' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php:28
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php(12): AuthWithGoogleController->loginWithGoogle()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AuthWithGoogleController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 28
+[03-Aug-2022 16:43:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Google_Client' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php:28
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php(12): AuthWithGoogleController->loginWithGoogle()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AuthWithGoogleController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 28
+[03-Aug-2022 16:57:54 UTC] PHP Warning:  Use of undefined constant CLIENT_ID - assumed 'CLIENT_ID' (this will throw an Error in a future version of PHP) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 28
+[03-Aug-2022 16:58:36 UTC] PHP Warning:  Use of undefined constant CLIENT_ID - assumed 'CLIENT_ID' (this will throw an Error in a future version of PHP) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 28
+[03-Aug-2022 16:59:10 UTC] PHP Warning:  Use of undefined constant CLIENT_ID - assumed 'CLIENT_ID' (this will throw an Error in a future version of PHP) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 27
+[03-Aug-2022 16:59:10 UTC] PHP Warning:  Use of undefined constant CLIENT_ID - assumed 'CLIENT_ID' (this will throw an Error in a future version of PHP) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 28
