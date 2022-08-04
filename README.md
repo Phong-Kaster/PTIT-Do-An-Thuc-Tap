@@ -484,6 +484,10 @@ tiếp tục
 2. Thiết kế nút đăng nhập với Google cho Android
 3. Tạo controller Auth With Google để tạo tài khoản bằng Google 
 
+- **04-08-2022**
+1. Hoàn thiện tính năng đăng nhập bằng tài khoản Google cho cả API & Android
+2. Nút mua ngay trong Android
+
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)

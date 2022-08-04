@@ -237,8 +237,8 @@ class App
                 $accessToken = $matches[1];
                 
                 try {
-                    // $decoded = Firebase\JWT\JWT::decode($accessToken, EC_SALT, array('HS256'));
-                    $decoded = Firebase\JWT\JWT::decode($accessToken, new Firebase\JWT\Key(EC_SALT, 'HS256'));
+                    $decoded = Firebase\JWT\JWT::decode($accessToken, EC_SALT, array('HS256'));
+                    //$decoded = Firebase\JWT\JWT::decode($accessToken, new Firebase\JWT\Key(EC_SALT, 'HS256'));
                     $User = Controller::Model("User", $decoded->id);
                     
                     if (isset($decoded->hashPass) && $User->isAvailable() 

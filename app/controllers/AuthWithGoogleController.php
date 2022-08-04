@@ -18,7 +18,7 @@
             /**Step 0 - declare required_fields */
             $this->resp->result = 0;
             $id_token = Input::post("id_token");
-
+            $msg = "Login with Google account successfully !";
 
             if( !$id_token )
             {
@@ -27,7 +27,8 @@
             }
             $client = new Google_Client(['client_id' => CLIENT_ID]);  // Specify the CLIENT_ID of the app that accesses the backend
 
-            try {
+            try 
+            {
                 $payload = $client->verifyIdToken($id_token);
               } catch (Exception $ex) {
                 $this->resp->msg = __("Oops! Something went wrong. Please try again!");
@@ -40,75 +41,87 @@
               }
       
               $email = $payload['email'];
-              $firstname = $payload['given_name'];
-              $lastname = $payload['family_name'];
-              $picture = $payload['picture'];
+              $firstName = $payload['given_name'];
+              $lastName = $payload['family_name'];
+              //$picture = $payload['picture'];
       
-             
-              $this->resp->result = 1;
-              $this->resp->email = $email;
-              $this->resp->firs_tname= $firstname;
-              $this->resp->last_name=$lastname;
-              $this->resp->picture=$picture;
-              $this->jsonecho();
-      
-            //   try 
-            //   {        
-            //     $User = Controller::model("User", $email);
-      
-            //     if (!$User->isAvailable()) 
-            //     {
-            //       $tempname = uniqid();
-            //       $ext = "png";
-          
-            //       $filepath = UPLOAD_PATH . "/" . $tempname . "." .$ext;
-            //       download_image($picture, $filepath);
-                  
-            //       $User->set("email", $email)
-            //           ->set("password", password_hash(uniqid(), PASSWORD_DEFAULT))
-            //           ->set("firstname", $firstname)
-            //           ->set("lastname", $lastname)
-            //           ->set("avatar", $tempname . "." .$ext)
-            //           ->set("is_active", 1)
-            //           ->save();
-            //     }
+            
+              try 
+              {        
+                $User = Controller::model("User", $email);
                 
-            //     if( !$User->get("is_active") ){
-            //       $this->resp->msg = __("Account is banned!");
-            //       $this->jsonecho();
-            //     }
+                /**if user does not exist */
+                if (!$User->isAvailable()) 
+                {
+                
+                    /**store and set up avatar */
+                    //   $tempname = uniqid();
+                    //   $ext = "png";
+                
+                    //   $filepath = UPLOAD_PATH . "/" . $tempname . "." .$ext;
+                    //   download_image($picture, $filepath);
                   
-            //     $data = array(
-            //         "account_type" => $User->get("account_type"),
-            //         "email" => $User->get("email"),
-            //         "firstname" => $User->get("firstname"),
-            //         "lastname" => $User->get("lastname"),
-            //         "avatar" => $User->get("avatar"),
-            //         "id" => (int)$User->get("id"),
-            //         "is_active" => (bool)$User->get("is_active"),
-            //         "date" => $User->get("date"),
-            //     );
+                    //   $User->set("email", $email)
+                    //       ->set("password", password_hash(uniqid(), PASSWORD_DEFAULT))
+                    //       ->set("first_name", $firstname)
+                    //       ->set("last_name", $lastname)
+                    //       ->set("avatar", $tempname . "." .$ext)
+                    //       ->set("is_active", 1)
+                    //       ->save();
+
+                    $msg = __("Your account has been created successfully!");
+                    
+                    $User->set("email", $email)
+                            ->set("password", password_hash(uniqid(), PASSWORD_DEFAULT))
+                            ->set("first_name", $firstName)
+                            ->set("last_name", $lastName)
+                            ->set("phone", "")
+                            ->set("address","Vietnam")
+                            ->set("role", "member")
+                            ->set("active", 1)
+                            ->set("create_at", date("Y-m-d H:i:s"))
+                            ->set("update_at", date("Y-m-d H:i:s"))
+                            ->save();
+                }
+                
+                /**if user is inactive */
+                if( $User->get("active") == 0 ){
+                  $this->resp->msg = __("Account is inactive!");
+                  $this->jsonecho();
+                }
+                
+                /**prepare data to send back */
+                $data = array(
+                    "id"    => (int)$User->get("id"),
+                    "email" => $User->get("email"),
+                    "first_name" => $User->get("first_name"),
+                    "last_name" => $User->get("last_name"),
+                    "phone" => $User->get("phone"),
+                    "address" => $User->get("address"),
+                    "role" => $User->get("role"),
+                    "active" => (int)$User->get("active"),
+                    "create_at" => $User->get("create_at"),
+                    "update_at" => $User->get("update_at")
+                );
       
-            //     $payload = $data;
+                $payload = $data;
       
-            //     $payload["hashPass"] = md5($User->get("password"));
-            //     $payload["iat"] = time();
-            //     $jwt = Firebase\JWT\JWT::encode($payload, MP_SALT);
+                $payload["hashPass"] = md5($User->get("password"));
+                $payload["iat"] = time();
+                // $jwt = Firebase\JWT\JWT::encode($payload, EC_SALT);
+                $jwt = Firebase\JWT\JWT::encode($payload, EC_SALT, 'HS256');
       
-            //     $this->resp->result = 1;
-            //     $this->resp->accessToken = $jwt;
-            //     $this->resp->data = $data;
-            //     $this->resp->msg = __("Your account has been created successfully!");
-            //   } 
-            //   catch (\Exception $ex) 
-            //   {
-            //       $this->resp->msg = __("Oops! Something went wrong. Please try again!");
-            //       $this->jsonecho();
-            //   }
-      
-            //   $this->resp->result = 1;
-            //   $this->resp->msg = __("Login is success!");
-            //   $this->jsonecho();
+                $this->resp->result = 1;
+                $this->resp->msg = $msg;
+                $this->resp->accessToken = $jwt;
+                $this->resp->data = $data;
+                
+              } 
+              catch (\Exception $ex) 
+              {
+                  $this->resp->msg = __("Oops! Something went wrong. Please try again!");
+              }
+              $this->jsonecho();
             
         }
     }

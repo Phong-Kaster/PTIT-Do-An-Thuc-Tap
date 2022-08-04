@@ -32,12 +32,12 @@
 
             foreach($result as $element){
                 $data = array(
-                    "id" => $element->id,
+                    "id" => (int)$element->id,
                     "email" => $element->email,
                     "first_name" => $element->first_name,
                     "last_name" => $element->last_name,
                     "role" => $element->role,
-                    "active" => $element->active,
+                    "active" => (int)$element->active,
                     "create_at" => $element->create_at,
                     "update_at" => $element->update_at
                 );

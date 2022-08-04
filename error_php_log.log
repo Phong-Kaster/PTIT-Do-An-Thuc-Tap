@@ -192,3 +192,75 @@ Stack trace:
 [03-Aug-2022 16:58:36 UTC] PHP Warning:  Use of undefined constant CLIENT_ID - assumed 'CLIENT_ID' (this will throw an Error in a future version of PHP) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 28
 [03-Aug-2022 16:59:10 UTC] PHP Warning:  Use of undefined constant CLIENT_ID - assumed 'CLIENT_ID' (this will throw an Error in a future version of PHP) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 27
 [03-Aug-2022 16:59:10 UTC] PHP Warning:  Use of undefined constant CLIENT_ID - assumed 'CLIENT_ID' (this will throw an Error in a future version of PHP) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 28
+[04-Aug-2022 14:36:20 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\Key' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:241
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(554): App->auth()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 241
+[04-Aug-2022 14:36:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\Key' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:241
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(554): App->auth()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 241
+[04-Aug-2022 14:37:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\Key' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:241
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(554): App->auth()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 241
+[04-Aug-2022 14:38:57 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\Key' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:241
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(554): App->auth()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 241
+[04-Aug-2022 14:39:24 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\Key' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:241
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(554): App->auth()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 241
+[04-Aug-2022 14:40:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\Key' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:241
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(554): App->auth()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 241
+[04-Aug-2022 14:41:54 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\Key' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:241
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(554): App->auth()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 241
+[04-Aug-2022 14:42:08 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\Key' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:241
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(554): App->auth()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 241
+[04-Aug-2022 14:51:15 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\Key' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:241
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(554): App->auth()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 241
+[04-Aug-2022 15:06:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\Key' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:241
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(554): App->auth()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 241
+[04-Aug-2022 15:08:59 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\Key' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:241
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(554): App->auth()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 241
+[04-Aug-2022 15:13:27 UTC] PHP Fatal error:  Uncaught Error: Class 'Firebase\JWT\Key' not found in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php:241
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(554): App->auth()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#2 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php on line 241
