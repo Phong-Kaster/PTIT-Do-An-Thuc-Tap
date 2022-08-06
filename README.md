@@ -488,6 +488,11 @@ tiếp tục
 1. Hoàn thiện tính năng đăng nhập bằng tài khoản Google cho cả API & Android
 2. Nút mua ngay trong Android
 
+- **05-08-2022**
+
+- **06-08-2022**
+1. Xong tính năng chỉnh sửa thông tin cá nhân
+
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)
