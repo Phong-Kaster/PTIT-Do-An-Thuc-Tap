@@ -63,14 +63,14 @@
             $this->resp->msg = "Get Order by id successfully !";
             $this->resp->data =  array(
                 "id"   => $Order->get("id"),
-                "user_id" => $Order->get("user_id"),
+                "user_id" => (int)$Order->get("user_id"),
                 "receiver_phone" => $Order->get("receiver_phone"),
                 "receiver_address" => $Order->get("receiver_address"),
                 "receiver_name" => $Order->get("receiver_name"),
                 "description" =>  $Order->get("description"),
                 "description" => $Order->get("description"),
                 "status" => $Order->get("status"),
-                "total" => $Order->get("total"),
+                "total" => (int)$Order->get("total"),
                 "create_at" => $Order->get("create_at"),
                 "update_at" => $Order->get("update_at")
             );
@@ -321,7 +321,7 @@
             $invalid_status = ["being transported","delivered","verified"];
             $current_status = $Order->get("status");
             if( in_array($current_status, $invalid_status)){
-                $this->resp->msg = "This order can not be delete when being transported !";
+                $this->resp->msg = "This order status is ".$current_status." and can't do this action";
                 $this->jsonecho();
             }
 
@@ -332,6 +332,7 @@
                             TABLE_PREFIX.TABLE_ORDERS_CONTENT.".order_id",
                             "=",
                             TABLE_PREFIX.TABLE_ORDERS.".id")
+                        ->where(TABLE_PREFIX.TABLE_ORDERS.".id", "=", $Route->params->id)
                         ->select([
                             TABLE_PREFIX.TABLE_ORDERS_CONTENT.".id"
                         ]);

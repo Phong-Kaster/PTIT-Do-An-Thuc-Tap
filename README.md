@@ -493,6 +493,12 @@ tiếp tục
 - **06-08-2022**
 1. Xong tính năng chỉnh sửa thông tin cá nhân
 
+- **07-08-2022**
+1. Admin - Thiết kế màn hình quản lý danh sách đơn hàng
+2. Admin - Nút xóa đơn nếu đơn hàng đó rỗng 
+
+- **08-08-2022**
+1. Admin - Thiết kế màn hình sửa thông tin của đơn hàng.
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)

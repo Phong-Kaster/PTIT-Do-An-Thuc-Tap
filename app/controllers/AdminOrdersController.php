@@ -58,6 +58,7 @@
                         $q->where(TABLE_PREFIX.TABLE_ORDERS.".receiver_name", 'LIKE', $search_query.'%')
                         ->orWhere(TABLE_PREFIX.TABLE_ORDERS.".receiver_phone", 'LIKE', $search_query.'%')
                         ->orWhere(TABLE_PREFIX.TABLE_ORDERS.".receiver_address", "LIKE", $search_query.'%')
+                        ->orWhere(TABLE_PREFIX.TABLE_ORDERS.".status", "LIKE", $search_query.'%')
                         ->orWhere(TABLE_PREFIX.TABLE_ORDERS.".description", "LIKE", $search_query.'%');
                     }); 
                 }
