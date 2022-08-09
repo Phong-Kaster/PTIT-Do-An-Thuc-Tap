@@ -275,17 +275,20 @@
                     ->set("status", $status)
                     ->save();
 
-                $this->resp->result = 0;
+                $this->resp->result = 1;
                 $this->resp->msg = "Order is modified successfully !";
                 $this->resp->data = array(
-                    "id" => $Order->get("id"),
+                    "id"   => $Order->get("id"),
                     "user_id" => (int)$Order->get("user_id"),
-                    "receiver_name"=> $Order->get("receiver_name"),
-                    "receiver_address"=> $Order->get("receiver_address"),
-                    "receiver_phone"=> $Order->get("receiver_phone"),
-                    "description"=> $Order->get("description"),
-                    "status"=> $Order->get("status"),
-                    "update_at"=> $Order->get("update_at")
+                    "receiver_phone" => $Order->get("receiver_phone"),
+                    "receiver_address" => $Order->get("receiver_address"),
+                    "receiver_name" => $Order->get("receiver_name"),
+                    "description" =>  $Order->get("description"),
+                    "description" => $Order->get("description"),
+                    "status" => $Order->get("status"),
+                    "total" => (int)$Order->get("total"),
+                    "create_at" => $Order->get("create_at"),
+                    "update_at" => $Order->get("update_at")
                 );
             } 
             catch (\Exception $ex) {

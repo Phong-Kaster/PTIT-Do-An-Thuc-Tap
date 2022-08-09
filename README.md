@@ -499,6 +499,12 @@ tiếp tục
 
 - **08-08-2022**
 1. Admin - Thiết kế màn hình sửa thông tin của đơn hàng.
+2. Admin - Xong chức năng sửa thông tin đơn hàng - lâu vl
+
+- **09-08-2022**
+1. Admin - Dựng màn hình thay đổi nội dung đơn hàng 
+2. Admin - Viết ViewModel + Repository cho chức năng thay đổi nội dung đơn hàng
+
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)
