@@ -504,7 +504,19 @@ tiếp tục
 - **09-08-2022**
 1. Admin - Dựng màn hình thay đổi nội dung đơn hàng 
 2. Admin - Viết ViewModel + Repository cho chức năng thay đổi nội dung đơn hàng
+3. Admin - Thay đổi nội dung của giỏ hàng - bao gồm thay đổi số lượng - xóa - thêm mới sản phẩm vào giỏ hàng
 
+- **10-09-2022**
+1. Admin - Thêm mới một đơn hàng
+
+- **11-08-2022**
+1. Admin - màn hình quản lý danh sách sản phẩm
+
+- **12-08-2022**
+1. Nằm đắp chăn bật quạt
+
+- **13-08-2022**
+1. Admin - Dựng màn hình tìm kiếm sản phẩm nâng cao
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)

@@ -80,6 +80,10 @@
                     }else{
                         $query->orderBy($column_name, $sort);
                     }
+                }
+                else 
+                {
+                    $query->orderBy("update_at", "desc");
                 } 
 
                 /**Step 2.3 - length filter * start filter*/

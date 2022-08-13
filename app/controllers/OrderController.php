@@ -3,8 +3,17 @@
     {
         public function process()
         {
+            $AuthUser = $this->getVariable("AuthUser");
             $method = Input::method();
             $Route = $this->getVariable("Route");
+
+
+            if( !$AuthUser )
+            {
+                $this->resp->result = 0;
+                $this->resp->msg = "There is no authenticated user !";
+                $this->jsonecho();
+            }
 
             if( !isset($Route->params->id) )
             {
@@ -74,7 +83,7 @@
             }
 
             $query = DB::table(TABLE_PREFIX.TABLE_ORDERS)
-                    ->where(TABLE_PREFIX.TABLE_ORDERS.".user_id", "=", $AuthUser->get("id"))
+                    // ->where(TABLE_PREFIX.TABLE_ORDERS.".user_id", "=", $AuthUser->get("id"))
                     ->where(TABLE_PREFIX.TABLE_ORDERS.".id", "=", $Route->params->id)
                     ->select("*");
                 

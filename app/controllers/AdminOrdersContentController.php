@@ -77,7 +77,7 @@
 
                 foreach($result as $element){
                     $data[] = array(
-                        "id" => $element->id,
+                        "id" => (int)$element->id,
                         "product_id" => (int)$element->product_id,
                         "product_name" => $element->product_name,
                         "product_avatar" => $this->getAvatar($element->id),
@@ -263,7 +263,7 @@
             {     
                 $this->resp->result = 1;
                 $this->resp->msg = "Order content have been modified successfully !";
-                $this->resp->total = $Order->get("total");
+                $this->resp->total = (int)$Order->get("total");
                 $this->resp->update_at = $Order->get("update_at");
                 $this->resp->data = $data;
             } 
