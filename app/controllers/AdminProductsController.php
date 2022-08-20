@@ -150,6 +150,10 @@
                     }else{
                         $query->orderBy($column_name, $sort);
                     }
+                }
+                else 
+                {
+                    $query->orderBy("id", "desc");    
                 }  
                         
 
@@ -163,14 +167,18 @@
                 foreach($res as $element){
 
                     $avatar = $this->getAvatar($element->id);
-                    // $avatar = "";
+                    /**this will be main solution when API go public 
+                     * At the moment, however, we just send the name of image 
+                     * to be suitable for Android application.
+                     */
+                    // $avatar = "$avatar ? $avatar : UPLOAD_URL."/default.png"";
 
                     $data[] = array(
-                        "id"            => $element->id,
+                        "id"            => (int)$element->id,
                         "name"          => $element->name,
-                        "remaining"     => $element->remaining,
+                        "remaining"     => (int)$element->remaining,
                         "manufacturer"  => $element->manufacturer,
-                        "price"         => $element->price,
+                        "price"         => (int)$element->price,
                         "screen_size"   => $element->screen_size,
                         "cpu"           => $element->cpu,
                         "ram"           => $element->ram,
@@ -178,7 +186,7 @@
                         "rom"           => $element->rom,
                         "demand"        => $element->demand,
                         "content"       => $element->content,
-                        "avatar"        => $avatar ? $avatar : UPLOAD_PATH."./default.png"
+                        "avatar"        => $avatar ? $avatar : "default.png"
                     );
                 }
 
@@ -355,15 +363,22 @@
             $tempres = [];
             $result = "";
 
+
+            /**this will be main solution when API go public 
+             * At the moment, however, we just send the name of image 
+             * to be suitable for Android application.
+             */
+            // $avatar = "$avatar ? $avatar : UPLOAD_URL."/default.png"";
+            /**$result = UPLOAD_PATH."/default.png"; */
             if( count($res) > 0 ){
                 foreach($res as $r){
                     $tempres[] = $r->path;
                 }
 
-                $result = UPLOAD_PATH."/".$tempres[0];
+                $result = $tempres[0];
             }
             else{
-                $result = UPLOAD_PATH."/default.png";
+                $result = "default.png";
             }
 
 

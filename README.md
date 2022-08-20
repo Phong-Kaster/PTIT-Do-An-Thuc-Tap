@@ -517,6 +517,30 @@ tiếp tục
 
 - **13-08-2022**
 1. Admin - Dựng màn hình tìm kiếm sản phẩm nâng cao
+
+- **14-08-2022**
+1. Admin - Sửa chi tiết sản phẩm
+2. Admin - Thêm mới sản phẩm
+
+- **15-08-2022**
+1. Viết báo cáo thực tập lần 2
+
+- **16-08-2022**
+1. Hoàn thiện báo cáo thực tập lần 2
+
+- **17-08-2022**
+1. Hoàn thiện báo cáo thực tập lần 2 & nộp 
+
+- **18-08-2022**
+1. Thêm nút hủy đơn hàng cho giỏ hàng của phía người dùng
+
+- **19-08-2022**
+1. Đi party tại công ty, say sml 😵
+
+- **20-08-2022**
+1. Thiết kế danh sách hình ảnh sản phẩm 
+2. Nút xóa một ảnh sản phẩm
+3. Nút cài một hình làm mặc định
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)

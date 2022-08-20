@@ -64,7 +64,7 @@
 
             foreach($result as $element){
                 $photos[] = array(
-                    "id" => $element->id,
+                    "id" => (int)$element->id,
                     "path"=> $element->path,
                     "is_avatar"=>(int)$element->is_avatar
                 );
@@ -137,13 +137,13 @@
             /**Step 4 - verification */
             /**Step 4.1 - name */
             $name = Input::put("name");
-            if($name){
-                $Product = Controller::model("Product", $name);
-                if( $Product->isAvailable() ){
-                    $this->resp->msg = "There is another product having the same name !";
-                    $this->jsonecho();
-                }
-            }
+            // if($name){
+            //     $Product = Controller::model("Product", $name);
+            //     if( $Product->isAvailable() ){
+            //         $this->resp->msg = "There is another product having the same name !";
+            //         $this->jsonecho();
+            //     }
+            // }
             
             $remaining = Input::put("remaining");
 

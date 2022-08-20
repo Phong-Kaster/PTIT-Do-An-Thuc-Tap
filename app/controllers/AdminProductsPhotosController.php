@@ -81,16 +81,17 @@
 
                 $data = [];
 
+                /**"path" => UPLOAD_PATH."/".$element->path, */
                 foreach($result as $element){
                     $data[] = array(
-                        "id" => $element->id,
-                        "path" => UPLOAD_PATH."/".$element->path,
-                        "is_avatar" => $element->is_avatar
+                        "id" => (int)$element->id,
+                        "path" => $element->path,
+                        "is_avatar" => (int)$element->is_avatar
                     );
                 }
 
                 $this->resp->result = 1;
-                $this->resp->product_id = $Product->get("id");
+                $this->resp->product_id = (int)$Product->get("id");
                 $this->resp->data = $data;
             } 
             catch (\Exception $ex) {
@@ -158,6 +159,7 @@
             /**Step 5 - if the uploaded photo is set as avatar, other photos will be not avatar */
             if($is_avatar == 1){
                 $query = DB::table(TABLE_PREFIX.TABLE_PRODUCTS_PHOTO)
+                        ->where(TABLE_PREFIX.TABLE_PRODUCTS_PHOTO.".product_id", "=", $Route->params->product_id)
                         ->update(array(
                             "is_avatar" => 0
                         ));
@@ -174,13 +176,14 @@
 
             $this->resp->result = 1;
             $this->resp->msg = __("Upload successful");
-            $this->resp->image = $tempname . "." .$ext;
             $this->jsonecho();
         }
 
 
         /**
          * @author Phong-Kaster
+         * set default avatar
+         * 
          * update photo's status (is_avatar)
          * is_avatar = 1 means the default avatar of product
          * is_avatar = 0 means not the default avatar of product
@@ -224,15 +227,25 @@
             try 
             {
                 $is_avatar = Input::put("is_avatar") ? Input::put("is_avatar") : 0;
-
+                
+                /**set photo_id as default avatar */
                 $query = DB::table(TABLE_PREFIX.TABLE_PRODUCTS_PHOTO)
+                        ->where(TABLE_PREFIX.TABLE_PRODUCTS_PHOTO.".product_id", "=", $Route->params->product_id)
                         ->where(TABLE_PREFIX.TABLE_PRODUCTS_PHOTO.".id", "=", $Route->params->photo_id)
                         ->update(array(
-                            "is_avatar" => $is_avatar
+                            "is_avatar" => 1
                         ));
+                
+                /**set pther photos as not default avatar */
+                $query = DB::table(TABLE_PREFIX.TABLE_PRODUCTS_PHOTO)
+                    ->where(TABLE_PREFIX.TABLE_PRODUCTS_PHOTO.".product_id", "=", $Route->params->product_id)
+                    ->where(TABLE_PREFIX.TABLE_PRODUCTS_PHOTO.".id", "!=", $Route->params->photo_id)
+                    ->update(array(
+                        "is_avatar" => 0
+                    ));
 
                 $this->resp->result = 1;
-                $this->resp->msg = "Update photo's status successfully !";
+                $this->resp->msg = "Set default avatar successfully !";
             } 
             catch (\Exception $ex) 
             {

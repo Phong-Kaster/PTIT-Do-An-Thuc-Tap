@@ -30,7 +30,12 @@
                 $this->jsonecho();
             }
 
-            
+            $order          = Input::get("order");
+            $search         = Input::get("search");
+            $length         = Input::get("length") ? (int)Input::get("length") : 10;
+            $start          = Input::get("start") ? (int)Input::get("start") : 0;
+            $status         = Input::get("status");
+
 
             try 
             {
@@ -38,7 +43,7 @@
                     ->where(TABLE_PREFIX.TABLE_ORDERS.".user_id", "=", $AuthUser->get("id"))
                     ->select("*");
 
-                $search = Input::get("search");
+                
                 $search_query = trim( (string)$search );
                 if($search_query){
                     $query->where(function($q) use($search_query)
@@ -50,7 +55,7 @@
                 }
 
 
-                $status = Input::get("status");
+
                 if( $status )
                 {
                     $valid_status = ["processing", "verified", "packed", "being transported", "delivered", "cancel"];
@@ -63,6 +68,33 @@
                     $query->where(TABLE_PREFIX.TABLE_ORDERS.".status", "=", $status);
                 }
 
+                /**Step 2.2 - orderBy filter */
+                if( $order && isset($order["column"]) && isset($order["dir"]))
+                {
+                    $type = $order["dir"];
+                    $validType = ["asc","desc"];
+                    $sort =  in_array($type, $validType) ? $type : "desc";
+
+
+                    $column_name = trim($order["column"]) != "" ? trim($order["column"]) : "id";
+                    $column_name = str_replace(".", "_", $column_name);
+    
+
+                    if(in_array($column_name, ["receiver_name", "receiver_description", "receiver_phone"])){
+                        $query->orderBy(DB::raw($column_name. " * 1"), $sort);
+                    }else{
+                        $query->orderBy($column_name, $sort);
+                    }
+                }
+                else 
+                {
+                    $query->orderBy("update_at", "desc");
+                } 
+
+
+
+                /**Step 2.3 - length filter * start filter*/
+                $query->limit($length ? $length : 10)->offset($start ? $start : 0);
                 $result = $query->get();
                 $quantity = count($result);
 
