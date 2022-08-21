@@ -110,15 +110,24 @@
             $this->resp->result = 0;
             $Route = $this->getVariable("Route");
 
-            if( !$Route->params->product_id ){
-                $this->resp->msg = "ID is required !";
+            // if( !$Route->params->product_id ){
+            //     $this->resp->msg = "ID is required !";
+            //     $this->jsonecho();
+            // }
+
+            if( !Input::post("product_id") )
+            {
+                $this->resp->msg = "Product ID is required !";
                 $this->jsonecho();
             }
 
+
             $is_avatar = Input::post("is_avatar") ? Input::post("is_avatar") : 0;
+            $productId = Input::post("product_id");
 
 
-            $Product = Controller::model("Product", $Route->params->product_id);
+
+            $Product = Controller::model("Product", $productId);
             if( !$Product->isAvailable()){
                 $this->resp->msg = "The product doesn't exist !";
                 $this->jsonecho();
@@ -127,7 +136,7 @@
 
             /**Step 2 - check if file is received or not */
             if (empty($_FILES["file"]) || $_FILES["file"]["size"] <= 0) {
-                $this->resp->msg = __("Photo is not received!");
+                $this->resp->msg = "Photo is not received!";
                 $this->jsonecho();
             }
 
@@ -159,7 +168,7 @@
             /**Step 5 - if the uploaded photo is set as avatar, other photos will be not avatar */
             if($is_avatar == 1){
                 $query = DB::table(TABLE_PREFIX.TABLE_PRODUCTS_PHOTO)
-                        ->where(TABLE_PREFIX.TABLE_PRODUCTS_PHOTO.".product_id", "=", $Route->params->product_id)
+                        ->where(TABLE_PREFIX.TABLE_PRODUCTS_PHOTO.".product_id", "=", $productId)
                         ->update(array(
                             "is_avatar" => 0
                         ));
@@ -167,7 +176,7 @@
             
             /**Step 6 - create a record to the product */
             $ProductsPhoto = Controller::model("ProductsPhoto" );
-            $ProductsPhoto->set("product_id", $Route->params->product_id)
+            $ProductsPhoto->set("product_id", $productId)
                         ->set("path", $tempname.".".$ext)
                         ->set("is_avatar", $is_avatar )
                         ->save();

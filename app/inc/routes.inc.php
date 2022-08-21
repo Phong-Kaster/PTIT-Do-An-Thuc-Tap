@@ -73,7 +73,7 @@ App::addRoute("GET|PUT|DELETE", "/admin/products/[i:id]/?","AdminProduct");
 
 /**************************PRODUCTS PHOTO CONTROLLER*****************************/
 /**this controller get all photo from a product | upload new photo for product */
-App::addRoute("GET|POST|PUT|DELETE", "/admin/products/photos/[i:product_id]/[i:photo_id]?", "AdminProductsPhotos");
+App::addRoute("GET|POST|PUT|DELETE", "/admin/products/photos/[i:product_id]?/[i:photo_id]?", "AdminProductsPhotos");
 
 
 /**************************ORDERS CONTROLLER*****************************/

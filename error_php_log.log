@@ -730,3 +730,21 @@ Stack trace:
 #3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php(28): AdminProductsPhotosController->save()
 #4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): AdminProductsPhotosController->process()
 #5 D:\xampp\htdocs\PTIT-Do-An-Thuc- in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[21-Aug-2022 13:44:10 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 120
+[21-Aug-2022 13:44:26 UTC] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 120
+[21-Aug-2022 13:45:21 UTC] PHP Notice:  Trying to get property 'product_id' of non-object in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 179
+[21-Aug-2022 13:45:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`ecommerce`.`ec_productsphoto`, CONSTRAINT `ec_productsphoto_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `ec_products` (`id`)) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\ProductsPhotoModel.php(93): Pixie\ in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[21-Aug-2022 15:00:55 UTC] PHP Parse error:  syntax error, unexpected ';' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 126
+[21-Aug-2022 15:01:25 UTC] PHP Parse error:  syntax error, unexpected ';' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 126
+[21-Aug-2022 15:01:40 UTC] PHP Parse error:  syntax error, unexpected ';' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 126
+[21-Aug-2022 15:02:25 UTC] PHP Parse error:  syntax error, unexpected ';' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 126
+[21-Aug-2022 15:03:12 UTC] PHP Parse error:  syntax error, unexpected ';' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 126
+[21-Aug-2022 15:04:02 UTC] PHP Parse error:  syntax error, unexpected ';' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 126
+[21-Aug-2022 15:04:40 UTC] PHP Parse error:  syntax error, unexpected ';' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 126
+[21-Aug-2022 15:05:57 UTC] PHP Parse error:  syntax error, unexpected ';' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 126
+[21-Aug-2022 15:06:16 UTC] PHP Parse error:  syntax error, unexpected ';' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 126

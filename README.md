@@ -541,6 +541,10 @@ tiếp tục
 1. Thiết kế danh sách hình ảnh sản phẩm 
 2. Nút xóa một ảnh sản phẩm
 3. Nút cài một hình làm mặc định
+
+- **21-08-2022**
+1. Làm tính năng upload ảnh nhưng chưa xong.
+
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)
@@ -582,6 +586,10 @@ Tự dưng tụt cảm xúc quá 😅. Không muốn làm nữa
 [**11:59 PM Friday, 29-07-2022**](#)
 
 95% rồi 🔥. Còn một chút nữa thôi. 
+
+[**10:23 PM Sunday, 21-08-2022**](#)
+
+5% cuối cùng coi bộ hơi bị khó ><
 
 # [**Special Thank**](#our-team)
 

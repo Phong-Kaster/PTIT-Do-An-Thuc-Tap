@@ -74,11 +74,11 @@
             $this->resp->result = 1;
             $this->resp->msg = "Get product by id successfully !";
             $this->resp->data =  array(
-                "id"   =>         $Product->get("id"),
+                "id"   =>         (int)$Product->get("id"),
                 "name" =>         $Product->get("name"),
-                "remaining" =>    $Product->get("remaining"),
+                "remaining" =>    (int)$Product->get("remaining"),
                 "manufacturer" => $Product->get("manufacturer"),
-                "price" =>        $Product->get("price"),
+                "price" =>        (int)$Product->get("price"),
                 "screen_size" =>  $Product->get("screen_size"),
                 "cpu" =>          $Product->get("cpu"),
                 "ram" =>          $Product->get("ram"),
