@@ -33,7 +33,7 @@
 - [**Timeline**](#timeline)
   - [**Phase 1: 29-06-2022 to 10-07-2022**](#phase-1-29-06-2022-to-10-07-2022)
   - [**Phase 2: 10-07-2022 to 13-07-2022**](#phase-2-10-07-2022-to-13-07-2022)
-  - [**Phase 3: 14-07-2022 to xx-xx-2022**](#phase-3-14-07-2022-to-xx-xx-2022)
+  - [**Phase 3: 14-07-2022 to 22-08-2022**](#phase-3-14-07-2022-to-22-08-2022)
 - [**Post Script**](#post-script)
 - [**Special Thank**](#special-thank)
 - [**Made with 💘 and PHP <img src="https://www.vectorlogo.zone/logos/php/php-horizontal.svg" width="60">**](#made-with--and-php-)
@@ -401,7 +401,7 @@ tiếp tục
 tiếp tục
 2. Tối ưu hóa quy trình kiểm tra dữ liệu đầu vào cho Sign Up Controller với bộ lọc cho firt_name và last_name.
 
-## [**Phase 3: 14-07-2022 to xx-xx-2022**](#phase-3-14-07-2022-to-xx-xx-2022)
+## [**Phase 3: 14-07-2022 to 22-08-2022**](#phase-3-14-07-2022-to-22-08-2022)
 
 - **14-07-2022**
 1. Dựng thư mục đồ án Android
@@ -545,6 +545,9 @@ tiếp tục
 - **21-08-2022**
 1. Làm tính năng upload ảnh nhưng chưa xong.
 
+- **22-08-2022**
+1. Hoàn thiện tính năng upload ảnh cho sản phẩm, chính thức hoàn thiện đồ án thực tập.
+
 # [**Post Script**](#post-script)
 
 [**11h41 PM Tuesday, 05-07-2022**](#)
@@ -590,6 +593,10 @@ Tự dưng tụt cảm xúc quá 😅. Không muốn làm nữa
 [**10:23 PM Sunday, 21-08-2022**](#)
 
 5% cuối cùng coi bộ hơi bị khó ><
+
+[**11:18 PM Sunday, 22-08-2022**](#)
+
+Chính thức chấm dứt chuỗi ngày dài nếm mật nằm gai với đồ án. Cuối cùng đồ án cũng đã hoàn tất.
 
 # [**Special Thank**](#our-team)
 

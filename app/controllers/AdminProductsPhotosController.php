@@ -110,11 +110,6 @@
             $this->resp->result = 0;
             $Route = $this->getVariable("Route");
 
-            // if( !$Route->params->product_id ){
-            //     $this->resp->msg = "ID is required !";
-            //     $this->jsonecho();
-            // }
-
             if( !Input::post("product_id") )
             {
                 $this->resp->msg = "Product ID is required !";
@@ -125,18 +120,16 @@
             $is_avatar = Input::post("is_avatar") ? Input::post("is_avatar") : 0;
             $productId = Input::post("product_id");
 
-
-
             $Product = Controller::model("Product", $productId);
             if( !$Product->isAvailable()){
                 $this->resp->msg = "The product doesn't exist !";
                 $this->jsonecho();
             }
 
-
             /**Step 2 - check if file is received or not */
-            if (empty($_FILES["file"]) || $_FILES["file"]["size"] <= 0) {
-                $this->resp->msg = "Photo is not received!";
+            if (empty($_FILES["file"]) || $_FILES["file"]["size"] <= 0) 
+            {
+                $this->resp->msg = "Photo is not received !";
                 $this->jsonecho();
             }
 
@@ -144,7 +137,8 @@
             /**Step 3 - check filename extension */
             $ext = strtolower(pathinfo($_FILES["file"]["name"], PATHINFO_EXTENSION));
             $allow = ["jpeg", "jpg", "png"];
-            if (!in_array($ext, $allow)) {
+            if (!in_array($ext, $allow)) 
+            {
                 $this->resp->msg = __("Only ".join(",", $allow)." files are allowed");
                 $this->jsonecho();
             }

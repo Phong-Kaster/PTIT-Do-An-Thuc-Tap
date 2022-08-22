@@ -748,3 +748,24 @@ Stack trace:
 [21-Aug-2022 15:04:40 UTC] PHP Parse error:  syntax error, unexpected ';' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 126
 [21-Aug-2022 15:05:57 UTC] PHP Parse error:  syntax error, unexpected ';' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 126
 [21-Aug-2022 15:06:16 UTC] PHP Parse error:  syntax error, unexpected ';' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AdminProductsPhotosController.php on line 126
+[22-Aug-2022 12:20:31 UTC] PHP Notice:  Undefined variable: Product in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\TestController.php on line 84
+[22-Aug-2022 12:20:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get() on null in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\TestController.php:84
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\TestController.php(14): TestController->uploadFile()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\core\App.php(581): TestController->process()
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\index.php(73): App->process()
+#3 {main}
+  thrown in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\TestController.php on line 84
+[22-Aug-2022 12:20:54 UTC] PHP Notice:  Undefined variable: is_avatar in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\TestController.php on line 97
+[22-Aug-2022 12:20:54 UTC] PHP Notice:  Undefined variable: is_avatar in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\TestController.php on line 109
+[22-Aug-2022 12:22:17 UTC] PHP Notice:  Undefined variable: is_avatar in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\TestController.php on line 97
+[22-Aug-2022 12:22:17 UTC] PHP Notice:  Undefined variable: is_avatar in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\TestController.php on line 109
+[22-Aug-2022 12:22:30 UTC] PHP Notice:  Undefined variable: is_avatar in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\TestController.php on line 97
+[22-Aug-2022 12:57:47 UTC] PHP Notice:  Undefined variable: accessToken in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\TestController.php on line 125
+[22-Aug-2022 13:00:05 UTC] PHP Notice:  Undefined variable: accessToken in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\TestController.php on line 125
+[22-Aug-2022 13:00:41 UTC] PHP Notice:  Undefined variable: accessToken in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\TestController.php on line 125
+[22-Aug-2022 13:02:49 UTC] PHP Notice:  Undefined variable: accessToken in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\TestController.php on line 125
+[22-Aug-2022 13:03:30 UTC] PHP Notice:  Undefined variable: accessToken in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\TestController.php on line 125
+[22-Aug-2022 13:07:43 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\TestController.php on line 81
+[22-Aug-2022 13:07:43 UTC] PHP Notice:  Undefined variable: accessToken in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\TestController.php on line 130
+[22-Aug-2022 13:07:55 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\TestController.php on line 81
