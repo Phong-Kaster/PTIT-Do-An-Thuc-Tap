@@ -41,6 +41,7 @@
             {
                 $query = DB::table(TABLE_PREFIX.TABLE_ORDERS)
                     ->where(TABLE_PREFIX.TABLE_ORDERS.".user_id", "=", $AuthUser->get("id"))
+                    ->where(TABLE_PREFIX.TABLE_ORDERS.".total", ">", 0)
                     ->select("*");
 
                 

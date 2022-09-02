@@ -137,7 +137,7 @@
             }
 
 
-            $user_id = $Order->get("user_id") != NULL ? $Order->get("user_id") : NULL;
+            // $user_id = $Order->get("user_id") != NULL ? $Order->get("user_id") : NULL;
 
             /**Step 3.1 - only processing | verified | packed | being transported then order can be modified */
             $invalid_status = ["delivered", "cancel"];
@@ -266,7 +266,7 @@
             try 
             {
                 //code...
-                $Order->set("user_id", NULL)
+                $Order
                     ->set("receiver_name", $receiver_name)
                     ->set("receiver_address", $receiver_address)
                     ->set("receiver_phone", $receiver_phone)

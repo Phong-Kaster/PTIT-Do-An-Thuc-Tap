@@ -48,6 +48,7 @@
             $data = [];
             try {
                 $query = DB::table(TABLE_PREFIX.TABLE_ORDERS)
+                        ->where(TABLE_PREFIX.TABLE_ORDERS.".total", ">", 0)
                         ->select("*");
 
                 /**Step 2.1 - search filter - receiver_name | receiver_phone | receiver_address | description*/

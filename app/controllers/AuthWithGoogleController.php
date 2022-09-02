@@ -42,7 +42,8 @@
       
               $email = $payload['email'];
               $firstName = $payload['given_name'];
-              $lastName = $payload['family_name'];
+              $lastName = "";
+              // $lastName = $payload['family_name'];
               //$picture = $payload['picture'];
       
             

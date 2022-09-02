@@ -572,7 +572,9 @@
             }
             else
             {
-                $msg = "Your order's status now is ".$Order->get("status")." & can't do this action !";
+                //$msg = "Your order's status now is ".$Order->get("status")." & can't do this action !";
+                $this->resp->msg = "Your order's status now is ".$Order->get("status")." & can't do this action !";
+                $this->jsonecho();
             }
 
             $this->resp->result = 1;

@@ -598,6 +598,10 @@ Tự dưng tụt cảm xúc quá 😅. Không muốn làm nữa
 
 Chính thức chấm dứt chuỗi ngày dài nếm mật nằm gai với đồ án. Cuối cùng đồ án cũng đã hoàn tất.
 
+[**11:17 PM Friday, 02-09-2022**](#)
+
+Mai bắt đầu báo cáo đồ án thực tập rồi 🤔. Căng quá ta! Vừa sửa xong vài lỗi vặt cho an tâm
+
 # [**Special Thank**](#our-team)
 
 <table>

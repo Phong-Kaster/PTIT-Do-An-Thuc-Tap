@@ -636,15 +636,16 @@ function getProductAvatar($id){
     $tempres = [];
     $result = "";
 
+    /**        $result = UPLOAD_PATH."/".$tempres[0]; */
     if( count($res) > 0 ){
         foreach($res as $r){
             $tempres[] = $r->path;
         }
 
-        $result = UPLOAD_PATH."/".$tempres[0];
+        $result = $tempres[0];
     }
     else{
-        $result = UPLOAD_PATH."/default.png";
+        $result = "default.png";
     }
 
 

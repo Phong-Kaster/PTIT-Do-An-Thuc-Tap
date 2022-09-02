@@ -108,7 +108,7 @@
             }
 
             $last_name_validation = isVietnameseName($lastName);
-            if( $first_name_validation != 1 ){
+            if( $last_name_validation != 1 ){
                 $this->resp->msg = "Last name only has letters and space";
                 $this->jsonecho();
             }

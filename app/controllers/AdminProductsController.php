@@ -216,7 +216,7 @@
                 "manufacturer","price",
                 "screen_size","cpu",
                 "ram","graphic_card",
-                "rom","demand"
+                "rom"
             ];
 
             foreach($required_fields as $field){
@@ -279,7 +279,7 @@
 
 
             /**Step 2.9 - demand */
-            $valid_demand = ["gaming","design","office","student","business","lightweight"];
+            $valid_demand = ["", "gaming","design","office","student","business","lightweight"];
             $demand = Input::post("demand");
 
             if( !in_array($demand, $valid_demand) ){

@@ -769,3 +769,14 @@ Stack trace:
 [22-Aug-2022 13:07:43 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\TestController.php on line 81
 [22-Aug-2022 13:07:43 UTC] PHP Notice:  Undefined variable: accessToken in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\TestController.php on line 130
 [22-Aug-2022 13:07:55 UTC] PHP Warning:  A non-numeric value encountered in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\TestController.php on line 81
+[23-Aug-2022 00:24:26 UTC] PHP Notice:  Undefined index: family_name in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 45
+[23-Aug-2022 00:24:31 UTC] PHP Notice:  Undefined index: family_name in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 45
+[28-Aug-2022 09:27:12 UTC] PHP Notice:  Undefined index: family_name in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 45
+[28-Aug-2022 09:27:18 UTC] PHP Notice:  Undefined index: family_name in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 45
+[28-Aug-2022 09:27:22 UTC] PHP Notice:  Undefined index: family_name in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 45
+[28-Aug-2022 09:27:29 UTC] PHP Notice:  Undefined index: family_name in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 45
+[28-Aug-2022 09:27:50 UTC] PHP Notice:  Undefined index: family_name in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 45
+[28-Aug-2022 09:28:04 UTC] PHP Notice:  Undefined index: family_name in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 45
+[28-Aug-2022 09:31:44 UTC] PHP Notice:  Undefined index: family_name in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 45
+[28-Aug-2022 09:35:55 UTC] PHP Notice:  Undefined index: family_name in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 45
+[28-Aug-2022 09:36:54 UTC] PHP Notice:  Undefined index: family_name in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 45
