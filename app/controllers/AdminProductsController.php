@@ -212,8 +212,7 @@
             $this->resp->result = 0;
 
             $required_fields = [
-                "name",
-                "manufacturer","price",
+                "name","price",
                 "screen_size","cpu",
                 "ram","graphic_card",
                 "rom"

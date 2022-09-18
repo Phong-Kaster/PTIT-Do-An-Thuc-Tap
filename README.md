@@ -23,6 +23,9 @@
     - [**3.1. Get Latest Order**](#31-get-latest-order)
     - [**3.2. Modify Order**](#32-modify-order)
     - [**3.3. Confirm Order**](#33-confirm-order)
+- [**Important Milestones**](#important-milestones)
+- [**Performace**](#performace)
+- [**Examination**](#examination)
 - [**Mentor**](#mentor)
   - [**1. Nguyễn Thị Bích Nguyên**](#1-nguyễn-thị-bích-nguyên)
   - [**2. Nguyễn Anh Hào**](#2-nguyễn-anh-hào)
@@ -57,6 +60,20 @@
 ***Bản thiết kế tiêu chuẩn cơ sở dữ liệu cho đồ án thực tập***
 </h3>
 
+Các bạn có thể thấy rằng cơ sở dữ liệu này ở mức rất cơ bản, dường như độ phức tạp chỉ ngang bằng với một môn học 
+ở trường là hết cỡ 😂. 
+
+Một lý do nữa, có thể coi là nguyên tắc bất thành văn, đồ án thực tập & sau này là đồ án tốt nghiệp phải được triển khai với mô hình **Restful API**.
+Các thầy cô sẽ không đồng thuận để chúng ta làm đồ án theo phương thức truyền thống nữa - tức là viết luôn phần xử lý trực tiếp trong sản phẩm đầu cuối luôn( website, application,..)
+
+Lý do cuối cùng là mình làm đồ án này hoàn toàn từ đầu 😎, nên cơ sở dữ càng đơn giản ( nhưng phải đủ yêu cầu đề tài ) thì chức năng sẽ càng ít.
+
+> Note: Trong quá trình làm đồ án mình có hỏi các bạn học của mình thì nhiều đứa lấy luôn đồ án cũ ra để nộp, hầu hết là lấy đồ án từ môn [**Phát triển phần mềm hướng dịch vụ**](https://github.com/Phong-Kaster/PTIT-Phat-Trien-Phan-Mem-Huong-Dich-Vu-Website) & kèm thêm một số chỉnh sửa. Sau đó thì đem nộp 😜
+
+Ở phần tiếp theo, mình sẽ trình bày với các bạn về những module xử lý quan trọng nhất của đồ án này. Những phần khác mình không đề cập vì đơn giản là chúng chỉ là các chức năng thêm - xóa - sửa đơn thuần và không có thuật toán hay chỗ nào xử lý quá phức tạp & để dễ hình dung cái mindset của Phong. 
+
+Tớ sẽ chỉ nói cách xử lý thôi nha, chứ tớ sẽ không chụp code xử lý do có thể các bạn không viết PHP thuần như Phong và mỗi người sẽ có phương án xử lý khác nhau mà, hehe🤧
+
 # [**Important Modules**](#important-modules)
 
 Có 2 controller quan trọng mà có giá trị cao nhất trong đồ án này. Đó là phần xử lý giỏ hàng. 
@@ -66,7 +83,7 @@ Hãy chú ý coi qua các controller sau đây:
 
 ## [**1. Admin Order Controller**](#1-admin-order-controller)
 
-Controller này có những chức năng chính như sau: tìm giỏ hàng theo Id, thay đổi nội dung của giỏ hàng & xóa giỏ món hàng trong giỏ hàng
+Controller này có những chức năng chính như sau: tìm giỏ hàng theo ID, thay đổi nội dung của giỏ hàng & xóa giỏ món hàng trong giỏ hàng
 
 ### [**1.1. Get Order By Id**](#11-get-order-by-id)
 
@@ -235,9 +252,95 @@ tồn là 10, người dùng mua 2 thì số lượng tồn còn lại là 8.
 **Trường hợp 4** - người dùng đã **XÁC NHẬN** mua hàng nhưng sau đó thay đổi suy nghĩ và chọn **HỦY ĐƠN HÀNG** thì số lượng tồn của các món hàng sẽ được hoàn trả lại. 
 Ví dụ: người dùng mua món hàng A với số lượng 2 món và sau đó nhấn hủy đơn thì số lượng tồn của món hàng A sẽ tăng lên 2 đơn vị.
 
+# [**Important Milestones**](#important-milestone)
+
+Trước khi đi vào những chia sẻ của mình lúc làm đồ án thực tập thì các bạn cần lắm được một số các mốc thời gian quan trọng sau:
+
+**Ngày 20-5** - đăng ký thông tin cá nhân, đơn vị thực tập và đề tài thực tập 
+
+Theo thông báo của nhà trường thì ngày này là ngày sẽ chốt thông tin nhưng **không phải đâu nha**. Sau ngày này, kể các bạn để trống 
+chưa đăng ký thông tin vẫn không sao đâu nha. Lúc này cứ điền bừa thông tin đơn vị thực tập cũng được
+
+**Ngày 15-06 đến 24-06** - đăng ký học hè và chốt danh sách thông tin thực tập 
+
+**Ngày 29-06** - sinh viên nhận đề tài và bắt tay vào làm đồ án thực tập
+
+**Sau ngày 29-06** - sinh viên nào đổi đơn vị thực tập thì liên hệ riêng với giáo viên hướng dẫn 
+
+**Ngày 31-08 đến 06-09** - kết thúc đồ án và chuẩn bị quá trình chấm điểm đồ án thực tập
+
+Vậy là các bạn sẽ có khoảng 2 tháng để làm đồ án thực tập từ cuối tháng 6 đến hết tháng 8
+
+> Note: mốc thời gian trên là đối với khóa D18 của Phong. Các bạn ở tương lai đọc có thể sẽ khác đi một chút.
+Du di đi với ngày so với lịch của mình🦁
+
+# [**Performace**](#performace)
+
+Okay, qua mấy phần trình bày ở trên các bạn đã hiểu ý tưởng mình thực hiện rồi. Giờ mình sẽ đến với việc thực hiện như thế nào nha !
+
+Sau khi đề tài được nhà trường chính thức xác nhận thì chúng ta sẽ bắt đầu làm đồ án thực tập. Ở thời điểm này, sinh viên chúng ta
+hầu hết đều đã đi thực tập nên thời gian làm đồ án rất hạn chết. Ví dụ như Phong khi thực tập tại công ty Geocomply thì thời gian làm việc hành chính sẽ
+bắt đầu từ 9h sáng đến 6h tối thì về nhà. Kèm theo thời gian di chuyển + thời gian nghỉ ngơi thì thông thường mình sẽ bắt đầu làm đồ án từ lúc 8h tối đến 12h đêm & ngày nào 
+cũng làm đều như vắt chanh 🍋
+
+Trong thời gian tương đối "nếm mật nằm gai" này thì tùy vào sự nỗ lực của mỗi cá nhân mà chất lượng đồ án sẽ khác nhau. Ai quyết tâm thì thường đồ án rất chất lượng. Ngược 
+lại, mấy bạn mải đi làm thì hầu như đồ án khá là kém chất lượng, thậm chí là có bạn bỏ luôn và không làm đồ án nữa( coi như bỏ phí 4 năm rưỡi đèn sách và cái bằng đại học 😘). 
+
+Thông thường, hàng tuần sinh viên sẽ phải báo cáo tiến độ cho giáo viên hướng dẫn. Tùy từng thầy cô mà hình thức báo cáo là khác nhau:
+
+- Với mình, giáo viên hướng dẫn là thầy Nguyễn Anh Hào thì sẽ báo cáo tiến độ bằng cách viết word và hoàn toàn phải tự giác.
+
+- Với các giáo viên khác, theo mình nghe từ bạn bè thì thường là báo cáo online. Còn bắt buộc tham gia hay không thì phải tùy vào giáo viên. 
+
+Ngoài ra, sẽ có 2 lần các bạn phải viết báo cáo tiến độ định kì & nộp cho nhà trường nữa. Hai lần báo cáo định kì này vô cùng quan trọng vì
+chúng sẽ ảnh hưởng rất nhiều tới điểm đồ án thực tập từ giáo viên hướng dẫn.👨‍🎓👨‍🎓👨‍🎓
+
+Phần [**Mentor**](#mentor) mình sẽ nói rõ hơn về từng giáo viên mà mình biết.
+
+# [**Examination**](#examination)
+
+Phần này mình sẽ nói về hình thức thi cử đồ án. Sau khi hết thời hạn làm đồ án. Các giáo viên hướng dẫn sẽ lên danh sách các 
+sinh viên mà mình quản lý và gửi về nhà trường để sắp xếp lịch chấm thi. Thông thường, thời gian để thi đồ án thực tập là khoảng 2 tuần lễ.
+
+Đồ án thực tập sẽ trải qua 2 vòng loại. Cả 2 vòng loại này đều là thi online qua Google meeting chứ không phải lên trường.
+
+Để dễ hình dung mình sẽ định danh lần lượt là **vòng sơ khảo** và **vòng phúc khảo**
+
+- Vòng sơ khảo: bạn và giáo viên hướng dẫn sẽ thi vấn đáp 1 vs 1 với nhau. Thường diễn ra trong 30-45 phút. Ở vòng này, giáo viên hướng dẫn sẽ đặt câu hỏi 
+và đánh giá chất lượng đồ án. Dĩ nhiên rồi! Có chấm điểm nha💯 nhưng mình sẽ không biết điểm đâu 
+
+- Vòng phúc khảo: bạn sẽ được sắp xếp để vấn đáp thêm với một giáo viên phản biện khác. Thời gian diễn ra vòng này là sau 1 tuần từ vòng sơ khảo. 
+Cũng vẫn đáp như trên luôn🥱. 
+
+Giáo viên chấm cho mình là thầy **Lê Minh Hóa** - trưởng khoa Công nghệ đa phương tiện - nếu bạn học qua thầy thì sẽ 
+nhớ thầy này là người rất hài hước và dễ tính. Điều đó đúng tới lúc chấm thi. 
+Thầy chấm rất nhẹ nhàng, chỉ hỏi một số câu hỏi mang tính thủ tục và cho 
+qua.(Lúc mình thi, ổng coi mới 3 đứa xong ổng kêu là "chấm thi các bạn thầy nhức đầu quá, cho 
+thầy nghỉ 30 phút uống thuốc nha các em 🤣😂😂")
+
+
+Sau khi kết thúc 2 vòng trên thì chúng ta đã được coi như chính thức thoát áp lực trong khoảng gần 2 tháng vừa qua🎇🎇. Yeah, đi xõa thôi. Và chờ kết quả thi,
+điểm cho đồ án sẽ lấy điểm của giáo viên hướng dẫn + giáo viên phản biện và chia đôi.
+
+Sau khi có điểm đồ án thực tập. Sẽ đến giai đoạn phân loại ai được làm đồ án tốt nghiệp và ai phải học 2 môn thay thế để ra trường.
+
+Có 2 yếu tố để nhà trường cho các bạn làm đồ án tốt nghiệp 
+
+1. Điểm đồ án thực tập của sinh viên 
+
+2. Điểm thành tích học tập của sinh viên trong suốt 4 năm học tại trường. Tớ xin trích lời bạn lớp trưởng lớp tớ - D18CQCP02 - Huỳnh Phước Sang để các bạn dễ nắm bắt 
+
+> A: Có giới hạn số người được làm đồ án ko á Phước Sang hay đủ điểm là đc làm á ông
+
+> B: Nghe bảo là bốc từ trên xuống tới tầm bao nhiêu người ấy. Hằng năm thường là 2.7
+
+> Sang: Có ông nha, lấy từ trên xuống, dao động khoảng từ 60-70 người hằng năm, đa phần sau khi xét như vậy thì các năm điểm thường 
+dao động từ 2.7-2.8 đổ lên. Trong trường hợp lấy người mà chưa đủ số lượng nhưng điểm thấp 
+quá(ví dụ lấy khoảng 50 bạn mà điểm đã tới khoảng 2.5) thì đôi khi sẽ ngưng lại không xét nữa- tức làm đồ án chỉ khoảng 50 người thôi ông
+
 # [**Mentor**](#mentor)
 
-Vài dòng mình để đây không có chủ đích xúc phạm giáo viên nào nhưng mình bức xúc quá nên đánh phá luận vậy
+Vài dòng mình để đây không có chủ đích xúc phạm giáo viên nào nhưng mình bức xúc quá nên đánh phá luật vậy
 
 ## [**1. Nguyễn Thị Bích Nguyên**](#nguyen-thi-bich-nguyen)
 
@@ -271,6 +374,23 @@ chọn tại nơi thực tập thay vì phải làm đề tài của thầy so�
 Từ lúc nhận đề tài(ngày 29-06-2022) tới khi viết những dòng lưu bút này(10-07-2022) thầy vẫn chưa có hồi âm gì về hướng dẫn cả. Có lẽ do thầy bận hoặc 
 thầy muốn để sinh viên tự làm đúng hay không ? Mình cũng không biết nữa.
 
+**18-09-2022**
+
+Thế là xong đồ án thực tập. Làm đồ án thực tập với thầy Hào sẽ chia ra làm 2 ý kiến: "Thầy Hào khó lắm" & "Thầy Hào dễ lắm"
+
+Với mình thì thầy Hào rất dễ. Thầy Hào kĩ tính nhưng không khắt khe như thầy Thư. Có thể nói là ở mức cân bằng giữa sự theo sát kèm cặp và sự khắt khe.
+Khi làm đồ án với thầy Hào thì hàng tuần chúng ta sẽ phải tự giác viết báo cáo tiến độ hàng tuần với thầy. Sự thật thì 
+chính quá trình báo cáo tiến độ hàng tuần này là cách để thầy Hào đánh giá và phân loại xem chúng ta có được thi đồ án thực tập hay là không? Chỉ 
+cần mỗi tuần các bạn viết báo cáo tiến độ đều đặn và cẩn thận một chút là sẽ tạo được thiện cảm cho thầy Hào. 
+
+Với những sinh viên kêu thầy khó là do tụi này không có ý thực tự giác và không thực sự đầu tư thời gian làm đồ án nên 
+thầy Hào thường chấm tụi này cực kì khắc khe. 
+Thường thì đứa làm kém sẽ không nộp báo cáo tiến độ hàng tuần nên sẽ được thầy đưa vào danh sách đen. 
+
+**Hầu hết các trường hợp bị thầy Hào đánh rớt là do không nộp báo cáo tiến độ hàng tuần đều đặn**
+
+> Note: Chỉ có nhược điểm là nếu các bạn cần trợ giúp hoặc xin ý kiến thầy qua e-mail thì thầy trả lời tin nhắn khá là chậm chạp.
+
 ## [**3. Lê Hồng Sơn**](#le-hong-son)
 
 Là giám đốc của Học viện mình. Đứng ở cương vị là người quản lý cấp cao nhất của nhà trường, ông thầy 
@@ -284,12 +404,50 @@ dẫn làm đồ án thực tập. Tại do `tào lao bí đao` quá nên thầy
 
 Mình khuyến khích bạn nào học yếu nên liên hệ trước với thầy luôn để ra trường sẽ dễ thở hơn.
 
+Tuy nhiên, phía trên là mình được nghe kể chứ sự thực thì không phải như vầy🙅‍♂️🙅‍♀️
+
+Ông thầy này rất là **TÀO LAO** theo đúng nghĩa đen và nghĩa bóng. Vì bạn mình làm đồ án với ông thầy này nên mình có thể tường thuật lại 
+chi tiết như sau:
+- Thứ nhất, thầy này không theo sát & kèm cặp đồ án như các thầy cô khác. Có thể nói là không hề quan tâm một tí gì tới sinh viên luôn 😀
+- Thứ hai, đề tài giao ra cực kì mông lung, không bám sát chuyên môn của sinh viên. Ví dụ bạn học công nghệ phần mềm nhưng ổng cho bạn làm đề tài 
+liên quan tới mạng máy tính hoặc AI các kiểu.
+- Thứ ba, đánh rớt sinh viên với những lý do rất tào lao. Trong khóa của mình, có 2 trường hợp bị đánh rớt đồ án thực tập vì những lý do vớ vẩn như này nè:
+
+**Trường hợp 1** - đánh rớt vì căn lề không chính xác trong báo cáo thực tập
+
+**Trường hợp 2** - viết báo cáo thực tập nhiều hơn 6 chương thì cũng rớt 
+
+Hai trường hợp này ổng cho ăn con ngỗng to đùng. Điều này đồng nghĩa với việc 2 bạn này sẽ phải chờ tới sang năm để học lại. Dĩ nhiên là ra trường muộn rồi😀😀
+
+Tuy nhiên, nếu như vậy thì hàng năm sẽ không có nhiều sinh viên liên hệ để ông này làm giáo viên thực tập. Chính cái sự **TÀO LAO** phía trên cũng là điểm 
+thu hút sinh viên tới với ông thầy này. Mình sẽ mách nước các bạn 2 điều như sau:
+
+**Điều 1** - dù ai nói ngả ngả nói nghiêng. Lòng ta vẫn vững như kiềng ba chân. Tức là hàng năm số lượng sinh viên làm đề tài bán hàng/thương 
+mại điện tử là rất nhiều. Ông thầy sẽ chốt câu "Lại bán hàng à, em có thể làm cái gì mới hơn không". Nhiều đứa nghe câu này tinh thần không vững và 
+chọn làm những đề tài do ông này đưa ra như mạng máy tính, Socket, AI các kiểu nên dẫn tới kết quả không cao và bị thấp điểm => Nếu bạn muốn làm đề tài nào 
+thì cứ tự tin chọn đề tài đó mà làm( giáo viên cũng phải lắng nghe sinh viên muốn làm đề tài nào chứ không thể tự ý cho bừa đề tài được)
+
+**Điều 2** - làm đồ án thực tập và viết báo cáo chịu khó cẩn thận 1 chút xíu thôi là sẽ được 9-10 điểm ngay. Ông thầy này chấm điểm thực tập cho sinh viên 
+của mình rất hào phóng😏🙄. Chăm chút một xíu là được.
+
 ## [**6. Lưu Nguyễn Kì Thư**](#luu-nguyen-ki-thu)
 
 Giảng viên huyền thoại của trường PTIT. Người đã góp phần tạo nên bao nỗi ác mộng cho các thế hệ sinh viên Học viện. Tuy nhiên,
 nếu bạn nào muốn có 1 người thấy chi tiết, hỗ trợ nhiệt tình tới tận răng thì nên chọn thầy. 
 
 Lưu ý duy nhất là hãy suy nghĩ xem bạn học có đủ khá | giỏi không ? Vì thầy tuy chi tiết nhưng ra đề tài làm đồ án thực tập cũng tương đối phức tạp & chấm rất gắt 😨😨
+
+Từ các bạn học của mình thì thầy Thư được đánh giá là "tốt, theo sát và kèm cặp sinh viên rất chu đáo". 
+
+Tuy nhiên, đề tài thường do ông thầy giao chứ sinh viên không được tự chọn như các giáo viên khác. Thường đề tài 
+ông Thư giao thường khó hơn so với yêu cầu của các giáo viên khác
+
+Với ông Thư thì mỗi cuối tuần, tất cả các sinh viên bắt buộc phải tham gia báo cáo online qua Google meet cho ông thầy.
+Nếu như vắng mặt thì phải có lý do chính đánh.
+
+Mỗi tuần, ông thầy sẽ giao các yêu cầu mà sinh viên phải hoàn thành trong tuần đó. Nếu tới buổi báo cáo mà chưa hoàn thiện thì ông thầy có thể 
+cho bạn nợ lại nhưng bạn sẽ phải hoàn thành trước buổi báo cáo tiến độ tuần tới. Ví dụ, thứ 5 tuần tới bạn phải báo cáo
+cho ông thầy chẳng hạn.😱😰
 
 # [**Controller Timeline**](#controller-timeline)
 
@@ -523,7 +681,7 @@ tiếp tục
 2. Admin - Thêm mới sản phẩm
 
 - **15-08-2022**
-1. Viết báo cáo thực tập lần 2
+1. Viết báo cáo thực tập lần 2 - Tạm biệt em, cô gái mà tôi chưa kịp nói lời yêu
 
 - **16-08-2022**
 1. Hoàn thiện báo cáo thực tập lần 2

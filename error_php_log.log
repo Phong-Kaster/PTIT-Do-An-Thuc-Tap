@@ -780,3 +780,50 @@ Stack trace:
 [28-Aug-2022 09:31:44 UTC] PHP Notice:  Undefined index: family_name in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 45
 [28-Aug-2022 09:35:55 UTC] PHP Notice:  Undefined index: family_name in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 45
 [28-Aug-2022 09:36:54 UTC] PHP Notice:  Undefined index: family_name in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\AuthWithGoogleController.php on line 45
+[10-Sep-2022 09:33:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php:138
+Stack trace:
+#0 [internal function]: PDO->__construct('mysql:dbname=ec...', 'root', '', Array)
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php(138): ReflectionClass->newInstanceArgs(Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php(110): Viocon\Container->instanciate('\\PDO', Array)
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\ConnectionAdapters\Mysql.php(28): Viocon\Container->build('\\PDO', Array)
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\ConnectionAdapters\BaseAdapter.php(28): Pixie\ConnectionAdapters\Mysql->doConnect(Array)
+#5 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\Connection.php(93) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php on line 138
+[10-Sep-2022 09:33:59 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php:138
+Stack trace:
+#0 [internal function]: PDO->__construct('mysql:dbname=ec...', 'root', '', Array)
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php(138): ReflectionClass->newInstanceArgs(Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php(110): Viocon\Container->instanciate('\\PDO', Array)
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\ConnectionAdapters\Mysql.php(28): Viocon\Container->build('\\PDO', Array)
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\ConnectionAdapters\BaseAdapter.php(28): Pixie\ConnectionAdapters\Mysql->doConnect(Array)
+#5 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\Connection.php(93) in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php on line 138
+[10-Sep-2022 09:34:14 UTC] PHP Fatal error:  Uncaught PDOException: PDO::__construct(): Error while reading greeting packet. PID=14412 in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php:138
+Stack trace:
+#0 [internal function]: PDO->__construct('mysql:dbname=ec...', 'root', '', Array)
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php(138): ReflectionClass->newInstanceArgs(Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php(110): Viocon\Container->instanciate('\\PDO', Array)
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\ConnectionAdapters\Mysql.php(28): Viocon\Container->build('\\PDO', Array)
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\ConnectionAdapters\BaseAdapter.php(28): Pixie\ConnectionAdapters\Mysql->doConnect(Array)
+#5 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\Connection.php(93): Pixie\ConnectionAdapters\BaseAda in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\viocon\src\Viocon\Container.php on line 138
+[10-Sep-2022 09:42:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1932 Table 'ecommerce.ec_users' doesn't exist in engine in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(173): Pixie\QueryBuilder\QueryBuilderHandler->statement('SELECT count(*)...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(252): Pixie\QueryBuilder\QueryBuilderHandler->get()
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(235): Pixie\QueryBuilder\QueryBuilderHandler->aggregate('count')
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\models\UserModel.php(46):  in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[10-Sep-2022 10:00:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'update_at' in 'field list' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrderLatestController.php(129): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrderLatestController.php(10): OrderLatestController-> in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
+[10-Sep-2022 10:01:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'update_at' in 'field list' in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php:152
+Stack trace:
+#0 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(152): PDOStatement->execute()
+#1 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(325): Pixie\QueryBuilder\QueryBuilderHandler->statement('INSERT INTO `ec...', Array)
+#2 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php(356): Pixie\QueryBuilder\QueryBuilderHandler->doInsert(Array, 'insert')
+#3 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrderLatestController.php(129): Pixie\QueryBuilder\QueryBuilderHandler->insert(Array)
+#4 D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\controllers\OrderLatestController.php(10): OrderLatestController-> in D:\xampp\htdocs\PTIT-Do-An-Thuc-Tap\app\vendor\usmanhalalit\pixie\src\Pixie\QueryBuilder\QueryBuilderHandler.php on line 152
