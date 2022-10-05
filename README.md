@@ -37,6 +37,7 @@
   - [**Phase 1: 29-06-2022 to 10-07-2022**](#phase-1-29-06-2022-to-10-07-2022)
   - [**Phase 2: 10-07-2022 to 13-07-2022**](#phase-2-10-07-2022-to-13-07-2022)
   - [**Phase 3: 14-07-2022 to 22-08-2022**](#phase-3-14-07-2022-to-22-08-2022)
+  - [**Phase 4: 01-09-2022 to 28-09-2022**](#phase-4-01-09-2022-to-28-09-2022)
 - [**Post Script**](#post-script)
 - [**Special Thank**](#special-thank)
 - [**Made with 💘 and PHP <img src="https://www.vectorlogo.zone/logos/php/php-horizontal.svg" width="60">**](#made-with--and-php-)
@@ -268,6 +269,10 @@ chưa đăng ký thông tin vẫn không sao đâu nha. Lúc này cứ điền b
 **Sau ngày 29-06** - sinh viên nào đổi đơn vị thực tập thì liên hệ riêng với giáo viên hướng dẫn 
 
 **Ngày 31-08 đến 06-09** - kết thúc đồ án và chuẩn bị quá trình chấm điểm đồ án thực tập
+
+**Ngày 04-09** - thi vấn đáp với giáo viên hướng dẫn
+
+**Ngày 09-06** - thi vấn đáp với giáo viên phản biện
 
 Vậy là các bạn sẽ có khoảng 2 tháng để làm đồ án thực tập từ cuối tháng 6 đến hết tháng 8
 
@@ -705,6 +710,16 @@ tiếp tục
 
 - **22-08-2022**
 1. Hoàn thiện tính năng upload ảnh cho sản phẩm, chính thức hoàn thiện đồ án thực tập.
+
+## [**Phase 4: 01-09-2022 to 28-09-2022**](#phase-4-01-09-2022-to-28-09-2022)
+
+- **04-09-2022**: Thi vấn đáp với giáo viên hướng dẫn về đồ án thực tập
+
+- **09-09-2022**: Thi vấn đáp với giáo viên phản biện về đồ án thực tập 
+
+- Thời gian còn lại: đi làm và xả hơi sau thời gian dài làm đồ án thực tập căng thẳng.
+
+- **28-09-2022**: Nhà trường công bố danh sách đề tài thực tập.
 
 # [**Post Script**](#post-script)
 
