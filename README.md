@@ -775,6 +775,10 @@ Chính thức chấm dứt chuỗi ngày dài nếm mật nằm gai với đồ 
 
 Mai bắt đầu báo cáo đồ án thực tập rồi 🤔. Căng quá ta! Vừa sửa xong vài lỗi vặt cho an tâm
 
+[**06:00 PM Wednesday, 05-10-2022**](#)
+
+Đồ án này mình được 8 điểm nhé ✔✔. Làm hì hục vậy mà hơi ít quá.😣
+
 # [**Special Thank**](#our-team)
 
 <table>
