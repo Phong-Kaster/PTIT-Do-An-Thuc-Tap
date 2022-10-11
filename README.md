@@ -23,9 +23,10 @@
     - [**3.1. Get Latest Order**](#31-get-latest-order)
     - [**3.2. Modify Order**](#32-modify-order)
     - [**3.3. Confirm Order**](#33-confirm-order)
-- [**Important Milestones**](#important-milestones)
+- [**Milestones**](#milestones)
 - [**Performace**](#performace)
 - [**Examination**](#examination)
+- [**Document**](#document)
 - [**Mentor**](#mentor)
   - [**1. Nguyễn Thị Bích Nguyên**](#1-nguyễn-thị-bích-nguyên)
   - [**2. Nguyễn Anh Hào**](#2-nguyễn-anh-hào)
@@ -253,7 +254,7 @@ tồn là 10, người dùng mua 2 thì số lượng tồn còn lại là 8.
 **Trường hợp 4** - người dùng đã **XÁC NHẬN** mua hàng nhưng sau đó thay đổi suy nghĩ và chọn **HỦY ĐƠN HÀNG** thì số lượng tồn của các món hàng sẽ được hoàn trả lại. 
 Ví dụ: người dùng mua món hàng A với số lượng 2 món và sau đó nhấn hủy đơn thì số lượng tồn của món hàng A sẽ tăng lên 2 đơn vị.
 
-# [**Important Milestones**](#important-milestone)
+# [**Milestones**](#milestone)
 
 Trước khi đi vào những chia sẻ của mình lúc làm đồ án thực tập thì các bạn cần lắm được một số các mốc thời gian quan trọng sau:
 
@@ -342,6 +343,19 @@ Có 2 yếu tố để nhà trường cho các bạn làm đồ án tốt nghi�
 > Sang: Có ông nha, lấy từ trên xuống, dao động khoảng từ 60-70 người hằng năm, đa phần sau khi xét như vậy thì các năm điểm thường 
 dao động từ 2.7-2.8 đổ lên. Trong trường hợp lấy người mà chưa đủ số lượng nhưng điểm thấp 
 quá(ví dụ lấy khoảng 50 bạn mà điểm đã tới khoảng 2.5) thì đôi khi sẽ ngưng lại không xét nữa- tức làm đồ án chỉ khoảng 50 người thôi ông
+
+# [**Document**](#document)
+
+Trong Repository này mình đã đính kèm rất đầy đủ các tài liệu mà các bạn có thể sẽ cần 
+
+1. `Intershup Project.postman_collection.json` - đây là file chứa các yêu cầu mình viết trong Postman. Các bạn chỉ việc import và là sẽ có toàn bộ các request mình viết trong API này
+
+2. `MySQL-script-database.sql` - đây là script để tạo ra database phía bên trên
+
+3. Thư mục `app` - là nơi chứa phần chương trình mình viết. Chủ yếu code xử lý nằm trong thư mục 
+app/controllers. Để đọc code hiểu quả hãy xem thêm [**Controller Timeline**](#controller-timelin)
+
+4. Những thư mục `assets, inc, photo, vendor` thì các bạn không cần phải quan tâm vì chúng không có tác dụng gì trong lúc mình viết API cả😅😅
 
 # [**Mentor**](#mentor)
 
@@ -779,6 +793,10 @@ Mai bắt đầu báo cáo đồ án thực tập rồi 🤔. Căng quá ta! V�
 
 Đồ án này mình được 8 điểm nhé ✔✔. Làm hì hục vậy mà hơi ít quá.😣
 
+[**09:02 PM Tuesday, 11-10-2022**](#)
+
+Hoàn thiện dòng lưu cảm ơn đặc biệt tới những các anh / các bạn đã giúp đỡ mình hoàn thiện đồ án. Đây sẽ là dòng lưu bút cuối cùng.
+
 # [**Special Thank**](#our-team)
 
 <table>
@@ -791,13 +809,41 @@ Mai bắt đầu báo cáo đồ án thực tập rồi 🤔. Căng quá ta! V�
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/Phong-Kaster">
-                    <img src="./photo/swastika2.jpg" width="100px;" alt=""/>
+                <a href="https://www.facebook.com/phatnguyen1892">
+                    <img src="./photo/Nguyen-Tan-Phat.jpg" width="100px;" alt=""/>
                     <br />
-                    <sub><b>Nguyễn Thành Phong</b></sub>
+                    <sub><b>Nguyễn Tấn Phát</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <img src="./photo/Nguyen-Dang-Phat.jpeg" width="100px;" alt=""/>
+                <br />
+                <sub><b>Nguyễn Đăng Phát</b></sub>
+            </td>
+            <td align="center">
+                <a href="https://www.facebook.com/minhthu.chaungoc">
+                    <img src="./photo/Chau-ngoc-minh-thu-2.jpg" width="100px;" alt=""/>
+                    <br />
+                    <sub><b>Châu Ngọc Minh Thư</b></sub>
                 </a>
             </td>
         </tr>    
 </table>
  
+**11-10-2022**: 
+
+Hôm nay mình hoàn thành phần này để gửi lời tri ân tới những người đã giúp đỡ mình trong quá trình hoàn thiện đồ án thực tập này. 
+
+> "Thời gian trôi qua không bao giờ quay lại" - Khuyết danh 
+
+Đầu tiên, mình muốn gửi lời cảm ơn sâu sắc tới các anh / các bạn tại thời điểm mình viết dòng lưu bút này là ở công ty 
+**GeoComply** đã hỗ trợ mình trong quá trình làm đồ án.
+
+Đặc biệt, em xin trân trọng cảm ơn anh **Nguyễn Tấn Phát** đã cho em cực kì nhiều lời khuyên và hướng giải quyết hay với đề 
+tài này. Sự hoàn thiện của đề tài này có rất nhiều sự giúp đỡ tới từ anh.
+
+Cảm ơn bạn Châu Ngọc Minh Thư & anh Nguyễn Đăng Phát - mentor của mình đã giành thời gian để xem và đưa ra các feedback để mình hoàn thiện đồ án này.
+
+Lời cuối cùng, Phong muốn gửi lời cảm ơn tới bạn Hậu - người bạn & cũng là người thầy vĩ đại nhất thời sinh viên của mình. Hầu như đồ án nào tui cũng hỏi xin ý kiến của Hậu hết🤣🤣🤣
+
 # [**Made with 💘 and PHP <img src="https://www.vectorlogo.zone/logos/php/php-horizontal.svg" width="60">**](#made-with-love-and-php)

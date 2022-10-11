@@ -105,7 +105,7 @@
                         "id" => $element->id,
                         "user_id" => (int)$element->user_id,
                         "receiver_phone" => $element->receiver_phone,
-                        "receiver_address" => $element->receiver_address,
+                        "receiver_address" => $ element->receiver_address,
                         "receiver_name" => $element->receiver_name,
                         "description" => $element->description,
                         "status"   => $element->status,
