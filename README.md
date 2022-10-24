@@ -263,17 +263,25 @@ Trước khi đi vào những chia sẻ của mình lúc làm đồ án thực t
 Theo thông báo của nhà trường thì ngày này là ngày sẽ chốt thông tin nhưng **không phải đâu nha**. Sau ngày này, kể các bạn để trống 
 chưa đăng ký thông tin vẫn không sao đâu nha. Lúc này cứ điền bừa thông tin đơn vị thực tập cũng được
 
-**Ngày 15-06 đến 24-06** - đăng ký học hè và chốt danh sách thông tin thực tập 
+**Ngày 15-06-2022 đến 24-06-2022** - đăng ký học hè và chốt danh sách thông tin thực tập 
 
-**Ngày 29-06** - sinh viên nhận đề tài và bắt tay vào làm đồ án thực tập
+**Ngày 29-06-2022** - sinh viên nhận đề tài và bắt tay vào làm đồ án thực tập
 
-**Sau ngày 29-06** - sinh viên nào đổi đơn vị thực tập thì liên hệ riêng với giáo viên hướng dẫn 
+**Sau ngày 29-06-2022** - sinh viên nào đổi đơn vị thực tập thì liên hệ riêng với giáo viên hướng dẫn 
 
-**Ngày 31-08 đến 06-09** - kết thúc đồ án và chuẩn bị quá trình chấm điểm đồ án thực tập
+**Ngày 03-08-2022** - nộp báo cáo định kì lần 1
 
-**Ngày 04-09** - thi vấn đáp với giáo viên hướng dẫn
+**Ngày 17-08-2022** - nộp báo cáo định kì lần 2
 
-**Ngày 09-06** - thi vấn đáp với giáo viên phản biện
+**Từ 22-08-2022 đến 28-08-2022** - Sinh viên tự liên hệ để nộp quyển báo cáo thực tập cho giáo viên hướng dẫn 
+
+**Ngày 30-08-2022** - Sinh viên nộp quyển báo cáo thực tập trực tiếp tại văn phòng nhà trường.
+
+**Ngày 31-08-2022 đến 06-09-2022** - kết thúc đồ án và chuẩn bị quá trình chấm điểm đồ án thực tập
+
+**Ngày 04-09-2022** - thi vấn đáp với giáo viên hướng dẫn
+
+**Ngày 06-09-2022** - thi vấn đáp với giáo viên phản biện
 
 Vậy là các bạn sẽ có khoảng 2 tháng để làm đồ án thực tập từ cuối tháng 6 đến hết tháng 8
 
