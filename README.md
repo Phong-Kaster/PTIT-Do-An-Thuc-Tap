@@ -281,7 +281,7 @@ chưa đăng ký thông tin vẫn không sao đâu nha. Lúc này cứ điền b
 
 **Ngày 04-09-2022** - thi vấn đáp với giáo viên hướng dẫn
 
-**Ngày 06-09-2022** - thi vấn đáp với giáo viên phản biện
+**Ngày 09-09-2022** - thi vấn đáp với giáo viên phản biện
 
 Vậy là các bạn sẽ có khoảng 2 tháng để làm đồ án thực tập từ cuối tháng 6 đến hết tháng 8
 
