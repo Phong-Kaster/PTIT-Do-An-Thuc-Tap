@@ -41,7 +41,7 @@
   - [**Phase 4: 01-09-2022 to 28-09-2022**](#phase-4-01-09-2022-to-28-09-2022)
 - [**Post Script**](#post-script)
 - [**Special Thank**](#special-thank)
-- [**Made with 💘 and PHP <img src="https://www.vectorlogo.zone/logos/php/php-horizontal.svg" width="60">**](#made-with--and-php-)
+- [**Made with 💘 and PHP **](#made-with--and-php-)
 
 # [**Topic**](#topic)
 <p align="center">
@@ -367,7 +367,12 @@ app/controllers. Để đọc code hiểu quả hãy xem thêm [**Controller Tim
 
 # [**Mentor**](#mentor)
 
-Vài dòng mình để đây không có chủ đích xúc phạm giáo viên nào nhưng mình bức xúc quá nên đánh phá luật vậy
+Vài dòng mình để đây không có chủ đích xúc phạm giáo viên nào nhưng mình bức xúc quá nên đánh phá luật vậy.
+
+**15-02-2023**: Đọc lại thì Phong cũng cảm thấy mình viết vậy là thiếu tôn trọng các thầy cô. Tuy 
+nhiên, khi mình viết những dòng lưu bút bên dưới thì đó là những cảm xúc thật của mình(Và có 
+thể bạn có khi cũng trải qua rồi chăng ?🤣🤣). Nên mình quyết định tôn trọng nguyên tác, các bạn
+có thể đọc để rút kinh nghiệm & né các giáo viên hướng dẫn tào lao. Cảm ơn bạn vì đã ở đây🤗🤗🤗
 
 ## [**1. Nguyễn Thị Bích Nguyên**](#nguyen-thi-bich-nguyen)
 
